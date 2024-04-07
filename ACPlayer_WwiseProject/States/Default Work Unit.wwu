@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}" SchemaVersion="119">
+	<States>
+		<WorkUnit Name="Default Work Unit" ID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="Weather" ID="{2C54F4B0-439C-49D4-9786-071AEC9DB8F1}">
+					<ChildrenList>
+						<State Name="None" ID="{995C304E-0413-4885-861D-529A98180890}"/>
+						<State Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}"/>
+						<State Name="Snow" ID="{D9DBCA4E-1DC3-4FE6-B1AA-B4362145DC4F}"/>
+						<State Name="Rain" ID="{E24C557D-9E66-47FD-B928-8C487ADDCBE4}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>

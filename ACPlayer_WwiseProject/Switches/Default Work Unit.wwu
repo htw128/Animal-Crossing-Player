@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{CE4B9689-9552-4CCE-A44A-21EB145D8F3C}" SchemaVersion="119">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{CE4B9689-9552-4CCE-A44A-21EB145D8F3C}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Time" ID="{4C33AB3F-864E-4F2D-BD53-795D662043CD}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="AM_01" ID="{8F2E8F53-9A17-401E-8FD6-EFD0C9095E1F}"/>
+						<Switch Name="AM_02" ID="{8EEC92A8-3051-4C88-8F40-E132E6937997}"/>
+						<Switch Name="AM_03" ID="{9A7501BC-DA63-47BB-A6A5-54AC777012DA}"/>
+						<Switch Name="AM_04" ID="{0801B343-A010-4BF2-9849-0C6AD294128D}"/>
+						<Switch Name="AM_05" ID="{DE23A5F3-B07A-480C-A0BF-B4659C87029C}"/>
+						<Switch Name="AM_06" ID="{73201B8C-15E6-496C-AD87-4807527C9470}"/>
+						<Switch Name="AM_07" ID="{B4BAE7B7-06FE-43F2-9089-B9945DE128CC}"/>
+						<Switch Name="AM_08" ID="{259EBB28-8BDD-44EB-B879-72BB8A723967}"/>
+						<Switch Name="AM_09" ID="{D36662AF-D885-43D5-97BA-E31C8BC01F50}"/>
+						<Switch Name="AM_10" ID="{FBB4A766-DD3A-434C-B11F-5142F507DB19}"/>
+						<Switch Name="AM_11" ID="{B8C91853-8505-4333-93B9-B2A998875153}"/>
+						<Switch Name="AM_12" ID="{2731D1A5-40FC-4B00-9C7E-72C67CBA036F}"/>
+						<Switch Name="PM_01" ID="{C47CE84E-8C4B-414B-B9E9-938742D740BE}"/>
+						<Switch Name="PM_02" ID="{409FEFCF-50C4-4CDE-831D-A3C4BFC44F5A}"/>
+						<Switch Name="PM_03" ID="{B66A7B89-DA1D-423D-8CC0-F9361AA2346D}"/>
+						<Switch Name="PM_04" ID="{7E9107D5-FC0F-4DC0-A689-9621C67B5D75}"/>
+						<Switch Name="PM_05" ID="{EE9F7DA2-3D1C-4F0D-8DB8-F213D79EE2E4}"/>
+						<Switch Name="PM_06" ID="{A01B19BD-8E33-4437-99F1-36CB17C2890C}"/>
+						<Switch Name="PM_07" ID="{43AED098-2C60-4C95-A2B3-6FBB550F3EFE}"/>
+						<Switch Name="PM_08" ID="{F709BBFC-D650-412B-AFA2-D0669EFD298E}"/>
+						<Switch Name="PM_09" ID="{386FA70B-03CA-48BE-830B-917A34153D7A}"/>
+						<Switch Name="PM_10" ID="{498733C1-2170-4F4E-A4D8-7FB17E624CF5}"/>
+						<Switch Name="PM_11" ID="{EE7C94FC-729D-4101-8469-D3F4B0E159F0}"/>
+						<Switch Name="PM_12" ID="{B2CA02AB-AF84-4E59-BA04-982B5FFAE09C}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Time" ID="{F274BA71-60F4-436F-9475-A768FD0E2DBE}"/>
+						<Curve Name="" ID="{EDC3DB9C-FB16-4AAF-B7D1-EDBDE0B349F7}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>12</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1.9995</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>3</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>4</XPos>
+									<YPos>4</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>5</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>6</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>7</XPos>
+									<YPos>7</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>8</XPos>
+									<YPos>8</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>9</XPos>
+									<YPos>9</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>10</XPos>
+									<YPos>10</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>11</XPos>
+									<YPos>11</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>12</XPos>
+									<YPos>24</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>13</XPos>
+									<YPos>13</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>14</XPos>
+									<YPos>14</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>15</XPos>
+									<YPos>15</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>16</XPos>
+									<YPos>16</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>17</XPos>
+									<YPos>17</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>18</XPos>
+									<YPos>18</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>19</XPos>
+									<YPos>19</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>20</XPos>
+									<YPos>20</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>21</XPos>
+									<YPos>21</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>22</XPos>
+									<YPos>22</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>23</XPos>
+									<YPos>23</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>24</XPos>
+									<YPos>12</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>
