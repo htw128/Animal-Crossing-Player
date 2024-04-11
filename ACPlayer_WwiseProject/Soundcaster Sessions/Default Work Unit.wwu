@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{04EEC9EA-20F0-4AD9-ADFE-498385B929A6}" SchemaVersion="119">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{04EEC9EA-20F0-4AD9-ADFE-498385B929A6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{04EEC9EA-20F0-4AD9-ADFE-498385B929A6}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="City" ID="{13009B1C-1BC2-4149-B1BF-980FE342C34C}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="City" ID="{4F703814-42E5-4752-8C0A-4EAC8CB2F62E}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="Time" ID="{F274BA71-60F4-436F-9475-A768FD0E2DBE}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="AM_12" ID="{2731D1A5-40FC-4B00-9C7E-72C67CBA036F}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>
