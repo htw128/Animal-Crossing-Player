@@ -2506,6 +2506,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{9856BEAD-9FDB-48BE-B316-9D1C75C13C9D}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -2858,6 +2861,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{2852C0C7-FFF8-4317-AA23-C7F20D7B5F33}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -3272,6 +3278,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{785EDF07-2BA9-4EEB-B8FB-2AD5B5CA068E}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -3624,6 +3633,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{06752A33-90E6-4A47-830F-350C95FAC9CC}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -4038,6 +4050,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{DEBF80C5-40B9-4136-A98A-82A03B1E41CD}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -4394,6 +4409,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{726CA818-F71A-4A19-B7C4-672BA41739DA}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -4812,6 +4830,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{72C344A5-80F5-4670-B09B-A34A7E956AF6}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -5164,6 +5185,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{3497E702-693A-47C8-AFA5-81BB80186AB7}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -5578,6 +5602,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{765DA1F5-606E-4CD5-98D2-411DACB4ED17}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -5934,6 +5961,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{80F091C2-299F-4669-B30D-CFCE6BCDC9E2}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -6348,6 +6378,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{470C8A51-7622-4E04-BD11-8CA91469D3CA}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -6700,6 +6733,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{40AB31C5-AED1-4B29-920E-7776540742EC}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -7114,6 +7150,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{99BCBD2C-78F6-4DDB-B60A-CC921AACB3CB}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -7466,6 +7505,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{D6D1C251-181D-4C2E-A9C4-1CF26224CA89}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -7880,6 +7922,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{D5AFEC35-F055-4C26-88AC-352B72324755}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -8232,6 +8277,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{932683E3-1649-43E2-BF21-5B9C2B155A40}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -8646,6 +8694,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{93271FEE-1A9A-4634-AEB0-831ADDC03815}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -8998,6 +9049,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{CC43AE73-A892-4108-AE9D-1C0A8353C611}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -10226,6 +10280,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{666254AB-CFB7-43C2-B074-3D11305DF651}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -10414,6 +10471,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{EDC4FFE3-3356-439C-AD3B-042157CAED26}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -10660,6 +10720,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{71B16DD9-246E-48D7-90D6-4B3E9A5CEAC1}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -11012,6 +11075,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{88DAE9CC-73E8-433F-8F13-B21879DFA2B7}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -11426,6 +11492,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{3B1B981E-B1DC-4F48-A3EB-506C5F9AAD2B}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -11778,6 +11847,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{916FF19F-99C4-487D-BD8E-134BE83DF03D}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -12192,6 +12264,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{B5DFF86B-5FA0-4231-AB6A-D062B254D356}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -12544,6 +12619,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{29680507-5F03-4037-B00B-E6C8F4F37337}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -12958,6 +13036,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{92258BC1-94C7-413B-8B9B-84C19C86AAA7}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -13314,6 +13395,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{1B0AE991-568E-403F-99D4-BFADC236C901}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -13732,6 +13816,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{6C8C45ED-76EF-467F-9971-1C31B14B8478}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -14088,6 +14175,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{59EFA56F-679E-4A38-8971-46FA2DF4143B}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -14502,6 +14592,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{B38375D6-2AAF-405E-8CDE-F22281F659DA}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -14854,6 +14947,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{364CC8A8-30D7-4467-9222-BCE36D71BF3E}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -15268,6 +15364,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{28138B09-14DD-4C2C-87F3-AF5A7728A959}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -15620,6 +15719,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{9C53DD24-6C7E-4FF3-B00E-2D299D663586}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -16034,6 +16136,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{78B9A165-7FBA-491E-9986-E20E6DCA5F7F}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -16391,6 +16496,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{DAE8AC30-9C5C-4137-BE8E-726931D87F72}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -16809,6 +16917,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{16401EFA-C3A8-4586-BA39-83141F1DE663}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
@@ -17166,6 +17277,9 @@
 															</PropertyList>
 															<ChildrenList>
 																<MusicTransition Name="Transition" ID="{3C45294E-EE54-481F-9DD5-545F611BCE32}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
 																	<TransitionInfo/>
 																</MusicTransition>
 															</ChildrenList>
