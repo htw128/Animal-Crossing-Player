@@ -11,6 +11,23 @@
 						<State Name="Rainy" ID="{E24C557D-9E66-47FD-B928-8C487ADDCBE4}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Day_And_Night" ID="{CF6A01A3-C977-41BA-AE4A-A662A8C1B258}">
+					<ChildrenList>
+						<State Name="None" ID="{135FEC71-56F5-4C51-B0B0-2742BA65A22E}"/>
+						<State Name="Day" ID="{7AFC9FB0-DFED-48D1-962B-2D83BCC0B5F9}"/>
+						<State Name="Night" ID="{537AED84-E62A-47F7-A8F4-9288D2B70F3A}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Museum" ID="{90AFB8BB-31DD-46C9-BC7E-ED04EEB59E50}">
+					<ChildrenList>
+						<State Name="None" ID="{C7721B68-2C21-4913-B1EF-17DDB5F6CC2C}"/>
+						<State Name="Entrance" ID="{00013CB1-7A71-4B4E-BD21-5592335D8AB6}"/>
+						<State Name="Fish" ID="{DCD26A72-46A1-4A4B-B3CA-C0B5B39ADFA9}"/>
+						<State Name="Insect" ID="{D9AABEA6-182D-412B-A3FD-9DE53D98404D}"/>
+						<State Name="Fossil" ID="{8D2A6F3D-18FD-42AF-9847-8C7E5F982013}"/>
+						<State Name="Art" ID="{904DED33-F496-443A-B52A-0DCFF48253DC}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>

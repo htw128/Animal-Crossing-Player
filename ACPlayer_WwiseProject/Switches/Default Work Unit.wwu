@@ -169,6 +169,19 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
+				<SwitchGroup Name="IsTent" ID="{0F0A5069-F8CC-4FCA-BB2D-B425CF51CFD6}">
+					<ChildrenList>
+						<Switch Name="True" ID="{BED2D85C-5E88-483F-8925-29BD008ACD2C}"/>
+						<Switch Name="False" ID="{E60EA925-3695-47F0-9CEA-726A1D068FAF}"/>
+					</ChildrenList>
+				</SwitchGroup>
+				<SwitchGroup Name="Museum_Room" ID="{FF94B97F-CA2B-4E6C-8505-9CB3E29BA356}">
+					<ChildrenList>
+						<Switch Name="first" ID="{2F417075-BA6E-493E-A983-ABFA6B21DD48}"/>
+						<Switch Name="second" ID="{51A250E6-C06D-4065-B769-75630441E780}"/>
+						<Switch Name="third" ID="{464C3E66-37D7-4C9D-BB77-8E82C6512F51}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
