@@ -169,7 +169,7 @@
 						</Curve>
 					</SwitchOnRTPC>
 				</SwitchGroup>
-				<SwitchGroup Name="IsTent" ID="{0F0A5069-F8CC-4FCA-BB2D-B425CF51CFD6}">
+				<SwitchGroup Name="IsSpeaker" ID="{0F0A5069-F8CC-4FCA-BB2D-B425CF51CFD6}">
 					<ChildrenList>
 						<Switch Name="True" ID="{BED2D85C-5E88-483F-8925-29BD008ACD2C}"/>
 						<Switch Name="False" ID="{E60EA925-3695-47F0-9CEA-726A1D068FAF}"/>

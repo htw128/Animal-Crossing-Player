@@ -21,9 +21,9 @@
 						<CurrentStateRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="first" ID="{2F417075-BA6E-493E-A983-ABFA6B21DD48}"/>
+						<CurrentSwitchRef Name="second" ID="{51A250E6-C06D-4065-B769-75630441E780}"/>
 						<CurrentSwitchRef Name="AM_12" ID="{2731D1A5-40FC-4B00-9C7E-72C67CBA036F}"/>
-						<CurrentSwitchRef Name="False" ID="{E60EA925-3695-47F0-9CEA-726A1D068FAF}"/>
+						<CurrentSwitchRef Name="True" ID="{BED2D85C-5E88-483F-8925-29BD008ACD2C}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
