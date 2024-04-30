@@ -13,17 +13,19 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="Time" ID="{F274BA71-60F4-436F-9475-A768FD0E2DBE}"/>
-							<Value>0</Value>
+							<Value>22</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
 						<CurrentStateRef Name="Entrance" ID="{00013CB1-7A71-4B4E-BD21-5592335D8AB6}"/>
-						<CurrentStateRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}"/>
+						<CurrentStateRef Name="None" ID="{995C304E-0413-4885-861D-529A98180890}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="second" ID="{51A250E6-C06D-4065-B769-75630441E780}"/>
-						<CurrentSwitchRef Name="AM_12" ID="{2731D1A5-40FC-4B00-9C7E-72C67CBA036F}"/>
-						<CurrentSwitchRef Name="True" ID="{BED2D85C-5E88-483F-8925-29BD008ACD2C}"/>
+						<CurrentSwitchRef Name="True" ID="{A4E53C6B-D33E-4591-A4AE-BECE23EE7243}"/>
+						<CurrentSwitchRef Name="False" ID="{64736913-FB3B-4007-917E-256E509CE683}"/>
+						<CurrentSwitchRef Name="first" ID="{2F417075-BA6E-493E-A983-ABFA6B21DD48}"/>
+						<CurrentSwitchRef Name="PM_10" ID="{498733C1-2170-4F4E-A4D8-7FB17E624CF5}"/>
+						<CurrentSwitchRef Name="False" ID="{E60EA925-3695-47F0-9CEA-726A1D068FAF}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>

@@ -182,6 +182,51 @@
 						<Switch Name="third" ID="{464C3E66-37D7-4C9D-BB77-8E82C6512F51}"/>
 					</ChildrenList>
 				</SwitchGroup>
+				<SwitchGroup Name="IsClosing" ID="{4C54269F-536C-4C78-881E-D0468BBE0823}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="True" ID="{D3F56EDA-1E5F-41BC-906F-B867ECD4C96D}"/>
+						<Switch Name="False" ID="{64736913-FB3B-4007-917E-256E509CE683}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="Time" ID="{F274BA71-60F4-436F-9475-A768FD0E2DBE}"/>
+						<Curve Name="" ID="{99E70A5F-D687-48D1-BF0F-9E3D29DC9BE0}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>2</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>21.833</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>22</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>24</XPos>
+									<YPos>2</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+				<SwitchGroup Name="IsUpgrade" ID="{BF327D20-9E47-4044-8C22-84FD25C0501C}">
+					<ChildrenList>
+						<Switch Name="False" ID="{0F711350-498C-4B8F-A559-7E77D66F0D64}"/>
+						<Switch Name="True" ID="{A4E53C6B-D33E-4591-A4AE-BECE23EE7243}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>
