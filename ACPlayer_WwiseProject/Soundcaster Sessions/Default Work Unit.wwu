@@ -17,14 +17,15 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Entrance" ID="{00013CB1-7A71-4B4E-BD21-5592335D8AB6}"/>
-						<CurrentStateRef Name="None" ID="{995C304E-0413-4885-861D-529A98180890}"/>
+						<CurrentStateRef Name="Stage_05" ID="{F28D9BC1-460C-4261-A34B-4B34E47C48B4}"/>
+						<CurrentStateRef Name="Fish" ID="{DCD26A72-46A1-4A4B-B3CA-C0B5B39ADFA9}"/>
+						<CurrentStateRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="True" ID="{A4E53C6B-D33E-4591-A4AE-BECE23EE7243}"/>
+						<CurrentSwitchRef Name="False" ID="{0F711350-498C-4B8F-A559-7E77D66F0D64}"/>
 						<CurrentSwitchRef Name="False" ID="{64736913-FB3B-4007-917E-256E509CE683}"/>
 						<CurrentSwitchRef Name="first" ID="{2F417075-BA6E-493E-A983-ABFA6B21DD48}"/>
-						<CurrentSwitchRef Name="PM_10" ID="{498733C1-2170-4F4E-A4D8-7FB17E624CF5}"/>
+						<CurrentSwitchRef Name="AM_01" ID="{8F2E8F53-9A17-401E-8FD6-EFD0C9095E1F}"/>
 						<CurrentSwitchRef Name="False" ID="{E60EA925-3695-47F0-9CEA-726A1D068FAF}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>

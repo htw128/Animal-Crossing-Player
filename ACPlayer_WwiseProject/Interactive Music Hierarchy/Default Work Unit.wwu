@@ -21411,6 +21411,105 @@
 							</ChildrenList>
 						</MusicPlaylistContainer>
 					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Museum" ID="{90AFB8BB-31DD-46C9-BC7E-ED04EEB59E50}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+							</Reference>
+						</ObjectList>
+						<ObjectList Name="Entries">
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{752ACA70-F14C-49D6-B16C-618ECC20ADD9}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Art" ID="{F753714F-CC4B-4B2E-94CE-081577D5F68B}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Art" ID="{904DED33-F496-443A-B52A-0DCFF48253DC}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{0049EF5C-D1D6-49D8-8D09-C1A2A3C1863B}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Entrance" ID="{BC2471A8-A25C-4779-8DEA-2F595A6D63B1}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Entrance" ID="{00013CB1-7A71-4B4E-BD21-5592335D8AB6}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{BF660195-A688-4D7E-ACB3-D0707B041584}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Fish" ID="{D7E92C03-7C24-4343-86C2-84402386CE38}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Fish" ID="{DCD26A72-46A1-4A4B-B3CA-C0B5B39ADFA9}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{D834F85A-1E13-457C-9607-1EFDA95D2DA7}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Fossil" ID="{D15C3FAA-E53B-4FAA-A182-A4A6D2A56CDB}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Fossil" ID="{8D2A6F3D-18FD-42AF-9847-8C7E5F982013}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+							<Reference>
+								<Local>
+									<MultiSwitchEntry Name="" ID="{15531793-36A1-4310-A20D-FBFE4A647A5A}">
+										<ReferenceList>
+											<Reference Name="AudioNode">
+												<ObjectRef Name="Insect" ID="{66C5DE2C-6B92-4865-BC27-C3766F3896A0}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+											</Reference>
+										</ReferenceList>
+										<ObjectLists>
+											<ObjectList Name="EntryPath">
+												<Reference>
+													<ObjectRef Name="Insect" ID="{D9AABEA6-182D-412B-A3FD-9DE53D98404D}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+											</ObjectList>
+										</ObjectLists>
+									</MultiSwitchEntry>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
 				</MusicSwitchContainer>
 				<MusicPlaylistContainer Name="Airport" ID="{A1B24863-69A9-49D8-91BC-C50F7DECFD74}" ShortID="273685959">
 					<PropertyList>
@@ -23994,6 +24093,3646 @@
 						</MusicSegment>
 					</ChildrenList>
 				</MusicPlaylistContainer>
+				<MusicSwitchContainer Name="Orientation" ID="{6867373E-9ABA-430A-B973-AF40C24F7E52}" ShortID="93818624">
+					<PropertyList>
+						<Property Name="Tempo" Type="Real64" Value="70"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{C2788A0B-1B79-4531-8439-57B32FE16D30}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{F0DBAAB6-796E-4BDA-B9AD-8F1FC76FE673}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="3-27 島生活オリエンテーション7 (晴)" ID="{2C0868C7-7458-45C6-86F4-CB13213759DE}" ShortID="991522831">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="150586.666666667"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="3-27 島生活オリエンテーション7 (晴)" ID="{E05E7A2C-40B7-4390-8F6C-10DA990258F3}" ShortID="982746662">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{D4FA6F87-3A27-4760-BADB-B34558C55345}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="3-27 島生活オリエンテーション7 (晴)" ID="{B56D7931-D4F0-40D2-A931-7C71FFC71DE2}">
+											<Language>SFX</Language>
+											<AudioFile>3-27 島生活オリエンテーション7 (晴).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="683852867"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{603DF763-BFE7-4074-9C37-3C9ECC3A2362}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="3-27 島生活オリエンテーション7 (晴)" ID="{0A16BABD-D66D-46A8-B7ED-CCFD1DD491F8}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="149586.666666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="3-27 島生活オリエンテーション7 (晴)" ID="{B56D7931-D4F0-40D2-A931-7C71FFC71DE2}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="3-28 島生活オリエンテーション7 (雨)" ID="{EC04CBCB-8DD0-4E0B-9B81-594E1F7C4D9E}" ShortID="685551309">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{80104396-D227-4095-A1FB-B1B279495B33}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="3-28 島生活オリエンテーション7 (雨)" ID="{7762759C-3C70-4A6E-99FB-BD1FBFF658C7}">
+											<Language>SFX</Language>
+											<AudioFile>3-28 島生活オリエンテーション7 (雨).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="391419915"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{8186FCB9-9404-4441-810A-696C94BA8879}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="3-28 島生活オリエンテーション7 (雨)" ID="{B4904E9A-7ED3-4D19-8FA6-3A657980709F}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="149466.666666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="3-28 島生活オリエンテーション7 (雨)" ID="{7762759C-3C70-4A6E-99FB-BD1FBFF658C7}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+								<MusicTrack Name="3-29 島生活オリエンテーション7 (雪)" ID="{8513364C-8CD0-4EB2-B5E1-8C0FBD1F560C}" ShortID="786319594">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{99DA4093-4FFF-4B8C-8AC3-7A242928341F}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="3-29 島生活オリエンテーション7 (雪)" ID="{3FD3B5A1-933D-43E2-A3A1-3D8327BD94A5}">
+											<Language>SFX</Language>
+											<AudioFile>3-29 島生活オリエンテーション7 (雪).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="484264680"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{8233DED9-5C59-4DCD-9FA7-323CF4FED1A4}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="3-29 島生活オリエンテーション7 (雪)" ID="{A314D18A-0D97-4E5E-A1FD-7884C716B623}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="150586.666666667"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="3-29 島生活オリエンテーション7 (雪)" ID="{3FD3B5A1-933D-43E2-A3A1-3D8327BD94A5}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{855EAA6B-128D-4637-BB01-4B2C6E2C84B6}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{FA30A653-8607-473D-9EBD-5879059F5AD9}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="149586.666666667"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicPlaylistContainer Name="Orientation_01" ID="{8743814C-4649-43E0-94BB-652F0ED12677}" ShortID="792715177">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{D24F7CD1-CCAD-4B56-AF9B-4A90D6B74F8F}" ShortID="146817727">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{FA0C6373-C46B-497A-BD75-97EEB2E954C7}" ShortID="69229405">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="first" ID="{7237AC38-8CED-4031-B12D-9D1C7416BCDE}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{F839887E-B292-4198-A77C-B5F4D7C888FB}" ShortID="654654365">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="loop" ID="{59A19176-4B29-4EFD-B215-5D5FA320D670}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{3F1732B1-F4A4-44A4-8119-2BD7E3D29118}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{F95F8CCD-1031-4F82-91E0-0B8C1B795873}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="first" ID="{7237AC38-8CED-4031-B12D-9D1C7416BCDE}" ShortID="499951516">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="28403.7802441734"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="3-17 島生活オリエンテーション1" ID="{79456BA5-38DD-461A-81B3-90789E171E81}" ShortID="395111082">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{EA17B552-E8E9-489A-8C4F-59F2A789A07B}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3-17 島生活オリエンテーション1" ID="{0CA00E83-9A60-4855-BD4C-C256F603F5E4}">
+													<Language>SFX</Language>
+													<AudioFile>3-17 島生活オリエンテーション1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="275034701"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{63BCDBB9-4DBA-414F-BC70-FAD482FEBAA9}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-17 島生活オリエンテーション1" ID="{D5F5F452-9846-4541-9935-6EB16740D6A2}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="646.101838955236"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="28074.6732675267"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-646.101838955236"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-17 島生活オリエンテーション1" ID="{0CA00E83-9A60-4855-BD4C-C256F603F5E4}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{9493DB72-0899-4FAB-8E00-14D003FD4CC9}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.6461</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>28.07467</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{6365B879-CA22-41C1-87D5-E294BE785166}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.6461</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>28.07467</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{EA8996BB-6471-44E9-B3EF-69AB8DB81C90}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.6461</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>28.07467</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{01DA3A31-527A-41DE-BDBD-924A37E09BD1}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{76AD5A25-CC6A-4247-A436-C82BF5DFD512}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="27428.5714285714"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="loop" ID="{59A19176-4B29-4EFD-B215-5D5FA320D670}" ShortID="831557278">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="27929.3800539083"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="3-17 島生活オリエンテーション1" ID="{2B505040-501A-4726-B6B8-C90604C808C8}" ShortID="941178538">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{DE6848D5-EC93-4D41-86B0-78D06E7CE8E4}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3-17 島生活オリエンテーション1" ID="{D7F40F42-4F1B-47C2-B30C-00BE6A7E59A8}">
+													<Language>SFX</Language>
+													<AudioFile>3-17 島生活オリエンテーション1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="275034701"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{62113D7C-EBE9-4187-A64F-F81E3D560A54}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-17 島生活オリエンテーション1" ID="{82BBACC8-17F1-47C9-8DD0-96A5B7FCB6FB}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="28074.6732675267"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="55503.2446960981"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-28074.6732675267"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-17 島生活オリエンテーション1" ID="{D7F40F42-4F1B-47C2-B30C-00BE6A7E59A8}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{CE6484E1-C7AE-4173-8C06-E841DBE92D02}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>28.07467</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>55.50324</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{D8C20341-69D0-498C-8438-8E73431FB2F2}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>28.07467</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>55.50324</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{4669E181-EF40-458F-8411-FD1E43F84B7B}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>28.07467</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>55.50324</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{34613B5B-97A0-4129-B034-346B82FEE2E6}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{B2C4160D-380C-4FF6-8B5C-7B4634BFDDB3}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="27428.5714285714"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Orientation_02" ID="{673A3129-5E8E-4EAE-9C7F-7F50F1093202}" ShortID="288321285">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{E0EE7A44-3640-461A-8E36-08B1F3514247}" ShortID="532176337">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{4D6BAB63-231D-41A1-85FF-1AB8ECB61A5C}" ShortID="279152282">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="first" ID="{791ED369-3C57-452F-8DA5-6FEFC9D2A556}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{7B4008CF-8EF5-465F-857E-CAD8F182C83E}" ShortID="983654294">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="loop" ID="{23BF08A3-669A-43E0-95DD-E89B1382BEDB}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{ACD08669-296C-4722-B9F3-146A846D05E7}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{4CCEEBAA-CC40-4B73-A310-A0766F6EF023}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="first" ID="{791ED369-3C57-452F-8DA5-6FEFC9D2A556}" ShortID="977757626">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="28146.588892647"/>
+										<Property Name="Tempo" Type="Real64" Value="70"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="3-18 島生活オリエンテーション2" ID="{D69B5583-1C39-424F-A5C5-B9E85FA7438C}" ShortID="284227885">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{B07E59E2-116C-4279-B365-95E31C4B2C67}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3-18 島生活オリエンテーション2" ID="{42B11E26-5A9C-40CB-A689-B1DE896C98EE}">
+													<Language>SFX</Language>
+													<AudioFile>3-18 島生活オリエンテーション2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="893483476"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{9CD3E0AB-4262-48F0-9247-F6A655EF2EED}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-18 島生活オリエンテーション2" ID="{7719CA5F-0D38-46B4-8AA6-12D57127849A}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="547.317790971753"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="28108.7168944955"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-547.317790971753"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-18 島生活オリエンテーション2" ID="{42B11E26-5A9C-40CB-A689-B1DE896C98EE}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{AE6968E9-2F17-43F3-96BB-2FEFCF16C976}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.54732</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>28.10872</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{67432DE3-9485-4226-AB24-B26D6D4C6F51}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.54732</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>28.10872</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{9D6AA111-BE40-479D-AE6E-F1A93BDC9342}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.54732</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>28.10872</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{D4F33E4C-7AA3-4526-9804-80751526B7B4}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="132.827674952286"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{981030DA-1E15-436D-8516-827D9AA89581}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="27561.3991035237"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="loop" ID="{23BF08A3-669A-43E0-95DD-E89B1382BEDB}" ShortID="1032265027">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="30195.8691967282"/>
+										<Property Name="Tempo" Type="Real64" Value="70"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="3-18 島生活オリエンテーション2" ID="{BBD647F3-14F6-4EA2-B2A5-BC04680BA14D}" ShortID="825165119">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{45F4C3F6-87F1-46EA-844B-B17FAFCD212A}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3-18 島生活オリエンテーション2" ID="{6516AC31-E25D-408E-AA7B-3B228E016CFE}">
+													<Language>SFX</Language>
+													<AudioFile>3-18 島生活オリエンテーション2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="893483476"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D54354C5-54BB-4FA2-BD0C-61E4CB45C6AF}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-18 島生活オリエンテーション2" ID="{7E13EC9D-28D9-44DA-A8EF-851A92E21FDB}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="28108.7168944955"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="55537.2883230669"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-28108.7168944955"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-18 島生活オリエンテーション2" ID="{6516AC31-E25D-408E-AA7B-3B228E016CFE}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{26DB3412-2505-4BF7-990B-CF4B7FA122A8}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>28.10872</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>55.53729</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{A854EBC7-526E-4205-9091-7DE9904F8CCA}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>28.10872</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>55.53729</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{7C00EF42-F82F-40C1-AB58-4812F402EF88}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>28.10872</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>55.53729</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{8BA2D9B7-AD4A-44BC-9C5C-5409A3A24BD3}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{41577669-D7BA-491B-8ED4-422CBF445F83}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="27428.5714285714"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Orientation_03" ID="{548AB860-46BC-42A4-8FBA-2CF738691804}" ShortID="484605667">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{B84620E9-B4AE-48F3-848D-5D61136314F7}" ShortID="821647224">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{F9F99CFA-D349-4295-91EC-EECDFD72CEBF}" ShortID="155115847">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="first" ID="{A51B2BBE-5485-49E0-BDCC-9BE211847199}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{3D9C07A7-BE92-46FF-AF1F-973746FAE93D}" ShortID="382878192">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="loop" ID="{5D81B92D-4495-4D36-8C4A-7AA0E216CD45}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{BE7C7FE0-A6E7-4C69-8C25-468E0DC69313}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{753AAC82-6AED-4F58-92FE-1D9DB9FB2DEF}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="first" ID="{A51B2BBE-5485-49E0-BDCC-9BE211847199}" ShortID="125791990">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="28159.7535183131"/>
+										<Property Name="Tempo" Type="Real64" Value="70"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="3-19 島生活オリエンテーション3" ID="{2643398E-8B1B-438E-BB3B-B0FF4E0409F2}" ShortID="549304456">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{9B099BB1-D722-49C0-801E-18C9C77E8689}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3-19 島生活オリエンテーション3" ID="{EE163882-FA5E-4746-89AD-01EF7B0FDC20}">
+													<Language>SFX</Language>
+													<AudioFile>3-19 島生活オリエンテーション3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="226246901"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{106D4E05-2EB0-4E4F-9C4F-C664D8885A97}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-19 島生活オリエンテーション3" ID="{D0F41C87-4179-46CA-8A76-EABB00FF2F50}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="590.200688223317"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="28018.7721167947"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-590.200688223317"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-19 島生活オリエンテーション3" ID="{EE163882-FA5E-4746-89AD-01EF7B0FDC20}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{B820965A-E8F5-48B0-9E90-656A557C0789}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.5902</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>28.01877</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{A50FD0B5-E65B-4EEF-90B1-0053C949163D}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.5902</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>28.01877</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{6430D402-7B6B-4CEE-B93C-01708DD0BED4}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.5902</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>28.01877</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{D0334F8F-1A95-44F6-BE30-7DA7E7920861}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{66A7189B-A014-414A-8B38-1A24A62AE19F}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="27428.5714285714"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="loop" ID="{5D81B92D-4495-4D36-8C4A-7AA0E216CD45}" ShortID="680359692">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="27967.3843877174"/>
+										<Property Name="Tempo" Type="Real64" Value="70"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="3-19 島生活オリエンテーション3" ID="{A5ACB309-82BF-442D-AFD5-4014C3492B86}" ShortID="294578197">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{73CB625D-1ABE-416A-BF3C-458279D2E1AD}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3-19 島生活オリエンテーション3" ID="{3FDDD363-4EC9-4280-9578-CD53FF966AB1}">
+													<Language>SFX</Language>
+													<AudioFile>3-19 島生活オリエンテーション3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="226246901"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{5BBC0A3F-7007-4B78-80BC-FD922BB6D05B}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-19 島生活オリエンテーション3" ID="{250C73C4-960E-4E09-A46B-8C29C832EC76}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="28018.7721167947"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="55447.3435453662"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-28018.7721167947"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-19 島生活オリエンテーション3" ID="{3FDDD363-4EC9-4280-9578-CD53FF966AB1}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{CF17427D-1797-449B-9BDC-3F34D045AF35}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>28.01877</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>55.44734</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{0EAC3DA0-E38C-4E35-9DE3-6F56CE12024C}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>28.01877</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>55.44734</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{E3FCC228-0116-4789-925C-EBE4215A12E4}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>28.01877</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>55.44734</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{F15856C0-9389-44B1-8C7C-6A67336699F6}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{AFC69B2E-A083-422F-818C-C57D76092557}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="27428.5714285714"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Orientation_04 (Night)" ID="{2725667A-0A58-4FF6-848C-2E99F341BF8A}" ShortID="214626202">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{B4B4B31E-489F-4960-8ED2-A4EFC7749601}" ShortID="995378715">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{2F0433A0-8266-4D94-A164-CC35C16C33CB}" ShortID="25926038">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="first" ID="{280F36BF-4ADC-49BC-86D0-8462E114D264}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{1E27D909-B860-408D-BC09-03A2EC127660}" ShortID="185916691">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="loop" ID="{2E455253-84D1-4C72-B6B0-52732DEED602}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{51BB0D89-069A-4DF6-BE7C-0DC4533C31C5}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{639CCBBE-2C17-435C-8A93-5D116A0D6801}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="first" ID="{280F36BF-4ADC-49BC-86D0-8462E114D264}" ShortID="145655889">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="38082.930123225"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="104"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="3-20 島生活オリエンテーション4 (キャンプファイアの夜)" ID="{D775E089-362F-440D-943A-1538B499A882}" ShortID="99195483">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{C5DA33A5-FF8A-40D1-A2E1-1E5F3DA4F108}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3-20 島生活オリエンテーション4 (キャンプファイアの夜)" ID="{A17CDDBE-029A-448D-B435-E5599CD0434E}">
+													<Language>SFX</Language>
+													<AudioFile>3-20 島生活オリエンテーション4 (キャンプファイアの夜).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="741247909"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{D696C80C-DF5E-499D-B4C0-8FD3AA530ABA}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-20 島生活オリエンテーション4 (キャンプファイアの夜)" ID="{A35D0A46-91CA-4B57-98B0-6468B4F665F7}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="588.300909984743"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="37511.3778330617"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-588.300909984743"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-20 島生活オリエンテーション4 (キャンプファイアの夜)" ID="{A17CDDBE-029A-448D-B435-E5599CD0434E}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{7D87F625-E8C7-40AE-A3B9-B1D31F511FD1}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.5883</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>37.51138</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{A47F9148-921F-4330-AC98-77D5EB894927}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.5883</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>37.51138</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{E56C342E-9D49-4EF8-9544-97D510BAA0D2}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.5883</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>37.51138</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{01A9AF38-9A49-4C43-A0B4-EE96ACF8B559}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{1C23165B-BD82-4E8A-ABF0-22E8917987E1}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="36923.0769230769"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="loop" ID="{2E455253-84D1-4C72-B6B0-52732DEED602}" ShortID="757698350">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="37979.5208385291"/>
+										<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+										<Property Name="Tempo" Type="Real64" Value="104"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="3-20 島生活オリエンテーション4 (キャンプファイアの夜)" ID="{F8A24147-0D30-4C96-B778-D249B45FB308}" ShortID="176087524">
+											<ReferenceList>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{0EF6BE83-DD59-4BBE-89F6-05948284F8C4}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3-20 島生活オリエンテーション4 (キャンプファイアの夜)" ID="{664255BC-0195-49EF-BB47-3E63B3D94CDC}">
+													<Language>SFX</Language>
+													<AudioFile>3-20 島生活オリエンテーション4 (キャンプファイアの夜).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="741247909"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{B139B10A-D435-4E52-B3BA-92FDF89D84F4}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-20 島生活オリエンテーション4 (キャンプファイアの夜)" ID="{5AEBC528-3B38-4D0F-8835-B7DC4DE89621}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="37511.3778330617"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="74434.4547561386"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-37511.3778330617"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-20 島生活オリエンテーション4 (キャンプファイアの夜)" ID="{664255BC-0195-49EF-BB47-3E63B3D94CDC}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{913610F4-838D-4C47-99C3-9E80509792DA}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>37.51138</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>74.43445</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{770B69CF-7B18-4C9C-9738-006CFF47BE18}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>37.51138</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>74.43445</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{4B66C89C-E93D-4440-A6D1-9517033FD730}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>37.51138</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>74.43445</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{5F6F9D57-7E31-498E-B62E-04BAE330C9DA}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{343AA11E-0096-461E-8FA4-18F831D3AB8F}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="36923.0769230769"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Orientation_05" ID="{36468BF3-7635-49D4-B23B-AD8BD285753C}" ShortID="406871358">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{4B50EEEB-0DC1-4371-976B-C4D33771EC36}" ShortID="565632348">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{3656BB1C-026B-486D-BB1F-A1151B8D300F}" ShortID="759934505">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="first" ID="{7D5C29F3-7A43-4356-8D31-3FA9CEEB9B90}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{3A48B07D-A907-481B-B9B1-0C3A70433FBB}" ShortID="184103568">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="loop" ID="{6064D117-85E8-446D-BE52-8DE25F40F007}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{18BDB798-345D-4CCE-91B7-462498E4E7F5}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{FB502642-A13C-476B-ACAE-30BBCE274A43}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="first" ID="{7D5C29F3-7A43-4356-8D31-3FA9CEEB9B90}" ShortID="13031157">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="72996.343174251"/>
+										<Property Name="Tempo" Type="Real64" Value="70"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="3-21 島生活オリエンテーション5 (晴)" ID="{3C44DC1D-16A4-4043-8533-12E3FBA94B30}" ShortID="659952850">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weather" ID="{2C54F4B0-439C-49D4-9786-071AEC9DB8F1}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{687B6A8D-78A0-43FA-9479-7C87947FA7A1}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{D1F55A9B-4BE9-4D3F-B260-2A389C939C64}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3-21 島生活オリエンテーション5 (晴)" ID="{338D34B6-AAE4-44C5-96F9-3E447D63D633}">
+													<Language>SFX</Language>
+													<AudioFile>3-21 島生活オリエンテーション5 (晴).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1034940699"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="3-22 島生活オリエンテーション5 (雨)" ID="{54089F0D-1E36-4FE4-B71D-8EF1CDFE448B}">
+													<Language>SFX</Language>
+													<AudioFile>3-22 島生活オリエンテーション5 (雨).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="960730601"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="3-23 島生活オリエンテーション5 (雪)" ID="{9FD9BFCA-E0C5-46A7-B567-AC53B02E50D0}">
+													<Language>SFX</Language>
+													<AudioFile>3-23 島生活オリエンテーション5 (雪).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="528293158"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{8861A3D2-5DB2-4FDB-8B45-7D389EB81406}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-21 島生活オリエンテーション5 (晴)" ID="{2122B9AB-28B1-4069-B528-1C5E03B5DAA1}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="553.639923280553"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="72660.6877876179"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-553.639923280553"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-21 島生活オリエンテーション5 (晴)" ID="{338D34B6-AAE4-44C5-96F9-3E447D63D633}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{4166932E-4434-48F9-BBA4-3A27DF987F38}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55364</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{761CB56C-D357-45F0-AA97-87A0C38E69BB}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55364</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{67073ED5-B520-463D-9549-897FDE9858AC}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55364</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{483F736B-8B39-498A-9173-1A4C3A32BC5D}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-22 島生活オリエンテーション5 (雨)" ID="{2095DA70-EF9F-4A3F-A713-87332818700B}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="553.639923280553"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="72660.6877876179"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-553.639923280553"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-22 島生活オリエンテーション5 (雨)" ID="{54089F0D-1E36-4FE4-B71D-8EF1CDFE448B}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{F9813ACF-235D-460B-83DE-1725138C15E4}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55364</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{B669FBC4-CF7B-4A55-8DA3-86DCE2ADE0BB}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55364</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{82E4B313-4383-46C0-BC81-5EC14E8E2DFF}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55364</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Rainy" ID="{E24C557D-9E66-47FD-B928-8C487ADDCBE4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{4EC09E4B-A469-4D12-B21C-BDC1A7B93A4D}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-23 島生活オリエンテーション5 (雪)" ID="{F8717728-7ECD-4600-9FA4-C80AC589114C}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="553.639923280553"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="72660.6877876179"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-553.639923280553"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-23 島生活オリエンテーション5 (雪)" ID="{9FD9BFCA-E0C5-46A7-B567-AC53B02E50D0}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{C073A611-B6FA-4ED7-860D-AF7086C534F0}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55364</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{24EF43F0-F9AC-48DF-BC11-3B2C4B6898E0}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55364</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{8853824E-2C55-4E3C-9F77-978E895B3564}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55364</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Snowy" ID="{D9DBCA4E-1DC3-4FE6-B1AA-B4362145DC4F}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{4D4F54E1-2F5B-4991-A837-9C77261A405B}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="107.047864337332"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{4C5D9572-3AEE-44C2-8BA8-E3FC186123BC}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="72107.0478643373"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="loop" ID="{6064D117-85E8-446D-BE52-8DE25F40F007}" ShortID="64245510">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="74015.715871254"/>
+										<Property Name="Tempo" Type="Real64" Value="70"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="3-21 島生活オリエンテーション5 (晴)" ID="{05B16D07-DB01-4E5B-9F65-14B719F69D7F}" ShortID="306002391">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weather" ID="{2C54F4B0-439C-49D4-9786-071AEC9DB8F1}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{58AB5D74-1027-411E-BE77-C2D53841D936}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{DFF95493-1CF9-498A-97FE-97E25DA3C7B1}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3-21 島生活オリエンテーション5 (晴)" ID="{5A75FE00-E36F-45F0-88BA-33DAA2C6926A}">
+													<Language>SFX</Language>
+													<AudioFile>3-21 島生活オリエンテーション5 (晴).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="1034940699"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="3-22 島生活オリエンテーション5 (雨)" ID="{9241E7C5-C1EE-44D9-9102-51B47C031ADE}">
+													<Language>SFX</Language>
+													<AudioFile>3-22 島生活オリエンテーション5 (雨).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="960730601"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="3-23 島生活オリエンテーション5 (雪)" ID="{A24151F2-C642-4056-9226-47896062305A}">
+													<Language>SFX</Language>
+													<AudioFile>3-23 島生活オリエンテーション5 (雪).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="528293158"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{553014C7-B761-4891-9B5F-CE5FA4851FD0}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-21 島生活オリエンテーション5 (晴)" ID="{4E96F453-F260-4066-AFC8-4341C6B2EF8B}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="446.592058943367"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="14375.1634875148"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="57624.8365124852"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-21 島生活オリエンテーション5 (晴)" ID="{5A75FE00-E36F-45F0-88BA-33DAA2C6926A}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{2F7D136F-A8F8-42AF-9219-4AC1F61432D0}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.44659</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.37516</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{364B3B74-36F5-41EA-8324-216E9421D353}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.44659</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.37516</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{21C9AB1A-6E1F-497C-B98C-68746E0863E5}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.44659</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.37516</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-21 島生活オリエンテーション5 (晴)" ID="{80F1FE92-909C-4F83-A14E-4A60300A6487}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="72660.6877876179"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="130946.402073332"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-72660.6877876179"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-21 島生活オリエンテーション5 (晴)" ID="{5A75FE00-E36F-45F0-88BA-33DAA2C6926A}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{9B9475D4-D16C-4468-B56D-781FF3CEF5B5}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>130.9464</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{A49702D3-081E-405A-94FD-7F60180047E2}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>130.9464</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{7984B80B-570C-4EBA-9DA8-B880FC87BDE1}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>130.9464</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{3FA599F9-81CC-4DF5-BF23-FF892762E77C}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-22 島生活オリエンテーション5 (雨)" ID="{58872734-47DB-44DB-AA04-894A4A699BC9}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="446.592058943358"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="14375.1634875147"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="57624.8365124852"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-22 島生活オリエンテーション5 (雨)" ID="{9241E7C5-C1EE-44D9-9102-51B47C031ADE}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{8A6DC35C-FD1F-402A-B0BA-A18647D1867B}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.44659</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.37516</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{D78CE77F-7BC2-4ACA-9AAC-E4FA2F40A37E}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.44659</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.37516</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{232D0BCF-CC8C-44E4-A705-3074568B09E6}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.44659</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.37516</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-22 島生活オリエンテーション5 (雨)" ID="{0322FEB7-A506-4AD4-A658-D8E346089C08}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="72660.6877876179"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="130946.402073332"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-72660.6877876179"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-22 島生活オリエンテーション5 (雨)" ID="{9241E7C5-C1EE-44D9-9102-51B47C031ADE}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{4262E040-62CB-4199-9D29-7D4F463381B7}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>130.9464</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{C31D24E1-E30C-4C24-80F0-1FD39B106414}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>130.9464</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{20E037DC-C62E-45D4-9C0B-3B21380DEBB8}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>130.9464</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Rainy" ID="{E24C557D-9E66-47FD-B928-8C487ADDCBE4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{6409D6AD-34D1-496F-8DFC-61BABD422D2F}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-23 島生活オリエンテーション5 (雪)" ID="{82B9B5AD-1E2C-462B-9BA4-C6819F9306B8}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="446.592058943352"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="14375.1634875147"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="57624.8365124852"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-23 島生活オリエンテーション5 (雪)" ID="{A24151F2-C642-4056-9226-47896062305A}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{C926BAB6-672A-4D22-B689-30E9DC74A067}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.44659</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.37516</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{DB275377-D5C5-4C77-A178-46DF9735D9E3}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.44659</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.37516</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{16B7321F-18A9-4CEF-9CF1-43D7C6F29D79}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.44659</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.37516</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-23 島生活オリエンテーション5 (雪)" ID="{60172525-7539-4F16-AF57-F4EBAA2D998B}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="72660.6877876179"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="130946.402073332"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-72660.6877876179"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-23 島生活オリエンテーション5 (雪)" ID="{A24151F2-C642-4056-9226-47896062305A}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{6A932A0F-430A-4359-B3D6-3D04C3D80DE6}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>130.9464</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{C86F749C-C3D7-47B0-8FD8-DE58D80FA384}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>130.9464</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{5C546166-03FC-4849-935C-61C6689D5709}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.66069</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>130.9464</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Snowy" ID="{D9DBCA4E-1DC3-4FE6-B1AA-B4362145DC4F}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{BEAFECB4-4382-4731-9061-93E95D518AEF}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{6439E0FE-3600-469E-9DBE-7D527301036D}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="72000"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+						<MusicPlaylistContainer Name="Orientation_06" ID="{C66E8B8C-C778-4BFC-ADE1-CAAFDDAD5104}" ShortID="193855380">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+								</Reference>
+								<Reference Name="PlaylistRoot">
+									<Custom>
+										<MusicPlaylistItem Name="" ID="{D639827B-77EB-4F7F-97F0-79E611BCD1E7}" ShortID="64762047">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{C73B906F-2218-4930-8509-B492A97554E2}" ShortID="775439870">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="first" ID="{99819ABF-91FE-47E3-B5B6-84CC22BDBD6A}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{AEC4C63D-99CE-4EF6-898F-57BB806A753C}" ShortID="644708753">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="loop" ID="{DC930100-6757-42BC-B11E-57626BB72C46}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Custom>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{BFF82A1A-4F74-47C4-A796-32DB4269DFFE}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{64E05A6D-D959-418F-9FB0-D95DDB2FDA94}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicSegment Name="first" ID="{99819ABF-91FE-47E3-B5B6-84CC22BDBD6A}" ShortID="921312660">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="72985.9563448021"/>
+										<Property Name="Tempo" Type="Real64" Value="70"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="3-24 島生活オリエンテーション6 (晴)" ID="{BF278843-1731-43D2-8096-B3A3D93C6C7C}" ShortID="228404608">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weather" ID="{2C54F4B0-439C-49D4-9786-071AEC9DB8F1}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{83A8B3E9-B98C-4EA3-84CB-FA48D0148D35}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{AAAE7CFA-1310-41A8-A7EF-CA9E5C08EBC9}">
+																	<PropertyList>
+																		<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+																	</PropertyList>
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3-24 島生活オリエンテーション6 (晴)" ID="{374A16E1-8CAF-4372-8202-0491135F7CAB}">
+													<Language>SFX</Language>
+													<AudioFile>3-24 島生活オリエンテーション6 (晴).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="298455535"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="3-25 島生活オリエンテーション6 (雨)" ID="{F2C3D8CB-FA6B-4C32-A948-0E4F4CCDA58B}">
+													<Language>SFX</Language>
+													<AudioFile>3-25 島生活オリエンテーション6 (雨).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="722818663"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="3-26 島生活オリエンテーション6 (雪)" ID="{FC850904-0E01-4AFD-894D-E8807A19B82E}">
+													<Language>SFX</Language>
+													<AudioFile>3-26 島生活オリエンテーション6 (雪).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="57413924"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{08BBEFBB-F60C-4DAD-AA1C-40A1C8BF0C1E}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-24 島生活オリエンテーション6 (晴)" ID="{536ECF2A-C349-4F9B-BFE2-8C3CA789A3A6}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="555.211551870344"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="72708.5808266744"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-555.168476022494"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-24 島生活オリエンテーション6 (晴)" ID="{374A16E1-8CAF-4372-8202-0491135F7CAB}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{E9ADE80C-D8F7-44DC-96BE-DC2CCD0C8571}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55521</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.70858</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{984CC3EE-C996-4ABA-9D12-03E970E56B31}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55521</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.70858</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{DFCDED4A-E8E3-40FC-8DBA-E6CA2A056358}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55521</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.70858</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{91CF8B3B-2508-429A-9B5A-276E34A7940D}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-25 島生活オリエンテーション6 (雨)" ID="{D39C2AE8-C9C8-4236-B043-B92401932F11}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="561.841146253344"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="72715.2534969053"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-561.841146253344"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-25 島生活オリエンテーション6 (雨)" ID="{F2C3D8CB-FA6B-4C32-A948-0E4F4CCDA58B}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{C3020CE2-9514-4293-A486-D8C99752D558}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.56184</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.71525</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{82BB8EB9-1D87-43FD-909D-F1558360FE70}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.56184</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.71525</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{40B5714E-BA7C-4D09-B24E-D3A4B0603D0E}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.56184</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.71525</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Rainy" ID="{E24C557D-9E66-47FD-B928-8C487ADDCBE4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{8D6BD950-F373-4B22-9FD2-3DAD574AB3A3}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-26 島生活オリエンテーション6 (雪)" ID="{6878C177-E75A-4E0B-896B-0325322038BE}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="559.262970659955"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="72712.653091651"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-559.240740999075"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-26 島生活オリエンテーション6 (雪)" ID="{FC850904-0E01-4AFD-894D-E8807A19B82E}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{42DA7F6E-54B6-42F1-A746-448107FDAC25}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55926</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.71265</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{5C65E27C-BDE8-4618-BFA1-B5B7CBC1E102}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55926</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.71265</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{180893F5-37A0-46FC-87E5-5CF6396BD90F}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.55926</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>72.71265</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Snowy" ID="{D9DBCA4E-1DC3-4FE6-B1AA-B4362145DC4F}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{54BD601F-242E-4BA1-9FF4-93832E98F572}">
+														<PropertyList>
+															<Property Name="TimeMs" Type="Real64" Value="153.412350651938"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{F2AEFB82-233D-4E7E-BD5C-CC39EB7867A0}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="72153.4123506519"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+								<MusicSegment Name="loop" ID="{DC930100-6757-42BC-B11E-57626BB72C46}" ShortID="10173874">
+									<PropertyList>
+										<Property Name="EndPosition" Type="Real64" Value="72985.9563448021"/>
+										<Property Name="Tempo" Type="Real64" Value="70"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicTrack Name="3-24 島生活オリエンテーション6 (晴)" ID="{D5C346D2-93EB-4553-A8EB-AA4171C7B6AC}" ShortID="303687182">
+											<PropertyList>
+												<Property Name="MusicTrackType" Type="int16" Value="3"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DefaultSwitchOrState">
+													<ObjectRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+												</Reference>
+												<Reference Name="SwitchGroupOrStateGroup">
+													<ObjectRef Name="Weather" ID="{2C54F4B0-439C-49D4-9786-071AEC9DB8F1}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+												</Reference>
+												<Reference Name="TransitionRoot">
+													<Custom>
+														<MusicTransition Name="Root" ID="{9F31091A-B6D7-4C50-B004-C8DC4D62C708}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<ChildrenList>
+																<MusicTransition Name="Transition" ID="{44B39FDC-D8FB-4479-9AB3-ACE932B54D91}">
+																	<TransitionInfo/>
+																</MusicTransition>
+															</ChildrenList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</Custom>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="3-24 島生活オリエンテーション6 (晴)" ID="{6A541006-2850-4573-8AAB-87B9FB9E112A}">
+													<Language>SFX</Language>
+													<AudioFile>3-24 島生活オリエンテーション6 (晴).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="298455535"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="3-25 島生活オリエンテーション6 (雨)" ID="{2C88FB87-367A-422B-8343-333BE1B32A02}">
+													<Language>SFX</Language>
+													<AudioFile>3-25 島生活オリエンテーション6 (雨).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="722818663"/>
+													</MediaIDList>
+												</AudioFileSource>
+												<AudioFileSource Name="3-26 島生活オリエンテーション6 (雪)" ID="{A458171D-16EF-4CF0-9C4A-12622A3A3270}">
+													<Language>SFX</Language>
+													<AudioFile>3-26 島生活オリエンテーション6 (雪).wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="57413924"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Sequences">
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{9AB1B82D-E4CA-481C-87C1-65A337292762}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-24 島生活オリエンテーション6 (晴)" ID="{1E5A86C6-7FE3-46C3-B259-5D2C1CE16FE4}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="434.191180917952"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="14422.8665409602"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="57730.5458096917"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-24 島生活オリエンテーション6 (晴)" ID="{6A541006-2850-4573-8AAB-87B9FB9E112A}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{831E28C3-5CE1-46D1-8A38-3460CCE31A98}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.43419</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.42287</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{FFD47D92-A669-4DE7-9EAF-FDD2E29A628B}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.43419</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.42287</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{A4C1413B-B5DB-4636-A3D2-50CA4AC3A687}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.43419</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.42287</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-24 島生活オリエンテーション6 (晴)" ID="{96E311CD-2BAC-465E-AA20-30A4B8A7238F}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="72708.5808266744"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="131091.111409151"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-72708.5808266744"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-24 島生活オリエンテーション6 (晴)" ID="{6A541006-2850-4573-8AAB-87B9FB9E112A}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{3D90FFFB-2881-4934-9238-273D489B81D1}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.70858</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>131.09111</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{ED5A55A8-519D-4D4D-9ADC-6833D408B5B6}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.70858</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>131.09111</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{EDBFE401-EF90-4F05-935D-6AABBC0E7813}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.70858</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>131.09111</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{2FF9394B-863C-48B1-884F-FF0D3F46DEE6}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-25 島生活オリエンテーション6 (雨)" ID="{5F9D79DE-4B2C-4AE2-81A6-65455C02313F}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="448.888800031103"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="14429.539211191"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="57723.8731394609"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-25 島生活オリエンテーション6 (雨)" ID="{2C88FB87-367A-422B-8343-333BE1B32A02}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{647F42C3-5F8D-46B6-9D25-4A7CB1408F7D}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.44889</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.42954</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{07018933-0D63-4E4C-93EA-631D409F9DBE}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.44889</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.42954</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{CD9E3220-32A8-4AF5-922D-6DDD359A1F68}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.44889</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.42954</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-25 島生活オリエンテーション6 (雨)" ID="{196D5CA1-E7BC-4861-A4D9-F7C2ACBA22F9}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="72715.2534969053"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="131109.886116477"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-72715.2534969053"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-25 島生活オリエンテーション6 (雨)" ID="{2C88FB87-367A-422B-8343-333BE1B32A02}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{ED052F17-C23F-4B32-971E-D472892DAD62}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.71525</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>131.10989</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{B6C70B53-CB78-459B-B26B-5AA5FB37D384}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.71525</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>131.10989</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{664A21A9-743C-430B-9801-1048C95BD2CF}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.71525</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>131.10989</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Rainy" ID="{E24C557D-9E66-47FD-B928-8C487ADDCBE4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicTrackSequence Name="" ID="{356BA9FB-D168-430E-BA3E-1B256F0D9032}">
+																<ObjectLists>
+																	<ObjectList Name="Clips">
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-26 島生活オリエンテーション6 (雪)" ID="{9E7661F2-1358-4E61-A754-56DC8B0413C7}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="454.378649167862"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="14426.9388059367"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="57726.4735447152"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-26 島生活オリエンテーション6 (雪)" ID="{A458171D-16EF-4CF0-9C4A-12622A3A3270}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{0EA2F800-F3D2-4572-85C2-85809906BDF7}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.45438</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.42694</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{C5D7D1E3-B05B-43E9-94B1-5B528E09F9D1}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.45438</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.42694</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{1227366E-45A0-4D4D-9A91-54B4E781937F}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>0.45438</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>14.42694</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																		<Reference>
+																			<Local>
+																				<MusicClip Name="3-26 島生活オリエンテーション6 (雪)" ID="{25CF69E1-716A-45F9-B96B-DE6E34AC16A4}">
+																					<PropertyList>
+																						<Property Name="BeginTrimOffset" Type="Real64" Value="72712.653091651"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="131100.375870223"/>
+																						<Property Name="FadeInMode" Type="int16" Value="0"/>
+																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																						<Property Name="PlayAt" Type="Real64" Value="-72712.653091651"/>
+																					</PropertyList>
+																					<AudioSourceRef Name="3-26 島生活オリエンテーション6 (雪)" ID="{A458171D-16EF-4CF0-9C4A-12622A3A3270}"/>
+																					<PropertyCurveList>
+																						<PropertyCurve PropertyName="Highpass">
+																							<Curve Name="" ID="{D5DF372B-9AA5-4FA2-AD92-EAD084CD87AA}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.71265</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>131.10038</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Lowpass">
+																							<Curve Name="" ID="{A919BB01-0C55-48A2-BF83-8F3DA4852963}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="1"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.71265</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>131.10038</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																						<PropertyCurve PropertyName="Volume">
+																							<Curve Name="" ID="{DA13B3CC-EE69-47EB-81AF-DA4702D5A181}">
+																								<PropertyList>
+																									<Property Name="Flags" Type="int32" Value="3"/>
+																								</PropertyList>
+																								<PointList>
+																									<Point>
+																										<XPos>72.71265</XPos>
+																										<YPos>0</YPos>
+																										<Flags>5</Flags>
+																									</Point>
+																									<Point>
+																										<XPos>131.10038</XPos>
+																										<YPos>0</YPos>
+																										<Flags>37</Flags>
+																									</Point>
+																								</PointList>
+																							</Curve>
+																						</PropertyCurve>
+																					</PropertyCurveList>
+																				</MusicClip>
+																			</Local>
+																		</Reference>
+																	</ObjectList>
+																</ObjectLists>
+																<ReferenceList>
+																	<Reference Name="TrackSequenceSwitch">
+																		<ObjectRef Name="Snowy" ID="{D9DBCA4E-1DC3-4FE6-B1AA-B4362145DC4F}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+																	</Reference>
+																</ReferenceList>
+															</MusicTrackSequence>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicTrack>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Cues">
+											<Reference>
+												<Local>
+													<MusicCue Name="Entry Cue" ID="{FCA8FDC0-5271-40E8-820E-7FD4FF2D4A30}"/>
+												</Local>
+											</Reference>
+											<Reference>
+												<Local>
+													<MusicCue Name="Exit Cue" ID="{161DA9F6-2583-4F85-8977-BC262FCFC443}">
+														<PropertyList>
+															<Property Name="CueType" Type="int16" Value="1"/>
+															<Property Name="TimeMs" Type="Real64" Value="72153.4123506519"/>
+														</PropertyList>
+													</MusicCue>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicSegment>
+							</ChildrenList>
+						</MusicPlaylistContainer>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Arguments">
+							<Reference>
+								<ObjectRef Name="Orientations" ID="{FEC6AB42-47B2-41D3-89FA-9B8BF59156DD}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</InteractiveMusic>

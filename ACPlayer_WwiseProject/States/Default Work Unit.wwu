@@ -28,6 +28,18 @@
 						<State Name="Art" ID="{904DED33-F496-443A-B52A-0DCFF48253DC}"/>
 					</ChildrenList>
 				</StateGroup>
+				<StateGroup Name="Orientations" ID="{FEC6AB42-47B2-41D3-89FA-9B8BF59156DD}">
+					<ChildrenList>
+						<State Name="None" ID="{3160B1EC-6BC6-4A06-8D31-F10525EC9BF4}"/>
+						<State Name="Stage_01" ID="{7D07C12F-7DD3-4E08-BC61-605518284B31}"/>
+						<State Name="Stage_02" ID="{C14F14EF-39F4-4E10-857C-BC18241268C1}"/>
+						<State Name="Stage_03" ID="{4311CCD1-72B9-4B3A-A9C9-222B82DF02DE}"/>
+						<State Name="Stage_04" ID="{74E5D6CA-37BC-417E-99EA-EEB3746BFCAB}"/>
+						<State Name="Stage_05" ID="{F28D9BC1-460C-4261-A34B-4B34E47C48B4}"/>
+						<State Name="Stage_06" ID="{39DF5406-6793-4EB8-AE16-336290A781B1}"/>
+						<State Name="Stage_07" ID="{D116782B-3CF8-48BA-8A0B-04E517ABEDE3}"/>
+					</ChildrenList>
+				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</States>
