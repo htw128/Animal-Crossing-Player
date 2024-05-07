@@ -17,9 +17,10 @@
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Night" ID="{537AED84-E62A-47F7-A8F4-9288D2B70F3A}"/>
 						<CurrentStateRef Name="Stage_05" ID="{F28D9BC1-460C-4261-A34B-4B34E47C48B4}"/>
 						<CurrentStateRef Name="Fish" ID="{DCD26A72-46A1-4A4B-B3CA-C0B5B39ADFA9}"/>
-						<CurrentStateRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}"/>
+						<CurrentStateRef Name="Rainy" ID="{E24C557D-9E66-47FD-B928-8C487ADDCBE4}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="False" ID="{0F711350-498C-4B8F-A559-7E77D66F0D64}"/>
