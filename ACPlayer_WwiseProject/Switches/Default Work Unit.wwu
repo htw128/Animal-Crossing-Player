@@ -236,6 +236,8 @@
 						<Switch Name="PM11_30" ID="{E51DEC42-127A-4D3D-A8FC-5B887380EBD8}"/>
 						<Switch Name="PM11_50" ID="{0F7A496B-704A-4718-B4FB-17C05B54B962}"/>
 						<Switch Name="PM11_55" ID="{FE74D817-6336-4983-B94E-5CEA198DD8EA}"/>
+						<Switch Name="AM0" ID="{35126CEC-4937-4EB6-9007-35275FBECE50}"/>
+						<Switch Name="AM2" ID="{69D60978-C3F3-410D-BB59-582F188B7313}"/>
 					</ChildrenList>
 					<SwitchOnRTPC>
 						<GameParameterRef Name="Time" ID="{F274BA71-60F4-436F-9475-A768FD0E2DBE}"/>
@@ -246,8 +248,18 @@
 							<PointList>
 								<Point>
 									<XPos>0</XPos>
-									<YPos>1</YPos>
+									<YPos>5</YPos>
 									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>2</XPos>
+									<YPos>6</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>3</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
 								</Point>
 								<Point>
 									<XPos>23</XPos>
@@ -260,7 +272,7 @@
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>23.833</XPos>
+									<XPos>23.834</XPos>
 									<YPos>3</YPos>
 									<Flags>0</Flags>
 								</Point>
@@ -271,7 +283,7 @@
 								</Point>
 								<Point>
 									<XPos>24</XPos>
-									<YPos>4</YPos>
+									<YPos>5</YPos>
 									<Flags>37</Flags>
 								</Point>
 							</PointList>
