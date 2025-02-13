@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{1EE950B3-E70D-457C-A201-77E8746830C6}" SchemaVersion="119">
+<WwiseDocument Type="WorkUnit" ID="{1EE950B3-E70D-457C-A201-77E8746830C6}" SchemaVersion="123">
 	<InteractiveMusic>
 		<WorkUnit Name="Default Work Unit" ID="{1EE950B3-E70D-457C-A201-77E8746830C6}" PersistMode="Standalone">
 			<ChildrenList>
@@ -20,6 +20,7 @@
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{3D676F51-4EFB-4DEF-A830-0742C13B8D5C}">
 											<PropertyList>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 											</PropertyList>
@@ -27,11 +28,20 @@
 												<SourceFadeOut>
 													<MusicFade Name="Source Fade-out" ID="{86BDDCE6-0AAF-4CDA-B04F-13EE5AC53A1C}">
 														<PropertyList>
-															<Property Name="FadeTime" Type="Real64" Value="5"/>
+															<Property Name="FadeOffset" Type="Real64" Value="1.5"/>
+															<Property Name="FadeTime" Type="Real64" Value="3"/>
 															<Property Name="FadeType" Type="int16" Value="1"/>
 														</PropertyList>
 													</MusicFade>
 												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{B5AE3E2C-5475-4822-A578-24F282BAA0C4}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="-1.5"/>
+															<Property Name="FadeTime" Type="Real64" Value="3"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
 											</TransitionInfo>
 										</MusicTransition>
 									</ChildrenList>
@@ -19157,7 +19167,31 @@
 									</PropertyList>
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{4F206F33-C6FA-44CB-842B-FBF0F8E330DE}">
-											<TransitionInfo/>
+											<PropertyList>
+												<Property Name="DestinationJumpPositionPreset" Type="int16" Value="1"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="3"/>
+											</PropertyList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{79D278ED-094C-4A3E-BFE0-B9EF4303F10C}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="1"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{4BAC69DE-6A4A-43CC-8543-4A857F8F04F1}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="-1"/>
+															<Property Name="FadeTime" Type="Real64" Value="2"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
 										</MusicTransition>
 									</ChildrenList>
 									<TransitionInfo/>
