@@ -1,6 +1,9 @@
 using System;
+using System.Collections;
 using System.Globalization;
+using CI.QuickSave;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class OCGlobalService : MonoBehaviour
 {
@@ -12,11 +15,42 @@ public class OCGlobalService : MonoBehaviour
     {
         None = 0,
         Sunny = 1,
-        Rain,
-        Snow
+        Rainy,
+        Snowy
     }
+    public WeatherResponse CurrentWeather;
+    public QuickSaveWriter CacheWriter;
+    public QuickSaveReader CacheReader;
+    public event Action<WeatherStates> OnWeatherChanged;
+    public static bool HasInstance => Instance != null;
     
     public int targetFrameRate = 60;
+    public string WeatherServiceAPIKey;
+
+    private int _lastHour;
+    private const string _cachedRespondKey = "CachedRespond";
+    private const string _cachedUnixTimeKey = "CachedUnixTime";
+    private WeatherStates _lastWeatherState = WeatherStates.None;
+    
+    public void UpdateWeatherState()
+    {
+        string url = $"https://api.weatherapi.com/v1/current.json?key={WeatherServiceAPIKey}&q=auto:ip&lang=zh_cmn";
+
+        if (CacheReader.Exists(_cachedRespondKey) && CacheReader.Exists(_cachedUnixTimeKey))
+        {
+            long _timeElapsed = DateTimeOffset.Now.ToUnixTimeSeconds() - CacheReader.Read<long>(_cachedUnixTimeKey);
+            if (_timeElapsed <= 2700)
+            {
+                #if UNITY_EDITOR || DEVELOPMENT_BUILD
+                Debug.Log("命中缓存");
+                #endif
+                SetWeatherState(ParseWeatherState(CacheReader.Read<WeatherResponse>(_cachedRespondKey)));
+                return;
+            }
+        }
+
+        StartCoroutine(GetWeatherAsync(url));
+    }
     
     private void Awake()
     {
@@ -28,19 +62,32 @@ public class OCGlobalService : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
         Application.targetFrameRate = targetFrameRate;
         CultureInfo.CurrentCulture = new CultureInfo("zh-cn");
+        _lastHour = DateTime.Now.Hour;
+        CacheWriter = QuickSaveWriter.Create("Root");
+        if (!QuickSaveReader.RootExists("Root"))
+        {
+            CacheWriter.Commit();
+        }
+        CacheReader = QuickSaveReader.Create("Root");
+    }
+
+    private void Start()
+    {
+        UpdateWeatherState();
     }
 
     private void Update()
     {
         Now = DateTime.Now;
         UpdateTimeToWwise(Now);
+
+        if (_lastHour != Now.Hour)
+        {
+            UpdateWeatherState();
+            _lastHour = Now.Hour;
+        }
     }
     
     private void UpdateTimeToWwise(DateTime now)
@@ -52,4 +99,90 @@ public class OCGlobalService : MonoBehaviour
 
         AkUnitySoundEngine.SetRTPCValue("Time", timeToWwise);
     }
+
+    private IEnumerator GetWeatherAsync(string url)
+    {
+        using UnityWebRequest request = UnityWebRequest.Get(url);
+        yield return request.SendWebRequest();
+
+        if (request.result == UnityWebRequest.Result.Success)
+        {
+            CurrentWeather = JsonUtility.FromJson<WeatherResponse>(request.downloadHandler.text);
+            CacheWriter.Write(_cachedRespondKey, CurrentWeather)
+                .Write(_cachedUnixTimeKey, DateTimeOffset.Now.ToUnixTimeSeconds())
+                .Commit();
+            SetWeatherState(ParseWeatherState(CurrentWeather));
+            #if UNITY_EDITOR || DEVELOPMENT_BUILD
+            Debug.Log($"当前天气实际：{CurrentWeather.current.condition.text}");
+            #endif
+        }
+        else
+        {
+            #if UNITY_EDITOR || DEVELOPMENT_BUILD
+            Debug.LogError($"获取天气信息失败：{request.error}");
+            #endif
+        }
+        
+    }
+
+    private WeatherStates ParseWeatherState(WeatherResponse response)
+    {
+        string text = response.current.condition.text;
+
+        if (text.Contains("雨"))
+        {
+            return WeatherStates.Rainy;
+        }
+
+        return text.Contains("雪") ? WeatherStates.Snowy : WeatherStates.Sunny;
+    }
+    
+    private void SetWeatherState(WeatherStates newState)
+    {
+        if (_lastWeatherState == newState)
+            return;
+
+        _lastWeatherState = newState;
+        WeatherState = newState;
+        #if UNITY_EDITOR || DEVELOPMENT_BUILD
+        Debug.Log($"切换天气状态至{WeatherState.ToString()}");
+        #endif
+
+        OnWeatherChanged?.Invoke(newState);
+    }
+
+    #region 天气数据类
+    [Serializable]
+    public class WeatherResponse
+    {
+        public Location location;
+        public Current current;
+    }
+
+    [Serializable]
+    public class Location
+    {
+        public string name;
+        public string region;
+        public string country;
+        public float lat;
+        public float lon;
+        public string tz_id;
+        public long localtime_epoch;
+        public string localtime;
+    }
+
+    [Serializable]
+    public class Current
+    {
+        public Condition condition;
+    }
+
+    [Serializable]
+    public class Condition
+    {
+        public string text;
+        public int code;
+    }
+    #endregion
 }

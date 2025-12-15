@@ -1,3 +1,4 @@
+using System;
 using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,7 +15,8 @@ public class OCSliderUpdater : MonoBehaviour
 
     private void Start()
     {
-        float volume = PlayerPrefs.GetFloat("MusicVolume", 100f);
+        float volume = OCGlobalService.Instance.CacheReader.Exists("MusicVolume") 
+            ? OCGlobalService.Instance.CacheReader.Read<float>("MusicVolume") : 100f;
         VolumeSlider.value = volume;
         TextBox.text = volume.ToString(CultureInfo.CurrentCulture);
     }

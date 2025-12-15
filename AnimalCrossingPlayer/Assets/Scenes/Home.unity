@@ -128,6 +128,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 80337646}
+  - component: {fileID: 80337647}
   m_Layer: 5
   m_Name: Volume
   m_TagString: Untagged
@@ -157,6 +158,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -200}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &80337647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 80337645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1c2cd38652804bc5a86cc73faae9f39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OCSliderUpdater
+  VolumeSlider: {fileID: 335431403}
+  TextBox: {fileID: 418068335}
 --- !u!1 &84006462
 GameObject:
   m_ObjectHideFlags: 0
@@ -166,6 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 84006463}
+  - component: {fileID: 84006464}
   m_Layer: 5
   m_Name: Weather
   m_TagString: Untagged
@@ -196,6 +212,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -100}
   m_SizeDelta: {x: 0, y: 100}
   m_Pivot: {x: 0, y: 1}
+--- !u!114 &84006464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84006462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2e9742ed0d9f48488fe590b11302ea0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OCWeatherUpdater
 --- !u!1 &145295973
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +518,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: OCMusicController, Assembly-CSharp
         m_MethodName: UpdateVolume
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 80337647}
+        m_TargetAssemblyTypeName: OCSliderUpdater, Assembly-CSharp
+        m_MethodName: UpdateText
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1209,7 +1249,6 @@ GameObject:
   - component: {fileID: 1210656704}
   - component: {fileID: 1210656703}
   - component: {fileID: 1210656705}
-  - component: {fileID: 1210656702}
   - component: {fileID: 1210656706}
   - component: {fileID: 1210656707}
   m_Layer: 0
@@ -1219,35 +1258,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1210656702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1210656700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0dcca290eb582491cace150c39f49e79, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkEvent
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: d4fc2ae86922e4a75bff673a62b92054, type: 2}
-  useCallbacks: 0
-  stopSoundOnDestroy: 1
-  Callbacks: []
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
 --- !u!114 &1210656703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1324,7 +1334,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34a2b07949cfd4bcbb01eb22cd6b7195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OCGlobalControll
+  CurrentWeather:
+    location:
+      name: 
+      region: 
+      country: 
+      lat: 0
+      lon: 0
+      tz_id: 
+      localtime_epoch: 0
+      localtime: 
+    current:
+      condition:
+        text: 
+        code: 0
   targetFrameRate: 60
+  WeatherServiceAPIKey: 5f42fc1c556447b88fd10853251512
 --- !u!114 &1210656707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1337,6 +1362,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 217bdb3b8ceff4635ba975bc8849dba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OCMusicPlayer
+  SwitchTime: 0
 --- !u!1 &1235549575
 GameObject:
   m_ObjectHideFlags: 0
