@@ -28,17 +28,28 @@ public class OCGlobalService : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
-        CultureInfo.CurrentCulture = new CultureInfo("zh-cn");
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Application.targetFrameRate = targetFrameRate;
+        CultureInfo.CurrentCulture = new CultureInfo("zh-cn");
     }
 
     private void Update()
     {
         Now = DateTime.Now;
+        UpdateTimeToWwise(Now);
+    }
+    
+    private void UpdateTimeToWwise(DateTime now)
+    {
+        int hour = now.Hour;
+        int minute = now.Minute;
+
+        float timeToWwise = hour + minute / 60f;
+
+        AkUnitySoundEngine.SetRTPCValue("Time", timeToWwise);
     }
 }
