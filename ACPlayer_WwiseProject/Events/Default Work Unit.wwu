@@ -1,6 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{6D3A078E-0C08-4A5E-A074-3A7AD3BF290A}" SchemaVersion="123">
+<WwiseDocument Type="WorkUnit" ID="{6D3A078E-0C08-4A5E-A074-3A7AD3BF290A}" SchemaVersion="133">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{6D3A078E-0C08-4A5E-A074-3A7AD3BF290A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{6D3A078E-0C08-4A5E-A074-3A7AD3BF290A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Play_City" ID="{2C1686C9-7480-42E0-BA66-92E8B4A13816}">
+					<ChildrenList>
+						<Action Name="" ID="{DD4BF872-0EC7-4157-9F70-C88841D4F2A0}" ShortID="758934783">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="City" ID="{4F703814-42E5-4752-8C0A-4EAC8CB2F62E}" WorkUnitID="{1EE950B3-E70D-457C-A201-77E8746830C6}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_Rainy" ID="{11FF2C7A-75A5-47AC-AE05-C847A65DE94E}">
+					<ChildrenList>
+						<Action Name="" ID="{D1218697-C5B9-4896-ADAE-263577AF3CF2}" ShortID="1055027310">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rainy" ID="{E24C557D-9E66-47FD-B928-8C487ADDCBE4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_Snowy" ID="{53A9D721-BEF3-41D9-A8D7-5708127EEF23}">
+					<ChildrenList>
+						<Action Name="" ID="{D360047A-9FE8-4D02-B9BC-0DFAF6AD51F0}" ShortID="680558473">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Snowy" ID="{D9DBCA4E-1DC3-4FE6-B1AA-B4362145DC4F}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_Sunny" ID="{6C89640E-317E-401B-8C7B-BC505203CBE8}">
+					<ChildrenList>
+						<Action Name="" ID="{35B3496E-5186-45ED-9ED7-EECD27446509}" ShortID="53657087">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Sunny" ID="{2A51BC95-42C8-48C4-8998-19F4241D33D4}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_State_None" ID="{7CB1C601-1B6F-4EB4-B54D-437D34C98364}">
+					<ChildrenList>
+						<Action Name="" ID="{3BA7297B-24AC-4A95-B455-0EF3F4732824}" ShortID="1032466433">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="22"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="None" ID="{995C304E-0413-4885-861D-529A98180890}" WorkUnitID="{3E77F137-B625-47C4-A69B-EEA9C0CBDDAE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

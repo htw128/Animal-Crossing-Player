@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="WorkUnit" ID="{EFB83B18-E7D9-45A2-A1CB-22011E00D642}" SchemaVersion="123">
+<WwiseDocument Type="WorkUnit" ID="{EFB83B18-E7D9-45A2-A1CB-22011E00D642}" SchemaVersion="133">
 	<GameParameters>
 		<WorkUnit Name="Default Work Unit" ID="{EFB83B18-E7D9-45A2-A1CB-22011E00D642}" PersistMode="Standalone">
 			<ChildrenList>
@@ -12,6 +12,11 @@
 				<GameParameter Name="Distance_To_Resident" ID="{9BC0A643-3932-4F8E-9353-A8C89FACC321}">
 					<PropertyList>
 						<Property Name="BindToBuiltInParam" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="Volume" ID="{C5D11AC1-1882-46E3-A138-50CB54FA5E09}">
+					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 					</PropertyList>
 				</GameParameter>

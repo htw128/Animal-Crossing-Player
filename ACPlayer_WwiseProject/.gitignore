@@ -1,0 +1,15 @@
+#Wwise Start
+*.cache
+.cache/
+.backup/
+IncrementalSoundBankData.xml
+*.validationcache
+*.wsettings
+*.prof
+*.akd
+WwiseUnityIntegration_*_Src.zip
+Assets/Wwise/Editor/ProjectData/AkWwiseProjectData.asset*
+logRunSetup.txt
+Wwise.dat
+*.bnk
+#Wwise End

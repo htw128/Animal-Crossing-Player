@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{117C7821-035C-4AB6-BA06-95177382EF9B}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Default Work Unit" ID="{117C7821-035C-4AB6-BA06-95177382EF9B}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Tubular Bell" ID="{466FDDB5-E6EF-4E8C-BA5D-497EB8A7436B}" ShortID="996839103">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A8EE7287-2CBA-4809-BA41-18696032E52B}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{20B32F81-3DBB-405F-8828-248E09661451}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<SourcePlugin Name="Synth One" ID="{B9A79AEE-FDC7-449A-ABD5-3D7CEEC14A43}" ShortID="859691521" PluginName="Wwise Synth One" CompanyID="0" PluginID="148">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{FEB17EAA-9E0F-40CB-B851-A8A8EC2720E2}" ShortID="1006673527">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="OutputLevel"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<Custom>
+													<ModulatorEnvelope Name="Modulator Envelope (Custom)" ID="{61452711-1870-4C6A-BD17-75B9CA7C5510}" ShortID="140571067">
+														<PropertyList>
+															<Property Name="EnvelopeAttackTime" Type="Real64" Value="0.01"/>
+														</PropertyList>
+													</ModulatorEnvelope>
+												</Custom>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{09E48D09-1FB1-4531-A0EB-ECBF6E411840}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-96</YPos>
+																<Flags>21</Flags>
+															</Point>
+															<Point>
+																<XPos>1</XPos>
+																<YPos>0</YPos>
+																<Flags>53</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+							<Language>SFX</Language>
+						</SourcePlugin>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Synth One" ID="{B9A79AEE-FDC7-449A-ABD5-3D7CEEC14A43}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>
