@@ -13,16 +13,16 @@ public class OCMusicController : MonoBehaviour
         AkUnitySoundEngine.SetRTPCValue("Volume", volume);
         OCGlobalService.Instance.CacheWriter.Write("MusicVolume", volume).Commit();
     }
-    
-    
+
     private void OnEnable()
     {
         OCGlobalService.Instance.OnWeatherChanged += SetWwiseWeatherState;
     }
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        
         float volume = OCGlobalService.Instance.CacheReader.Exists("MusicVolume") 
             ? OCGlobalService.Instance.CacheReader.Read<float>("MusicVolume") : 100f;
         AkUnitySoundEngine.SetRTPCValue("Volume", volume);

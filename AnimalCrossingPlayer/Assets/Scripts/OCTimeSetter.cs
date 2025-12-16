@@ -7,11 +7,8 @@ public class OCTimeSetter : MonoBehaviour
 {
     public Text timerDisplay;
     public Toggle twelveHourToggle;
-
-    private bool isPaused;
-
-    // Update is called once per frame
-    void Update()
+    
+    private void Update()
     {
         string format;
 
