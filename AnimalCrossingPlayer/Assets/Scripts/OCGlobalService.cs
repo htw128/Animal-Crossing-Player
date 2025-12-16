@@ -32,19 +32,18 @@ public class OCGlobalService : MonoBehaviour
     private const string _cachedUnixTimeKey = "CachedUnixTime";
     private WeatherStates _lastWeatherState = WeatherStates.None;
     
-    public void UpdateWeatherState()
+    public void UpdateWeatherState(bool isforceUpdate = false)
     {
         string url = $"https://api.weatherapi.com/v1/current.json?key={WeatherServiceAPIKey}&q=auto:ip&lang=zh_cmn";
 
-        if (CacheReader.Exists(_cachedRespondKey) && CacheReader.Exists(_cachedUnixTimeKey))
+        if (CacheReader.Exists(_cachedRespondKey) && CacheReader.Exists(_cachedUnixTimeKey) && !isforceUpdate)
         {
             long _timeElapsed = DateTimeOffset.Now.ToUnixTimeSeconds() - CacheReader.Read<long>(_cachedUnixTimeKey);
             if (_timeElapsed <= 2700)
             {
-                #if UNITY_EDITOR || DEVELOPMENT_BUILD
-                Debug.Log("命中缓存");
-                #endif
-                SetWeatherState(ParseWeatherState(CacheReader.Read<WeatherResponse>(_cachedRespondKey)));
+                OCDebug.Log("命中缓存");
+                CurrentWeather = CacheReader.Read<WeatherResponse>(_cachedRespondKey);
+                SetWeatherState(ParseWeatherState(CurrentWeather));
                 return;
             }
         }
@@ -112,15 +111,11 @@ public class OCGlobalService : MonoBehaviour
                 .Write(_cachedUnixTimeKey, DateTimeOffset.Now.ToUnixTimeSeconds())
                 .Commit();
             SetWeatherState(ParseWeatherState(CurrentWeather));
-            #if UNITY_EDITOR || DEVELOPMENT_BUILD
-            Debug.Log($"当前天气实际：{CurrentWeather.current.condition.text}");
-            #endif
+            OCDebug.Log($"当前天气实际：{CurrentWeather.current.condition.text}");
         }
         else
         {
-            #if UNITY_EDITOR || DEVELOPMENT_BUILD
-            Debug.LogError($"获取天气信息失败：{request.error}");
-            #endif
+            OCDebug.LogError($"获取天气信息失败：{request.error}");
         }
         
     }
@@ -144,9 +139,7 @@ public class OCGlobalService : MonoBehaviour
 
         _lastWeatherState = newState;
         WeatherState = newState;
-        #if UNITY_EDITOR || DEVELOPMENT_BUILD
-        Debug.Log($"切换天气状态至{WeatherState.ToString()}");
-        #endif
+        OCDebug.Log($"切换天气状态至{WeatherState.ToString()}");
 
         OnWeatherChanged?.Invoke(newState);
     }
