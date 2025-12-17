@@ -16,6 +16,7 @@ public class OCWeatherUpdater : MonoBehaviour
         OCGlobalService.Instance.UpdateWeatherState(true);
         _refreshButton.enabled = false;
         _refreshButtonText.fontSize = 34;
+        _refreshButtonText.color = new Color(0.6f, 0.6f, 0.6f);
         _refreshButtonText.text = $"已刷新\n{_timerDisplay}";
 
     }
@@ -38,7 +39,7 @@ public class OCWeatherUpdater : MonoBehaviour
         if (_lastSecond != OCGlobalService.Instance.Now.Second && !_refreshButton.enabled)
         {
             _timerDisplay--;
-            _refreshButtonText.text = $"已刷新\n{_timerDisplay}";
+            _refreshButtonText.text = $"已刷新({_timerDisplay})";
             _lastSecond = OCGlobalService.Instance.Now.Second;
             
         }
@@ -47,6 +48,7 @@ public class OCWeatherUpdater : MonoBehaviour
         {
             _refreshButton.enabled = true;
             _refreshButtonText.fontSize = 68;
+            _refreshButtonText.color = new Color(0.2f,0.2f,0.2f);
             _refreshButtonText.text = "刷新";
             _timerDisplay = 60;
         }
