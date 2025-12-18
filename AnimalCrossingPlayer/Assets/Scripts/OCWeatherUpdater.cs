@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Networking;
 using UnityEngine.UI;
 
 public class OCWeatherUpdater : MonoBehaviour
@@ -12,7 +13,8 @@ public class OCWeatherUpdater : MonoBehaviour
     private Text _cityNameBox;
     private Text _refreshButtonText;
     private Button _refreshButton;
-    private bool isRefreshing = false;
+    private bool _isRefreshing;
+    private bool _isRefreshFailed;
     
     public void OnRefreshButtonClicked()
     {
@@ -20,13 +22,12 @@ public class OCWeatherUpdater : MonoBehaviour
         _refreshButton.enabled = false;
         _refreshButtonText.fontSize = 34;
         _refreshButtonText.color = new Color(0.6f, 0.6f, 0.6f);
-        _refreshButtonText.text = $"刷新中……";
-
+        
+        _weatherConditionBox.fontSize = 70;
         _weatherConditionBox.text = "获取天气中……";
         _cityNameBox.text = "获取位置中……";
         
-        isRefreshing = true;
-
+        _isRefreshing = true;
     }
 
     private void Awake()
@@ -41,25 +42,27 @@ public class OCWeatherUpdater : MonoBehaviour
     private void Start()
     {
         OCGlobalService.Instance.OnGetNewWeather += OnGetNewWeather;
+        OCGlobalService.Instance.OnGetWeatherFailed += OnGetWeatherFailed;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (OCGlobalService.Instance.CurrentWeather != null)
+        if (OCGlobalService.Instance.CurrentWeather == null || _isRefreshing)
+        {
+            _weatherConditionBox.fontSize = 70;
+            _weatherConditionBox.text = "获取天气中……";
+            _cityNameBox.text = "获取位置中……";
+        }
+        else if (OCGlobalService.Instance.CurrentWeather != null && !_isRefreshFailed)
         {
             _weatherConditionBox.text = OCGlobalService.Instance.CurrentWeather.current.condition.text;
             _cityNameBox.text = OCGlobalService.Instance.CurrentWeather.location.name;
         }
-        else
-        {
-            _weatherConditionBox.text = "获取天气中……";
-            _cityNameBox.text = "获取位置中……";
-        }
         
         if (_lastSecond != OCGlobalService.Instance.Now.Second 
             && !_refreshButton.enabled 
-            && !isRefreshing)
+            && !_isRefreshing)
         {
             _timerDisplay--;
             _refreshButtonText.text = $"已刷新({_timerDisplay})";
@@ -82,11 +85,23 @@ public class OCWeatherUpdater : MonoBehaviour
     {
         if (!OCGlobalService.HasInstance) return;
         OCGlobalService.Instance.OnGetNewWeather -= OnGetNewWeather;
+        OCGlobalService.Instance.OnGetWeatherFailed -= OnGetWeatherFailed;
     }
 
     private void OnGetNewWeather(OCGlobalService.WeatherResponse newResponse)
     {
-        isRefreshing = false;
+        _isRefreshing = false;
+        _isRefreshFailed = false;
+        _weatherConditionBox.fontSize = 70;
+    }
+
+    private void OnGetWeatherFailed(UnityWebRequest request)
+    {
+        _isRefreshFailed = true;
+        _isRefreshing = false;
+        _cityNameBox.text = "地球";
+        _weatherConditionBox.fontSize = 40;
+        _weatherConditionBox.text = "获取天气信息失败，将继续播放当前天气\n请稍后再试 :(";
     }
 
 }

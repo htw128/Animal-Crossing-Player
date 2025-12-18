@@ -21,6 +21,7 @@ public class OCMusicController : MonoBehaviour
         float volume = OCGlobalService.Instance.CacheReader.Exists("MusicVolume") 
             ? OCGlobalService.Instance.CacheReader.Read<float>("MusicVolume") : 100f;
         AkUnitySoundEngine.SetRTPCValue("Volume", volume);
+        AkUnitySoundEngine.PostEvent("Set_State_Sunny", gameObject);
         AkUnitySoundEngine.PostEvent("Play_City", gameObject);
     }
 

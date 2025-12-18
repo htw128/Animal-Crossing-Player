@@ -23,6 +23,7 @@ public class OCGlobalService : MonoBehaviour
     public QuickSaveReader CacheReader;
     public event Action<WeatherStates> OnWeatherChanged;
     public event Action<WeatherResponse> OnGetNewWeather;
+    public event Action<UnityWebRequest> OnGetWeatherFailed;
     public static bool HasInstance => Instance != null;
     
     public int targetFrameRate = 60;
@@ -103,6 +104,7 @@ public class OCGlobalService : MonoBehaviour
     private IEnumerator GetWeatherAsync(string url)
     {
         using UnityWebRequest request = UnityWebRequest.Get(url);
+        request.timeout = 10;
         yield return request.SendWebRequest();
 
         if (request.result == UnityWebRequest.Result.Success)
@@ -117,6 +119,7 @@ public class OCGlobalService : MonoBehaviour
         }
         else
         {
+            OnGetWeatherFailed?.Invoke(request);
             OCDebug.LogError($"获取天气信息失败：{request.error}");
         }
         
