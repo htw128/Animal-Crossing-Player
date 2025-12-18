@@ -17073,7 +17073,7 @@
 													<ObjectList Name="Clips">
 														<MusicClip Name="music_silence" ID="{66585DDD-BE88-4C0E-B8C9-A8B7E36B7B9A}">
 															<PropertyList>
-																<Property Name="EndTrimOffset" Type="Real64" Value="9999.99999999997"/>
+																<Property Name="EndTrimOffset" Type="Real64" Value="5000"/>
 																<Property Name="FadeInMode" Type="int16" Value="0"/>
 																<Property Name="FadeOutMode" Type="int16" Value="0"/>
 															</PropertyList>
@@ -17091,7 +17091,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>10</XPos>
+																				<XPos>5</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -17110,7 +17110,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>10</XPos>
+																				<XPos>5</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>
@@ -17129,7 +17129,7 @@
 																				<Flags>5</Flags>
 																			</Point>
 																			<Point>
-																				<XPos>10</XPos>
+																				<XPos>5</XPos>
 																				<YPos>0</YPos>
 																				<Flags>37</Flags>
 																			</Point>

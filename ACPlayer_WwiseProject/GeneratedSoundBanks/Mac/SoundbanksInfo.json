@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{6B77641B-9E16-4DB6-A3D7-6CF3BA6BAC2C}",
     "Language": "SFX",
-    "Hash": "{DD6F1BE4-61AF-7257-9F51-0DE4FBADD7A7}",
+    "Hash": "{151CC74D-E0B6-AAFD-E69E-7A8A9E4B7765}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Default",
     "ShortName": "Default",
     "Path": "Default.bnk",
@@ -496,6 +496,14 @@
       "CachePath": "03/{03635A89-B9E7-50E4-1264-775BC27AA61C}.wem"
      },
      {
+      "Id": "877812239",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "music_silence.wav",
+      "CachePath": "38/{3847FDCE-0BA9-CDFC-5EFB-19C9FB2B3772}.wem"
+     },
+     {
       "Id": "887049169",
       "Language": "SFX",
       "Streaming": "false",
@@ -591,6 +599,11 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_City",
       "GUID": "{2C1686C9-7480-42E0-BA66-92E8B4A13816}",
       "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "877812239"
+       }
+      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1841,6 +1854,6 @@
     ]
    }
   ],
-  "FileHash": "{A50B81EC-5F2F-4672-2771-E0F2B146280C}"
+  "FileHash": "{3E213150-BE33-E374-31D0-FF78156885BF}"
  }
 }
