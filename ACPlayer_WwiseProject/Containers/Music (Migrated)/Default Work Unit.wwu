@@ -20,7 +20,6 @@
 									<ChildrenList>
 										<MusicTransition Name="Transition" ID="{3D676F51-4EFB-4DEF-A830-0742C13B8D5C}">
 											<PropertyList>
-												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 												<Property Name="UseTransitionObject" Type="bool" Value="True"/>
@@ -17151,7 +17150,7 @@
 									<MusicCue Name="Exit Cue" ID="{87DFDF16-476D-4693-91F6-029B78D7CE1F}">
 										<PropertyList>
 											<Property Name="CueType" Type="int16" Value="1"/>
-											<Property Name="TimeMs" Type="Real64" Value="10000"/>
+											<Property Name="TimeMs" Type="Real64" Value="5000"/>
 										</PropertyList>
 									</MusicCue>
 								</ObjectList>

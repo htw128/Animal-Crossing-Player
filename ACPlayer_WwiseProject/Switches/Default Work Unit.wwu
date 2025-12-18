@@ -46,118 +46,123 @@
 									<Flags>5</Flags>
 								</Point>
 								<Point>
-									<XPos>1</XPos>
+									<XPos>0.999</XPos>
 									<YPos>1</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>1.9995</XPos>
+									<XPos>1.999</XPos>
 									<YPos>2</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>3</XPos>
+									<XPos>2.999</XPos>
 									<YPos>3</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>4</XPos>
+									<XPos>3.999</XPos>
 									<YPos>4</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>5</XPos>
+									<XPos>4.999</XPos>
 									<YPos>5</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>6</XPos>
+									<XPos>5.999</XPos>
 									<YPos>6</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>7</XPos>
+									<XPos>6.999</XPos>
 									<YPos>7</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>8</XPos>
+									<XPos>7.999</XPos>
 									<YPos>8</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>9</XPos>
+									<XPos>8.999</XPos>
 									<YPos>9</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>10</XPos>
+									<XPos>9.999</XPos>
 									<YPos>10</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>11</XPos>
+									<XPos>10.999</XPos>
 									<YPos>11</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>12</XPos>
+									<XPos>11.999</XPos>
 									<YPos>24</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>13</XPos>
+									<XPos>12.999</XPos>
 									<YPos>13</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>14</XPos>
+									<XPos>13.999</XPos>
 									<YPos>14</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>15</XPos>
+									<XPos>14.999</XPos>
 									<YPos>15</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>16</XPos>
+									<XPos>15.999</XPos>
 									<YPos>16</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>17</XPos>
+									<XPos>16.999</XPos>
 									<YPos>17</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>18</XPos>
+									<XPos>17.999</XPos>
 									<YPos>18</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>19</XPos>
+									<XPos>18.999</XPos>
 									<YPos>19</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>20</XPos>
+									<XPos>19.999</XPos>
 									<YPos>20</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>21</XPos>
+									<XPos>20.999</XPos>
 									<YPos>21</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>22</XPos>
+									<XPos>21.999</XPos>
 									<YPos>22</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>23</XPos>
+									<XPos>22.999</XPos>
 									<YPos>23</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>23.999</XPos>
+									<YPos>12</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
