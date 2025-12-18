@@ -48,16 +48,16 @@
 					</PropertyList>
 					<ConversionPluginInfoList>
 						<ConversionPluginInfo Platform="iOS">
-							<ConversionPlugin Name="" ID="{069F6E94-81F9-46BA-A8DA-864799666ED7}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{C3419A54-B20A-48C4-80C7-E9AB3FB70340}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Android">
-							<ConversionPlugin Name="" ID="{A7C94B65-4EE6-4ECF-89F9-EEA2A1939970}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{F015EE3B-3D5B-49AF-BBB1-6DA78D758341}" PluginName="Vorbis" CompanyID="0" PluginID="4"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Mac">
-							<ConversionPlugin Name="" ID="{0196EF3E-FCE3-4BFA-A2B6-D2E9244C313E}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{2B499B62-F072-4EAA-834C-A744381C17C4}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 						</ConversionPluginInfo>
 						<ConversionPluginInfo Platform="Windows">
-							<ConversionPlugin Name="" ID="{8F6F9F0F-A9E9-435F-8293-2CC3448013F6}" PluginName="PCM" CompanyID="0" PluginID="1"/>
+							<ConversionPlugin Name="" ID="{FEC1EA9D-3626-4AE5-B35D-B02332C4F22D}" PluginName="ADPCM" CompanyID="0" PluginID="2"/>
 						</ConversionPluginInfo>
 					</ConversionPluginInfoList>
 				</Conversion>
