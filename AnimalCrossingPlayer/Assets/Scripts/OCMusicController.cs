@@ -3,11 +3,6 @@ using UnityEngine;
 
 public class OCMusicController : MonoBehaviour
 {
-    public int SwitchTime;
-
-    private bool _clearedThisHour;
-    private bool _switchedThisHour;
-    
     public void UpdateVolume(float volume)
     {
         AkUnitySoundEngine.SetRTPCValue("Volume", volume);
@@ -27,26 +22,6 @@ public class OCMusicController : MonoBehaviour
             ? OCGlobalService.Instance.CacheReader.Read<float>("MusicVolume") : 100f;
         AkUnitySoundEngine.SetRTPCValue("Volume", volume);
         AkUnitySoundEngine.PostEvent("Play_City", gameObject);
-    }
-
-    private void Update()
-    {
-        int minute = OCGlobalService.Instance.Now.Minute;
-        int second = OCGlobalService.Instance.Now.Second;
-
-        if (minute == 59 && second >= 59 && !_clearedThisHour)
-        {
-            AkUnitySoundEngine.PostEvent("Set_State_None", gameObject);
-            _clearedThisHour = true;
-            _switchedThisHour = false;
-        }
-
-        if (minute == 0 && second >= SwitchTime && !_switchedThisHour)
-        {
-            SetWwiseWeatherState(OCGlobalService.Instance.WeatherState);
-            _clearedThisHour = false;
-            _switchedThisHour = true;
-        }
     }
 
     private void OnDisable()
