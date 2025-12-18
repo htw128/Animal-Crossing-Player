@@ -98,6 +98,7 @@ Assets/BinaryConfig/single_cfg.dat
 Assets/BinaryConfig/single_cfg.dat.meta
 Assets/MainAssets/Editor/*
 Assets/BuildReports/*
+/.utmp/*
 
 #Wwise Start
 *.cache
