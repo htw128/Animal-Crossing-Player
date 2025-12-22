@@ -4,7 +4,7 @@
 
 根据你的IP地址，使用`api.weatherapi.com`来获取天气信息。如果打开以后获取到的天气信息不正确，请把这个API地址添加到代理的豁免列表里。
 
-为了避免版权问题，本开源库不包含Audiokinetic以及Nintendo的资产。如果你需要完整使用这个项目，你需要使用Audiokinetic Launcher将Wwise Integration集成到项目中，并将对应的音乐wav文件存放至Wwise工程的对应位置。
+为了避免版权问题，本开源库不包含Audiokinetic以及Nintendo的资产。如果你需要完整使用这个项目，你需要使用Audiokinetic Launcher将Wwise Integration添加到Unity项目中，并将对应的音乐wav文件存放至Wwise工程的对应位置。
 
 ## 使用方法
 
@@ -90,7 +90,7 @@
 
 2.  将重命名好的音频放入`ACPlayer_WwiseProject/Originals/SFX/`文件夹内。
 
-3.  安装Wwise 2025.1.4并打开。Wwise的安装方法请参考本教程。
+3.  安装Wwise 2025.1.4并打开。Wwise的安装方法请参考[本文档](https://www.audiokinetic.com/zh/public-library/launcher_2025.3.3.5754/?source=InstallGuide&id=install_wwise_through_launcher)。
 
 4.  按下Ctrl+shift+F7（Mac为⌘+shift+fn+F7)，开始生成soundbank。生成过程中可能会报错，是正常的。只需检查`ACPlayer_WwiseProject/GeneratedSoundbanks/`内对应平台有没有对应的`.bnk`文件即可。如果有一个名为`Defaul.bnk`的文件，且体积在150MB以上则为正常生成。
 
@@ -100,7 +100,7 @@
     将`ACPlayer_WwiseProject/GeneratedSoundbanks/Windows`文件夹移动到
     `游戏目录\NookPlayer_data\StreamingAssets\Audio\GeneratedSoundbanks`。
 
-    ![windowsLegend](/Users/oliver/Library/Application Support/typora-user-images/image-20251222下午120320082.png)
+    ![windowsLegend](Other Data And Tools/windowsLegend.png)
 
     #### macOS
 
@@ -108,7 +108,7 @@
     将`ACPlayer_WwiseProject/GeneratedSoundbanks/Mac`文件夹移动到
     `NookPlayer.app/Contents/Resources/Data/StreamingAssets/Audio/GeneratedSoundbanks`内。
     
-    ![macOSLegend](/Users/oliver/Library/Application Support/typora-user-images/image-20251222下午122717090.png)
+    ![macOSLegend](Other Data And Tools/macOSLegend.png)
     
 6. 启动软件。Windows上运行游戏目录下的`NookPlayer.exe`。Mac上双击运行`NookPlayer.app`。
 
@@ -123,9 +123,9 @@
 
 2.  安装环境
 
-Unity的安装方法，请参考本教程。
+Unity的安装方法，请参考[本教程](https://unity.com/download)。
 
-Wwise的安装方法请参考本教程，集成过程请参考本教程。
+Wwise的安装方法请参考[本文档](https://www.audiokinetic.com/zh/public-library/launcher_2025.3.3.5754/?source=InstallGuide&id=install_wwise_through_launcher)，集成过程请参考[本文档](https://www.audiokinetic.com/zh/public-library/Launcher_2025.3.3.5754/?source=InstallGuide&id=integrating_wwise_into_a_unity_project)。
 
 3.  导入素材
 
