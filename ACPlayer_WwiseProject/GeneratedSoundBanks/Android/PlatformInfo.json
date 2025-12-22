@@ -3,7 +3,7 @@
   "Platform": {
    "Name": "Android",
    "BasePlatform": "Android",
-   "Generator": "2025.1.3.9039"
+   "Generator": "2025.1.4.9062"
   },
   "RootPaths": {
    "ProjectRoot": "../..",
@@ -14,12 +14,12 @@
   },
   "DefaultAlign": "16",
   "Settings": {
-   "AutoSoundBankDefinition": "false",
+   "AutoSoundBankDefinition": "true",
    "CopyLooseStreamedMediaFiles": "true",
    "SubFoldersForGeneratedFiles": "false",
    "RemoveUnusedGeneratedFiles": "true",
    "SourceControlGeneratedFiles": "false",
-   "GenerateHeaderFile": "false",
+   "GenerateHeaderFile": "true",
    "GenerateContentTxtFile": "false",
    "GenerateMetadataXML": "false",
    "GenerateMetadataJSON": "true",
@@ -33,6 +33,6 @@
    "PrintObjectPath": "true",
    "PrintObjectColor": "true"
   },
-  "FileHash": "{70237AAE-3FC8-51AC-CDB9-10C2F4F856DC}"
+  "FileHash": "{BF4CDFAA-28E0-CCC7-4589-D87AE6987E62}"
  }
 }

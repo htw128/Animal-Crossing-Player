@@ -3,7 +3,7 @@
   "Platform": {
    "Name": "iOS",
    "BasePlatform": "iOS",
-   "Generator": "2025.1.3.9039"
+   "Generator": "2025.1.4.9062"
   },
   "RootPaths": {
    "ProjectRoot": "../..",
@@ -14,12 +14,12 @@
   },
   "DefaultAlign": "16",
   "Settings": {
-   "AutoSoundBankDefinition": "false",
+   "AutoSoundBankDefinition": "true",
    "CopyLooseStreamedMediaFiles": "true",
    "SubFoldersForGeneratedFiles": "false",
    "RemoveUnusedGeneratedFiles": "true",
    "SourceControlGeneratedFiles": "false",
-   "GenerateHeaderFile": "false",
+   "GenerateHeaderFile": "true",
    "GenerateContentTxtFile": "false",
    "GenerateMetadataXML": "false",
    "GenerateMetadataJSON": "true",
@@ -33,6 +33,6 @@
    "PrintObjectPath": "true",
    "PrintObjectColor": "true"
   },
-  "FileHash": "{D9D537F4-DA13-DE22-D7F9-3C30F1A580E9}"
+  "FileHash": "{666DC383-E75D-1165-17B3-E04DA1B79790}"
  }
 }
