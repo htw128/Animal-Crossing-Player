@@ -6,6 +6,8 @@
 
 为了避免版权问题，本开源库不包含Audiokinetic以及Nintendo的资产。如果你需要完整使用这个项目，你需要使用Audiokinetic Launcher将Wwise Integration添加到Unity项目中，并将对应的音乐wav文件存放至Wwise工程的对应位置。
 
+只做官方Nintendo Music没有提供的功能。
+
 ## 使用方法
 
 ### 仅生成Soundbank
@@ -164,3 +166,7 @@ Wwise的安装方法请参考[本文档](https://www.audiokinetic.com/zh/public-
 [这个](https://www.ip2location.io/)API好用，但是不知道为啥注册不上。先码了。
 
 和风天气和心知天气的数据都很好。但是和风要JWT，心知也要搭服务器做私钥签名……
+
+### Open Source Disclaimer
+
+TimePicker - TTP
