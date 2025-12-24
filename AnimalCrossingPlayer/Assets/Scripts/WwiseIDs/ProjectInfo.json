@@ -1,0 +1,50 @@
+{
+ "ProjectInfo": {
+  "Project": {
+   "Name": "Animal Crossing Player",
+   "GUID": "{E1FC8E4F-07A5-4217-A20C-7234E2D6396E}",
+   "Generator": "2025.1.4.9062"
+  },
+  "CacheRoot": "../../../ACPlayer_WwiseProject/.cache",
+  "Platforms": [
+   {
+    "Name": "Android",
+    "GUID": "{52323536-306D-44E1-B43F-D9F978F2251D}",
+    "BasePlatform": "Android",
+    "BasePlatformGUID": "{A2D401DE-B8B6-4FEB-8142-137C34D507CA}",
+    "Path": "../../../ACPlayer_WwiseProject/GeneratedSoundBanks/Android"
+   },
+   {
+    "Name": "iOS",
+    "GUID": "{5E38E256-E030-444C-81E5-EC8F1517684E}",
+    "BasePlatform": "iOS",
+    "BasePlatformGUID": "{ECE03DB4-F948-462D-B2BB-A9173012B1F8}",
+    "Path": "../../../ACPlayer_WwiseProject/GeneratedSoundBanks/iOS"
+   },
+   {
+    "Name": "Mac",
+    "GUID": "{EB774140-08FD-49DC-976F-CBC185FCDE8D}",
+    "BasePlatform": "Mac",
+    "BasePlatformGUID": "{9C6217D5-DD11-4795-87C1-6CE02853C540}",
+    "Path": "../../../ACPlayer_WwiseProject/GeneratedSoundBanks/Mac"
+   },
+   {
+    "Name": "Windows",
+    "GUID": "{75691173-289E-4F86-94AC-87D6A27EB805}",
+    "BasePlatform": "Windows",
+    "BasePlatformGUID": "{6E0CB257-C6C8-4C5C-8366-2740DFC441EB}",
+    "Path": "../../../ACPlayer_WwiseProject/GeneratedSoundBanks/Windows"
+   }
+  ],
+  "Languages": [
+   {
+    "Name": "English(US)",
+    "Id": "684519430",
+    "GUID": "{8C27F35F-DBF7-40D1-ABFE-7DE23AD36079}",
+    "Default": "true",
+    "UseAsStandIn": "true"
+   }
+  ],
+  "FileHash": "{CA955799-FE98-5C98-A598-0293D9B28B04}"
+ }
+}

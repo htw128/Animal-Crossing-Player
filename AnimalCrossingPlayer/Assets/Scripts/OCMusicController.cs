@@ -5,7 +5,7 @@ public class OCMusicController : MonoBehaviour
 {
     public void UpdateVolume(float volume)
     {
-        AkUnitySoundEngine.SetRTPCValue("Volume", volume);
+        AkUnitySoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.VOLUME, volume);
         OCGlobalService.Instance.CacheWriter.Write("MusicVolume", volume).Commit();
     }
 
@@ -20,9 +20,9 @@ public class OCMusicController : MonoBehaviour
         
         float volume = OCGlobalService.Instance.CacheReader.Exists("MusicVolume") 
             ? OCGlobalService.Instance.CacheReader.Read<float>("MusicVolume") : 100f;
-        AkUnitySoundEngine.SetRTPCValue("Volume", volume);
-        AkUnitySoundEngine.PostEvent("Set_State_Sunny", gameObject);
-        AkUnitySoundEngine.PostEvent("Play_City", gameObject);
+        AkUnitySoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.VOLUME, volume);
+        AkUnitySoundEngine.PostEvent(AK.EVENTS.SET_STATE_SUNNY, gameObject);
+        AkUnitySoundEngine.PostEvent(AK.EVENTS.PLAY_CITY, gameObject);
     }
 
     private void OnDisable()
@@ -35,15 +35,15 @@ public class OCMusicController : MonoBehaviour
 
     private void SetWwiseWeatherState(OCGlobalService.WeatherStates newState)
     {
-        string eventName = newState switch
+        uint eventID = newState switch
         {
-            OCGlobalService.WeatherStates.None => "Set_State_None",
-            OCGlobalService.WeatherStates.Rainy => "Set_State_Rainy",
-            OCGlobalService.WeatherStates.Snowy => "Set_State_Snowy",
-            _ => "Set_State_Sunny"
+            OCGlobalService.WeatherStates.None => AK.EVENTS.SET_STATE_SUNNY,
+            OCGlobalService.WeatherStates.Rainy => AK.EVENTS.SET_STATE_RAINY,
+            OCGlobalService.WeatherStates.Snowy => AK.EVENTS.SET_STATE_SNOWY,
+            _ => AK.EVENTS.SET_STATE_SUNNY
         };
 
-        AkUnitySoundEngine.PostEvent(eventName, gameObject);
+        AkUnitySoundEngine.PostEvent(eventID, gameObject);
     }
 
 }
