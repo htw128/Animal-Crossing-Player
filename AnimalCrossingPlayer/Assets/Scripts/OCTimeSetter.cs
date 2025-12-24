@@ -7,7 +7,23 @@ public class OCTimeSetter : MonoBehaviour
 {
     public Text timerDisplay;
     public Toggle twelveHourToggle;
-    
+
+    private void Start()
+    {
+        twelveHourToggle.onValueChanged.AddListener(delegate{OnToggleValueChanged();});
+        
+        bool isSaved = OCGlobalService.Instance.CacheReader.Exists("isTwelveHour");
+
+        if (!isSaved)
+        {
+            OCGlobalService.Instance.CacheWriter.Write("isTwelveHour", twelveHourToggle.isOn).Commit();
+        }
+        else
+        {
+            twelveHourToggle.isOn = OCGlobalService.Instance.CacheReader.Read<bool>("isTwelveHour");
+        }
+    }
+
     private void Update()
     {
         string format;
@@ -23,5 +39,15 @@ public class OCTimeSetter : MonoBehaviour
             timerDisplay.text = OCGlobalService.Instance.Now.ToString(format, CultureInfo.CurrentCulture);
         }
 
+    }
+
+    private void OnDestroy()
+    {
+        twelveHourToggle.onValueChanged.RemoveListener(delegate { OnToggleValueChanged(); });
+    }
+
+    private void OnToggleValueChanged()
+    {
+        OCGlobalService.Instance.CacheWriter.Write("isTwelveHour", twelveHourToggle.isOn).Commit();
     }
 }
