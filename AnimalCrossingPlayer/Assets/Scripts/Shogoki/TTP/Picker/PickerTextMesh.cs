@@ -27,7 +27,7 @@ namespace Shogoki.TTP.Picker {
 				int steepUp = i + 1;
 				m_TopButtons[i].onClick.AddListener(
 					delegate {
-						NumeredButtonClicked(steepUp, ButtonID.UP_BUTTON);
+						NumberedButtonClicked(steepUp, ButtonID.UP_BUTTON);
 					}
 				);
 			}
@@ -39,7 +39,7 @@ namespace Shogoki.TTP.Picker {
 				int steepDown = j + 1;
 				m_BottomButtons[j].onClick.AddListener(					
 					delegate {
-						NumeredButtonClicked(steepDown, ButtonID.DOWN_BUTTON);
+						NumberedButtonClicked(steepDown, ButtonID.DOWN_BUTTON);
 					}
 				);
 			}

@@ -35,14 +35,24 @@ public class OCMusicController : MonoBehaviour
 
     private void SetWwiseWeatherState(OCGlobalService.WeatherStates newState)
     {
-        uint eventID = newState switch
-        {
-            OCGlobalService.WeatherStates.None => AK.EVENTS.SET_STATE_SUNNY,
-            OCGlobalService.WeatherStates.Rainy => AK.EVENTS.SET_STATE_RAINY,
-            OCGlobalService.WeatherStates.Snowy => AK.EVENTS.SET_STATE_SNOWY,
-            _ => AK.EVENTS.SET_STATE_SUNNY
-        };
+        uint eventID;
 
+        switch (newState)
+        {
+            case OCGlobalService.WeatherStates.Rainy:
+                eventID = AK.EVENTS.SET_STATE_RAINY;
+                break;
+            
+            case OCGlobalService.WeatherStates.Snowy:
+                eventID = AK.EVENTS.SET_STATE_SNOWY;
+                break;
+            
+            case OCGlobalService.WeatherStates.None:
+            case OCGlobalService.WeatherStates.Sunny:
+            default:
+                eventID = AK.EVENTS.SET_STATE_SUNNY;
+                break;
+        }
         AkUnitySoundEngine.PostEvent(eventID, gameObject);
     }
 

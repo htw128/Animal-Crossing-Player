@@ -10,23 +10,30 @@ public class OCGlobalService : MonoBehaviour
     public static OCGlobalService Instance { get; private set; }
     
     public DateTime Now { get; private set; }
-    public WeatherStates WeatherState { get; private set; }
     public enum WeatherStates
     {
-        None = 0,
-        Sunny = 1,
+        None = -1,
+        Sunny = 0,
         Rainy,
         Snowy
     }
+    
+    public WeatherStates WeatherState { get; private set; }
     public WeatherResponse CurrentWeather;
     public QuickSaveWriter CacheWriter;
     public QuickSaveReader CacheReader;
+    
     public event Action<WeatherStates> OnWeatherChanged;
     public event Action<WeatherResponse> OnGetNewWeather;
     public event Action<UnityWebRequest> OnGetWeatherFailed;
+    
     public static bool HasInstance => Instance != null;
     
+    [HideInInspector]
+    public bool IsManual;
     public int targetFrameRate = 60;
+    [HideInInspector]
+    public int ManualHour { get; private set; }
     public string WeatherServiceAPIKey;
 
     private int _lastHour;
@@ -65,7 +72,8 @@ public class OCGlobalService : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         Application.targetFrameRate = targetFrameRate;
         CultureInfo.CurrentCulture = new CultureInfo("zh-cn");
-        _lastHour = DateTime.Now.Hour;
+        Now = DateTime.Now;
+        ManualHour = _lastHour = DateTime.Now.Hour;
         CacheWriter = QuickSaveWriter.Create("Root");
         if (!QuickSaveReader.RootExists("Root"))
         {
@@ -82,20 +90,31 @@ public class OCGlobalService : MonoBehaviour
     private void Update()
     {
         Now = DateTime.Now;
-        UpdateTimeToWwise(Now);
+
+        if (!IsManual)
+        {
+            UpdateTimeToWwise(Now.Hour, Now.Minute);
+        }
+        else
+        {
+            UpdateTimeToWwise(ManualHour, 1);
+        }
 
         if (_lastHour != Now.Hour)
         {
             UpdateWeatherState();
             _lastHour = Now.Hour;
+
+            if (!IsManual)
+            {
+                ManualHour = Now.Hour;
+            }
+            
         }
     }
     
-    private void UpdateTimeToWwise(DateTime now)
+    private void UpdateTimeToWwise(int hour, int minute)
     {
-        int hour = now.Hour;
-        int minute = now.Minute;
-
         float timeToWwise = hour + minute / 60f;
 
         AkUnitySoundEngine.SetRTPCValue("Time", timeToWwise);
@@ -137,7 +156,7 @@ public class OCGlobalService : MonoBehaviour
         return text.Contains("雪") ? WeatherStates.Snowy : WeatherStates.Sunny;
     }
     
-    private void SetWeatherState(WeatherStates newState)
+    public void SetWeatherState(WeatherStates newState)
     {
         if (_lastWeatherState == newState)
             return;
@@ -147,6 +166,14 @@ public class OCGlobalService : MonoBehaviour
         OCDebug.Log($"切换天气状态至{WeatherState.ToString()}");
 
         OnWeatherChanged?.Invoke(newState);
+    }
+
+    public void SetManualTime(int newTime)
+    {
+        if (ManualHour == newTime) return;
+
+        ManualHour = newTime;
+        OCDebug.Log($"已收到手动时间,当前为{ManualHour}");
     }
 
     #region 天气数据类

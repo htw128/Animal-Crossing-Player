@@ -46,8 +46,9 @@ public class OCWeatherUpdater : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        //prompt text
         if (OCGlobalService.Instance.CurrentWeather == null || _isRefreshing)
         {
             _weatherConditionBox.fontSize = 70;
@@ -60,6 +61,7 @@ public class OCWeatherUpdater : MonoBehaviour
             _cityNameBox.text = OCGlobalService.Instance.CurrentWeather.location.name;
         }
         
+        //button
         if (_lastSecond != OCGlobalService.Instance.Now.Second 
             && !_refreshButton.enabled 
             && !_isRefreshing)

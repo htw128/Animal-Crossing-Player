@@ -81,13 +81,17 @@ namespace Shogoki.TTP.Picker {
             }
         }
 
+		void OnEnable()
+        {
+	        m_PickerStartAt = OCGlobalService.Instance.ManualHour;
+        }
 
         // Use this for initialization
         protected virtual void Start () {
-			// Intitialize the selectedValueField
+			// Initialize the selectedValueField
 			selectedValueField = m_SelectedValueFieldContainer.GetComponentInChildren<Text>();
 
-			// Initialze the content of the Text[] arrays base on the m_TopButtons and DownButtons content
+			// Initialize the content of the Text[] arrays base on the m_TopButtons and DownButtons content
 			// Top Buttons
 			topTextFields = new Text[m_TopButtons.Length];
 			for(int i = 0; i < m_TopButtons.Length; ++i) {
@@ -95,7 +99,7 @@ namespace Shogoki.TTP.Picker {
 				int steepUp = i + 1;
 				m_TopButtons[i].onClick.AddListener(
 					delegate {
-						NumeredButtonClicked(steepUp, ButtonID.UP_BUTTON);
+						NumberedButtonClicked(steepUp, ButtonID.UP_BUTTON);
 					}
 				);
 			}
@@ -107,20 +111,21 @@ namespace Shogoki.TTP.Picker {
 				int steepDown = j + 1;
 				m_BottomButtons[j].onClick.AddListener(					
 					delegate {
-						NumeredButtonClicked(steepDown, ButtonID.DOWN_BUTTON);
+						NumberedButtonClicked(steepDown, ButtonID.DOWN_BUTTON);
 					}
 				);
 			}
 
-			if(m_ValueFormat == null || m_ValueFormat == string.Empty) {
+			if(string.IsNullOrEmpty(m_ValueFormat)) {
 				m_ValueFormat = "00";
 			}
 
 			AddEvents();
 			SetPickerValue(m_PickerStartAt);
+			
 		}
 
-        protected void NumeredButtonClicked(int steep, ButtonID buttonId)
+        protected void NumberedButtonClicked(int steep, ButtonID buttonId)
         {
             if(buttonId == ButtonID.UP_BUTTON) {
 				SetPickerValue(PickerValue - steep);
