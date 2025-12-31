@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using OliversComputer.ACPlayer;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -83,7 +84,7 @@ namespace Shogoki.TTP.Picker {
 
 		void OnEnable()
         {
-	        m_PickerStartAt = OCGlobalService.Instance.ManualHour;
+	        m_PickerStartAt = GlobalService.Instance.ManualHour;
         }
 
         // Use this for initialization
