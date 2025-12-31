@@ -61,6 +61,20 @@ namespace OliversComputer.ACPlayer
 
             StartCoroutine(GetWeatherAsync(url));
         }
+        
+        public bool RestoreWeatherFromCache()
+        {
+            if (CurrentWeather == null)
+            {
+                BetterDebug.LogWarning("当前没有缓存的天气数据，已恢复到晴天");
+                SetWeatherState(WeatherStates.Sunny);
+                return false;
+            }
+
+            WeatherStates state = ParseWeatherState(CurrentWeather);
+            SetWeatherState(state);
+            return true;
+        }
     
         private void Awake()
         {

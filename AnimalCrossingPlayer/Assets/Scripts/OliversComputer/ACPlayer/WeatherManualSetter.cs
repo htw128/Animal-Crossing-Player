@@ -55,6 +55,11 @@ namespace OliversComputer.ACPlayer
             GlobalService.Instance.IsManual = _manualToggle.isOn;
             _manualOptions.SetActive(_manualToggle.isOn);
             _weatherDropDown.value = (int)GlobalService.Instance.WeatherState;
+
+            if (!_manualToggle.isOn)
+            {
+                GlobalService.Instance.RestoreWeatherFromCache();
+            }
         }
     
         private void OnApplyButtonClicked()
