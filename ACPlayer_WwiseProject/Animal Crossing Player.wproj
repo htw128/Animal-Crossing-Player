@@ -40,7 +40,7 @@
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
 				<Property Name="SoundBankGeneratePrintGUID" Type="bool" Value="True"/>
 				<Property Name="SoundBankGeneratePrintPath" Type="bool" Value="True"/>
-				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\AnimalCrossingPlayer\Assets\Scripts"/>
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\AnimalCrossingPlayer\Assets\Scripts\WwiseIDs"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="iOS">GeneratedSoundBanks\iOS\</Value>
