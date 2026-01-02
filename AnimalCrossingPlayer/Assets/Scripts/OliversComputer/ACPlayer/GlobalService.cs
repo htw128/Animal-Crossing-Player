@@ -33,8 +33,7 @@ namespace OliversComputer.ACPlayer
     
         [HideInInspector]
         public bool IsManual;
-        public int targetFrameRate = 60;
-        [HideInInspector]
+        public int targetFrameRate = 60; 
         public int ManualHour { get; private set; }
         public string WeatherServiceAPIKey;
 
@@ -42,6 +41,8 @@ namespace OliversComputer.ACPlayer
         private const string _cachedRespondKey = "CachedRespond";
         private const string _cachedUnixTimeKey = "CachedUnixTime";
         private WeatherStates _lastWeatherState = WeatherStates.None;
+        [Tooltip("到整点后，几秒后切换回音乐")][SerializeField] private int m_delaySecond;
+        private float m_lastTimeToWwise;
     
         public void UpdateWeatherState(bool isForceUpdate = false)
         {
@@ -109,11 +110,11 @@ namespace OliversComputer.ACPlayer
 
             if (!IsManual)
             {
-                UpdateTimeToWwise(Now.Hour, Now.Minute);
+                UpdateTimeToWwise(Now.Hour, Now.Minute, Now.Second);
             }
             else
             {
-                UpdateTimeToWwise(ManualHour, 1);
+                UpdateTimeToWwise(ManualHour, 1, 1);
             }
 
             if (_lastHour != Now.Hour)
@@ -129,11 +130,18 @@ namespace OliversComputer.ACPlayer
             }
         }
     
-        private void UpdateTimeToWwise(int hour, int minute)
+        private void UpdateTimeToWwise(int hour, int minute, int second)
         {
             float timeToWwise = hour + minute / 60f;
 
-            AkUnitySoundEngine.SetRTPCValue("Time", timeToWwise);
+            if ((minute == 59 && second >= 55) || (minute == 0 && second <= m_delaySecond))
+            {
+                timeToWwise = -1f;
+            }
+
+            if (Mathf.Approximately(m_lastTimeToWwise, timeToWwise)) return;
+            AkUnitySoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.TIME, timeToWwise);
+            m_lastTimeToWwise = timeToWwise;
         }
 
         private IEnumerator GetWeatherAsync(string url)

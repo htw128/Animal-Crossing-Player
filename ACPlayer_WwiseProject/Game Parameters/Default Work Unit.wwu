@@ -7,6 +7,7 @@
 					<PropertyList>
 						<Property Name="InitialValue" Type="Real64" Value="0"/>
 						<Property Name="Max" Type="Real64" Value="24"/>
+						<Property Name="Min" Type="Real64" Value="-1"/>
 					</PropertyList>
 				</GameParameter>
 				<GameParameter Name="Distance_To_Resident" ID="{9BC0A643-3932-4F8E-9353-A8C89FACC321}">

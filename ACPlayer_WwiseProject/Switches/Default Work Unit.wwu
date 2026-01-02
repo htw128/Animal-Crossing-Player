@@ -41,122 +41,127 @@
 							</PropertyList>
 							<PointList>
 								<Point>
-									<XPos>0</XPos>
-									<YPos>12</YPos>
+									<XPos>-1</XPos>
+									<YPos>0</YPos>
 									<Flags>5</Flags>
 								</Point>
 								<Point>
-									<XPos>0.999</XPos>
+									<XPos>0</XPos>
+									<YPos>12</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>1</XPos>
 									<YPos>1</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>1.999</XPos>
+									<XPos>2</XPos>
 									<YPos>2</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>2.999</XPos>
+									<XPos>3</XPos>
 									<YPos>3</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>3.999</XPos>
+									<XPos>4</XPos>
 									<YPos>4</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>4.999</XPos>
+									<XPos>5</XPos>
 									<YPos>5</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>5.999</XPos>
+									<XPos>6</XPos>
 									<YPos>6</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>6.999</XPos>
+									<XPos>7</XPos>
 									<YPos>7</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>7.999</XPos>
+									<XPos>8</XPos>
 									<YPos>8</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>8.999</XPos>
+									<XPos>9</XPos>
 									<YPos>9</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>9.999</XPos>
+									<XPos>10</XPos>
 									<YPos>10</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>10.999</XPos>
+									<XPos>11</XPos>
 									<YPos>11</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>11.999</XPos>
+									<XPos>12</XPos>
 									<YPos>24</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>12.999</XPos>
+									<XPos>13</XPos>
 									<YPos>13</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>13.999</XPos>
+									<XPos>14</XPos>
 									<YPos>14</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>14.999</XPos>
+									<XPos>15</XPos>
 									<YPos>15</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>15.999</XPos>
+									<XPos>16</XPos>
 									<YPos>16</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>16.999</XPos>
+									<XPos>17</XPos>
 									<YPos>17</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>17.999</XPos>
+									<XPos>18</XPos>
 									<YPos>18</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>18.999</XPos>
+									<XPos>19</XPos>
 									<YPos>19</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>19.999</XPos>
+									<XPos>20</XPos>
 									<YPos>20</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>20.999</XPos>
+									<XPos>21</XPos>
 									<YPos>21</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>21.999</XPos>
+									<XPos>22</XPos>
 									<YPos>22</YPos>
 									<Flags>0</Flags>
 								</Point>
 								<Point>
-									<XPos>22.999</XPos>
+									<XPos>23</XPos>
 									<YPos>23</YPos>
 									<Flags>0</Flags>
 								</Point>
@@ -203,9 +208,14 @@
 							</PropertyList>
 							<PointList>
 								<Point>
-									<XPos>0</XPos>
+									<XPos>-1</XPos>
 									<YPos>2</YPos>
 									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
 								</Point>
 								<Point>
 									<XPos>21.833</XPos>
@@ -252,9 +262,14 @@
 							</PropertyList>
 							<PointList>
 								<Point>
-									<XPos>0</XPos>
+									<XPos>-1</XPos>
 									<YPos>5</YPos>
 									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>5</YPos>
+									<Flags>0</Flags>
 								</Point>
 								<Point>
 									<XPos>2</XPos>
