@@ -12,6 +12,7 @@ namespace OliversComputer.ACPlayer
         public static GlobalService Instance { get; private set; }
     
         public DateTime Now { get; private set; }
+        public MusicController Music { get; private set; }
         public enum WeatherStates
         {
             None = -1,
@@ -86,6 +87,7 @@ namespace OliversComputer.ACPlayer
             }
 
             Instance = this;
+            Music = GetComponent<MusicController>();
             DontDestroyOnLoad(gameObject);
             Application.targetFrameRate = targetFrameRate;
             CultureInfo.CurrentCulture = new CultureInfo("zh-cn");

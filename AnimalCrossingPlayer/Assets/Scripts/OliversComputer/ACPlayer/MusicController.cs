@@ -1,9 +1,15 @@
+using System;
 using UnityEngine;
 
 namespace OliversComputer.ACPlayer
 {
     public class MusicController : MonoBehaviour
     {
+        public void PlayThemeSong(bool isPreview = false)
+        {
+            throw new NotImplementedException();
+        }
+        
         public void UpdateVolume(float volume)
         {
             AkUnitySoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.VOLUME, volume);
@@ -56,6 +62,5 @@ namespace OliversComputer.ACPlayer
             }
             AkUnitySoundEngine.PostEvent(eventID, gameObject);
         }
-
     }
 }

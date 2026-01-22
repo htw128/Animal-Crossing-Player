@@ -1,6 +1,6 @@
 namespace OliversComputer.ACPlayer.ThemeSongEditor
 {
-    public enum NoteList
+    public enum NoteNames
     {
         Rest,
         Sustain,
