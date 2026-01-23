@@ -5,6 +5,8 @@ namespace OliversComputer.ACPlayer
 {
     public class MusicController : MonoBehaviour
     {
+        public AK.Wwise.Event BellEvent;
+        
         public void PlayThemeSong(bool isPreview = false)
         {
             throw new NotImplementedException();

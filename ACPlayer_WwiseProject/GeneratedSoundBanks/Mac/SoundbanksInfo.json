@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{6B77641B-9E16-4DB6-A3D7-6CF3BA6BAC2C}",
     "Language": "SFX",
-    "Hash": "{1160E963-C6E9-3FCF-C8BC-D94A6C0D5FC0}",
+    "Hash": "{CE8F0C22-85B6-DAAA-8174-9065E0408FF3}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Default",
     "ShortName": "Default",
     "Path": "Default.bnk",
@@ -1045,6 +1045,16 @@
       ]
      },
      {
+      "Id": "1916619709",
+      "Name": "Play_MIDI",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_MIDI",
+      "GUID": "{A70DF6FA-82C2-493F-9CF5-6B6E7A31E04A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "4160240018",
       "Name": "Set_State_None",
       "ObjectPath": "\\Events\\Default Work Unit\\Set_State_None",
@@ -1841,6 +1851,6 @@
     ]
    }
   ],
-  "FileHash": "{C4EE0FB6-D6D9-099B-AC92-E9EFF136A44E}"
+  "FileHash": "{7BBF498D-3B42-3BA8-3361-E420B0A45CC1}"
  }
 }

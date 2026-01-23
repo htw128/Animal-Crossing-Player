@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{6B77641B-9E16-4DB6-A3D7-6CF3BA6BAC2C}",
     "Language": "SFX",
-    "Hash": "{B9273F20-FEA2-CA5A-94D0-F89DD8DBAC33}",
+    "Hash": "{A479F3EE-3542-147F-5509-912D9E2D3B2E}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Default",
     "ShortName": "Default",
     "Path": "Default.bnk",
@@ -496,14 +496,6 @@
       "CachePath": "51/{5129DA86-19ED-1B0E-7601-5C11B001AF89}.wem"
      },
      {
-      "Id": "877812239",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "music_silence.wav",
-      "CachePath": "F5/{F507A63A-1FD5-5AAF-6B0C-E9E91452DE13}.wem"
-     },
-     {
       "Id": "887049169",
       "Language": "SFX",
       "Streaming": "false",
@@ -599,11 +591,6 @@
       "ObjectPath": "\\Events\\Default Work Unit\\Play_City",
       "GUID": "{2C1686C9-7480-42E0-BA66-92E8B4A13816}",
       "DurationType": "Infinite",
-      "MediaRefs": [
-       {
-        "Id": "877812239"
-       }
-      ],
       "SwitchContainers": [
        {
         "SwitchValue": {
@@ -1058,6 +1045,16 @@
       ]
      },
      {
+      "Id": "1916619709",
+      "Name": "Play_MIDI",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_MIDI",
+      "GUID": "{A70DF6FA-82C2-493F-9CF5-6B6E7A31E04A}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "4160240018",
       "Name": "Set_State_None",
       "ObjectPath": "\\Events\\Default Work Unit\\Set_State_None",
@@ -1339,7 +1336,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{AC045A4D-21A4-85E1-548C-1A041439C65F}",
+    "Hash": "{FC55B169-7164-63B9-CCC1-631DD9CBE6A9}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -1854,6 +1851,6 @@
     ]
    }
   ],
-  "FileHash": "{4C7EFB95-ED5B-8232-4147-A7EEAA07C966}"
+  "FileHash": "{7A843E0D-220A-6F2D-9C89-34EB66F606A9}"
  }
 }

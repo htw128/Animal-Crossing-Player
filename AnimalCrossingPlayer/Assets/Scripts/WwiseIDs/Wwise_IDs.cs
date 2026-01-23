@@ -3,6 +3,7 @@ namespace AK
     public class EVENTS
     {
         public static uint PLAY_CITY = 3366829419U;
+        public static uint PLAY_MIDI = 1916619709U;
         public static uint SET_STATE_NONE = 4160240018U;
         public static uint SET_STATE_RAINY = 2716087331U;
         public static uint SET_STATE_SNOWY = 1986417150U;

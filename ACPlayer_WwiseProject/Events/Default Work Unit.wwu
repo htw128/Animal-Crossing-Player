@@ -70,6 +70,7 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Play_MIDI" ID="{A70DF6FA-82C2-493F-9CF5-6B6E7A31E04A}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
