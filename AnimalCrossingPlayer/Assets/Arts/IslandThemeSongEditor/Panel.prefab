@@ -620,13 +620,14 @@ GameObject:
   m_Component:
   - component: {fileID: 2187662026007752161}
   - component: {fileID: 948550164623865450}
+  - component: {fileID: 71250442751836795}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2187662026007752161
 RectTransform:
   m_ObjectHideFlags: 0
@@ -666,6 +667,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OliversComputer.ACPlayer.ThemeSongEditor.PanelView
   m_notePrefab: {fileID: 2710551716904517049, guid: 52fc44eccaa7545e8b0af34fa08d0e74, type: 3}
+--- !u!114 &71250442751836795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8927901410096709395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f0028d60b040f7b535238b8ee67113, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OliversComputer.ACPlayer.ThemeSongEditor.PanelController
 --- !u!1 &9033630508554976729
 GameObject:
   m_ObjectHideFlags: 0
