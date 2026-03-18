@@ -81,7 +81,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_Melodica" ID="{A92C890C-347F-4CE5-B4C2-314ADB30296E}"/>
+				<Event Name="Play_Melodica" ID="{A92C890C-347F-4CE5-B4C2-314ADB30296E}">
+					<ChildrenList>
+						<Action Name="" ID="{DE2064E3-C5C7-4043-ADD7-4B3F47BE42F2}" ShortID="839491168">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Melodica" ID="{8E7371DE-783D-4C28-9622-54613CB3E203}" WorkUnitID="{117C7821-035C-4AB6-BA06-95177382EF9B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

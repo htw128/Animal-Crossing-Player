@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{6B77641B-9E16-4DB6-A3D7-6CF3BA6BAC2C}",
     "Language": "SFX",
-    "Hash": "{E5135732-2B44-CB19-3D4E-A2D5F9601471}",
+    "Hash": "{28B9D258-58D9-9059-2AAB-802E314F8558}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Default",
     "ShortName": "Default",
     "Path": "Default.bnk",
@@ -54,6 +54,14 @@
       "Location": "Memory",
       "ShortName": "060 - 6 PM - Rainy.wav",
       "CachePath": "A7/{A79CA8F9-4DA4-67CE-0F86-D2CBA850FC01}.wem"
+     },
+     {
+      "Id": "65438888",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_D4_strong.wav",
+      "CachePath": "E6/{E6F92A91-19AA-1A6B-FC3C-74207E600131}.wem"
      },
      {
       "Id": "72070406",
@@ -112,6 +120,14 @@
       "CachePath": "19/{19570998-9720-33CA-146C-34C2CEF684C1}.wem"
      },
      {
+      "Id": "112340253",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_E5_strong.wav",
+      "CachePath": "09/{0959118D-EC26-A2DE-2808-291437835299}.wem"
+     },
+     {
       "Id": "114094185",
       "Language": "SFX",
       "Streaming": "false",
@@ -134,6 +150,22 @@
       "Location": "Memory",
       "ShortName": "068 - 2 AM - Snowy.wav",
       "CachePath": "35/{35A60F08-964A-C77E-E9E9-C36283BD67EE}.wem"
+     },
+     {
+      "Id": "137385551",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_A4_strong.wav",
+      "CachePath": "81/{818B4AA5-611D-A3FD-9E18-665962729F18}.wem"
+     },
+     {
+      "Id": "140516481",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_A4_weak.wav",
+      "CachePath": "76/{76B65828-DE53-8A25-85DC-630661A5A0F4}.wem"
      },
      {
       "Id": "171507440",
@@ -168,6 +200,14 @@
       "CachePath": "EC/{ECF6182F-E8D0-584F-9FD8-EED93BC0131D}.wem"
      },
      {
+      "Id": "255340133",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_C5_weak.wav",
+      "CachePath": "98/{98BC7102-4B69-3D44-7F89-AB4347019FAF}.wem"
+     },
+     {
       "Id": "262076247",
       "Language": "SFX",
       "Streaming": "false",
@@ -182,6 +222,14 @@
       "Location": "Memory",
       "ShortName": "070 - 4 AM - Snowy.wav",
       "CachePath": "48/{485D533B-9A96-29AF-22B1-5AF7CD8259EF}.wem"
+     },
+     {
+      "Id": "274989256",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_F#4_weak.wav",
+      "CachePath": "D1/{D1EC3DE3-B312-E55A-8F93-6033A18A15D9}.wem"
      },
      {
       "Id": "276416672",
@@ -256,12 +304,28 @@
       "CachePath": "7B/{7B0671DE-31A5-E464-BFF4-2C541A26E11C}.wem"
      },
      {
+      "Id": "356824447",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_E5_weak.wav",
+      "CachePath": "B1/{B14B2CAC-2671-4216-4FCF-4558D0C57CB7}.wem"
+     },
+     {
       "Id": "364145407",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "052 - 10 AM - Rainy.wav",
       "CachePath": "55/{55C3757F-16BE-E93D-DA6D-82B5A640DBD8}.wem"
+     },
+     {
+      "Id": "386028694",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_F#4_strong.wav",
+      "CachePath": "13/{13681252-881B-DB7F-5E3A-76B661021703}.wem"
      },
      {
       "Id": "386752679",
@@ -280,12 +344,28 @@
       "CachePath": "3C/{3C8A8001-B923-A478-BD09-25848C772942}.wem"
      },
      {
+      "Id": "393400227",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_D5_strong.wav",
+      "CachePath": "A4/{A40CE286-2399-B631-B70E-A4AC39F1D267}.wem"
+     },
+     {
       "Id": "394191101",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "067 - 1 AM - Snowy.wav",
       "CachePath": "56/{5624ED65-9A00-4C8F-A5B2-0013FAC5CDCA}.wem"
+     },
+     {
+      "Id": "398506772",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_B4_weak.wav",
+      "CachePath": "D0/{D059E773-7D34-1C42-BC88-DE4FB2210E54}.wem"
      },
      {
       "Id": "399211732",
@@ -304,12 +384,28 @@
       "CachePath": "6E/{6E9B8B05-1EE9-C162-9459-31CF6244C7B1}.wem"
      },
      {
+      "Id": "404519501",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_B4_strong.wav",
+      "CachePath": "5E/{5E0C806F-6ED9-2412-F0FC-CD6498288C7B}.wem"
+     },
+     {
       "Id": "407710321",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "027 - 9 AM.wav",
       "CachePath": "F8/{F803AC22-F0B5-5E3E-0FD3-137D4BF7B3A4}.wem"
+     },
+     {
+      "Id": "427417619",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_G4_strong.wav",
+      "CachePath": "5F/{5F5D2045-D3C6-8E7F-9C5D-1A754EA0CE85}.wem"
      },
      {
       "Id": "443479919",
@@ -520,6 +616,14 @@
       "CachePath": "51/{518516F7-7FA9-2BF0-837A-143166476BEA}.wem"
      },
      {
+      "Id": "819879927",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_G4_weak.wav",
+      "CachePath": "E9/{E93C4CA5-B21C-D19C-E263-906D8D2DF46A}.wem"
+     },
+     {
       "Id": "820019275",
       "Language": "SFX",
       "Streaming": "false",
@@ -542,6 +646,14 @@
       "Location": "Memory",
       "ShortName": "026 - 8 AM.wav",
       "CachePath": "D6/{D680F3DF-68B0-90B8-D3C8-7DFB89CB63F4}.wem"
+     },
+     {
+      "Id": "846950458",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_D4_weak.wav",
+      "CachePath": "B5/{B594E4B4-4696-B7D6-12F7-CF814B8DE93A}.wem"
      },
      {
       "Id": "851106016",
@@ -592,12 +704,28 @@
       "CachePath": "DD/{DD40B49B-B647-D32F-B962-7A0BF8D6E34D}.wem"
      },
      {
+      "Id": "891246453",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_C5_strong.wav",
+      "CachePath": "B6/{B6268EF6-0978-96AF-E768-483161BDD5C9}.wem"
+     },
+     {
       "Id": "923599265",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "031 - 1 PM.wav",
       "CachePath": "50/{5057E4AC-9992-E1A9-1316-492289C3B7D2}.wem"
+     },
+     {
+      "Id": "923636082",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_D5_weak.wav",
+      "CachePath": "B4/{B4B8FC27-2E2B-EDFA-A916-2CA744B8901E}.wem"
      },
      {
       "Id": "941907930",
@@ -1192,10 +1320,59 @@
       "Name": "Play_Melodica",
       "ObjectPath": "\\Events\\Default Work Unit\\Play_Melodica",
       "GUID": "{A92C890C-347F-4CE5-B4C2-314ADB30296E}",
-      "MaxAttenuation": "0",
       "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
+      "DurationMin": "8.544943",
+      "DurationMax": "8.544943",
+      "MediaRefs": [
+       {
+        "Id": "65438888"
+       },
+       {
+        "Id": "112340253"
+       },
+       {
+        "Id": "137385551"
+       },
+       {
+        "Id": "140516481"
+       },
+       {
+        "Id": "255340133"
+       },
+       {
+        "Id": "274989256"
+       },
+       {
+        "Id": "356824447"
+       },
+       {
+        "Id": "386028694"
+       },
+       {
+        "Id": "393400227"
+       },
+       {
+        "Id": "398506772"
+       },
+       {
+        "Id": "404519501"
+       },
+       {
+        "Id": "427417619"
+       },
+       {
+        "Id": "819879927"
+       },
+       {
+        "Id": "846950458"
+       },
+       {
+        "Id": "891246453"
+       },
+       {
+        "Id": "923636082"
+       }
+      ]
      },
      {
       "Id": "4160240018",
@@ -1994,6 +2171,6 @@
     ]
    }
   ],
-  "FileHash": "{3D7839AA-3DCC-2BDC-10D7-3F2D0A57C916}"
+  "FileHash": "{CD4BE58B-EA01-B988-8928-A15E62870ACB}"
  }
 }
