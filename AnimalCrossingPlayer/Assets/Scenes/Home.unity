@@ -2622,7 +2622,7 @@ MonoBehaviour:
   IsManual: 0
   targetFrameRate: 30
   WeatherServiceAPIKey: 5f42fc1c556447b88fd10853251512
-  m_delaySecond: 10
+  m_delaySecond: 18
 --- !u!114 &1210656707
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2635,6 +2635,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 217bdb3b8ceff4635ba975bc8849dba4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OCMusicPlayer
+  BellEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8f1642c86b1a04032b242a344ec87dbb, type: 2}
 --- !u!1 &1235549575
 GameObject:
   m_ObjectHideFlags: 0

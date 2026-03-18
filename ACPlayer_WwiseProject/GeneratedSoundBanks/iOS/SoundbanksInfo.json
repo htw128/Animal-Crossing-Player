@@ -18,11 +18,19 @@
     "Type": "User",
     "GUID": "{6B77641B-9E16-4DB6-A3D7-6CF3BA6BAC2C}",
     "Language": "SFX",
-    "Hash": "{A479F3EE-3542-147F-5509-912D9E2D3B2E}",
+    "Hash": "{F279DBB5-5B34-319B-6382-C9375C1D617A}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Default",
     "ShortName": "Default",
     "Path": "Default.bnk",
     "Media": [
+     {
+      "Id": "5161546",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RGL_led_mf_D4.wav",
+      "CachePath": "D3/{D3126FD1-E604-26AD-83E7-389FE1AD3489}.wem"
+     },
      {
       "Id": "28676972",
       "Language": "SFX",
@@ -78,6 +86,14 @@
       "Location": "Memory",
       "ShortName": "023 - 5 AM.wav",
       "CachePath": "69/{69E380E2-4C3D-3B56-C70B-74A4BFF67434}.wem"
+     },
+     {
+      "Id": "94308477",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RGL_led_mf_A#4.wav",
+      "CachePath": "3B/{3B33921E-9651-DF95-FABB-2E12153CDE57}.wem"
      },
      {
       "Id": "105917430",
@@ -232,6 +248,14 @@
       "CachePath": "C4/{C433981E-4EE6-1374-C338-C5C2D9950233}.wem"
      },
      {
+      "Id": "351343805",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RGL_led_mf_E4.wav",
+      "CachePath": "6A/{6A8CFE6A-B258-12E0-BE51-B4AC1C6621FE}.wem"
+     },
+     {
       "Id": "364145407",
       "Language": "SFX",
       "Streaming": "false",
@@ -328,6 +352,14 @@
       "CachePath": "1A/{1A0911FE-73D3-AD2E-1D8C-5D656847131D}.wem"
      },
      {
+      "Id": "521557036",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RGL_led_mf_G#3.wav",
+      "CachePath": "25/{2592C24D-4286-662F-B1B1-C8853B3BBBC6}.wem"
+     },
+     {
       "Id": "524678498",
       "Language": "SFX",
       "Streaming": "false",
@@ -350,6 +382,22 @@
       "Location": "Memory",
       "ShortName": "063 - 9 PM - Rainy.wav",
       "CachePath": "2E/{2E6CD463-9BBF-658F-8CE0-46CE0FB68D0D}.wem"
+     },
+     {
+      "Id": "594973911",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RGL_led_mf_G#4.wav",
+      "CachePath": "83/{83C9E573-D941-2B52-1D25-2CBBCF1C85F3}.wem"
+     },
+     {
+      "Id": "596860404",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RGL_led_mf_F#4.wav",
+      "CachePath": "6F/{6F46127D-D90A-5BF1-7B10-5EE662B0D1C4}.wem"
      },
      {
       "Id": "629673521",
@@ -400,12 +448,28 @@
       "CachePath": "C9/{C920DE29-290F-2A18-946D-51A6F507E8C5}.wem"
      },
      {
+      "Id": "685697408",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RGL_led_mf_C5.wav",
+      "CachePath": "94/{94122914-4B51-7671-EC60-7ABB04088A40}.wem"
+     },
+     {
       "Id": "685894300",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "020 - 2 AM.wav",
       "CachePath": "6A/{6A735783-6565-FF4C-E200-1EE923CF5A20}.wem"
+     },
+     {
+      "Id": "704735862",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RGL_led_mf_A#3.wav",
+      "CachePath": "A6/{A6BD5AA0-4F32-49CC-E4F2-2E703DAB2466}.wem"
      },
      {
       "Id": "706248627",
@@ -422,6 +486,14 @@
       "Location": "Memory",
       "ShortName": "076 - 10 AM - Snowy.wav",
       "CachePath": "ED/{ED08B389-DFC6-43B2-B9A4-8E14606810EF}.wem"
+     },
+     {
+      "Id": "711840308",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RGL_led_mf_E5.wav",
+      "CachePath": "C6/{C6B87EE3-C164-CD67-9063-C491415E41BB}.wem"
      },
      {
       "Id": "751552534",
@@ -472,6 +544,14 @@
       "CachePath": "C4/{C45AD342-01A5-DB92-31F9-17C801352C78}.wem"
      },
      {
+      "Id": "851106016",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RGL_led_mf_C4.wav",
+      "CachePath": "6A/{6AEB710D-112C-FC1D-D8A8-D57C628CFFBB}.wem"
+     },
+     {
       "Id": "854641889",
       "Language": "SFX",
       "Streaming": "false",
@@ -520,6 +600,14 @@
       "CachePath": "3F/{3F32FB16-2E2B-0486-94A0-EA9E966314E5}.wem"
      },
      {
+      "Id": "941907930",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RGL_led_mf_F#3.wav",
+      "CachePath": "71/{7121D939-68EC-CD5F-536C-92931F47F2EE}.wem"
+     },
+     {
       "Id": "949251040",
       "Language": "SFX",
       "Streaming": "false",
@@ -550,6 +638,14 @@
       "Location": "Memory",
       "ShortName": "022 - 4 AM.wav",
       "CachePath": "44/{44AB24CA-F724-C920-77BE-B2C4C994FBF1}.wem"
+     },
+     {
+      "Id": "998002315",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "RGL_led_mf_D5.wav",
+      "CachePath": "A6/{A6D97F79-FDEC-52E8-D35B-83627813919C}.wem"
      },
      {
       "Id": "1005508453",
@@ -585,6 +681,53 @@
      }
     ],
     "Events": [
+     {
+      "Id": "1945722105",
+      "Name": "Play_Bell",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Bell",
+      "GUID": "{A70DF6FA-82C2-493F-9CF5-6B6E7A31E04A}",
+      "DurationType": "OneShot",
+      "DurationMin": "2.876",
+      "DurationMax": "2.876",
+      "MediaRefs": [
+       {
+        "Id": "5161546"
+       },
+       {
+        "Id": "94308477"
+       },
+       {
+        "Id": "351343805"
+       },
+       {
+        "Id": "521557036"
+       },
+       {
+        "Id": "594973911"
+       },
+       {
+        "Id": "596860404"
+       },
+       {
+        "Id": "685697408"
+       },
+       {
+        "Id": "704735862"
+       },
+       {
+        "Id": "711840308"
+       },
+       {
+        "Id": "851106016"
+       },
+       {
+        "Id": "941907930"
+       },
+       {
+        "Id": "998002315"
+       }
+      ]
+     },
      {
       "Id": "3366829419",
       "Name": "Play_City",
@@ -1045,10 +1188,10 @@
       ]
      },
      {
-      "Id": "1916619709",
-      "Name": "Play_MIDI",
-      "ObjectPath": "\\Events\\Default Work Unit\\Play_MIDI",
-      "GUID": "{A70DF6FA-82C2-493F-9CF5-6B6E7A31E04A}",
+      "Id": "1929178478",
+      "Name": "Play_Melodica",
+      "ObjectPath": "\\Events\\Default Work Unit\\Play_Melodica",
+      "GUID": "{A92C890C-347F-4CE5-B4C2-314ADB30296E}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
@@ -1851,6 +1994,6 @@
     ]
    }
   ],
-  "FileHash": "{7A843E0D-220A-6F2D-9C89-34EB66F606A9}"
+  "FileHash": "{F4D1ACEC-9ED0-84FD-F4D4-BAF472F3C97E}"
  }
 }

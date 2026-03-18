@@ -70,7 +70,18 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Play_MIDI" ID="{A70DF6FA-82C2-493F-9CF5-6B6E7A31E04A}"/>
+				<Event Name="Play_Bell" ID="{A70DF6FA-82C2-493F-9CF5-6B6E7A31E04A}">
+					<ChildrenList>
+						<Action Name="" ID="{4A423507-CF58-4773-936F-4BEB09CE3EED}" ShortID="419104941">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Tubular Bells" ID="{CCEF5BF8-D704-4DFE-829A-230CB442D293}" WorkUnitID="{117C7821-035C-4AB6-BA06-95177382EF9B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Play_Melodica" ID="{A92C890C-347F-4CE5-B4C2-314ADB30296E}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

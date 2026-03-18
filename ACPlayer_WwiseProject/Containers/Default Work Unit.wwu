@@ -5,8 +5,16 @@
 			<ChildrenList>
 				<BlendContainer Name="Tubular Bells" ID="{CCEF5BF8-D704-4DFE-829A-230CB442D293}" ShortID="768062903">
 					<PropertyList>
-						<Property Name="MidiKeyFilterMax" Type="int32" Value="76"/>
-						<Property Name="MidiKeyFilterMin" Type="int32" Value="55"/>
+						<Property Name="Highpass" Type="int16">
+							<ValueList>
+								<Value>15</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-3</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
@@ -250,7 +258,6 @@
 						<Sound Name="RGL_led_mf_E5" ID="{BE1B9078-AF6B-4026-A533-BA0EAFD202AF}" ShortID="341713181">
 							<PropertyList>
 								<Property Name="EnableMidiNoteTracking" Type="bool" Value="True"/>
-								<Property Name="MidiKeyFilterMax" Type="int32" Value="76"/>
 								<Property Name="MidiKeyFilterMin" Type="int32" Value="76"/>
 								<Property Name="MidiTrackingRootNote" Type="int32" Value="76"/>
 								<Property Name="OverrideMidiNoteTracking" Type="bool" Value="True"/>
@@ -284,7 +291,6 @@
 							<PropertyList>
 								<Property Name="EnableMidiNoteTracking" Type="bool" Value="True"/>
 								<Property Name="MidiKeyFilterMax" Type="int32" Value="55"/>
-								<Property Name="MidiKeyFilterMin" Type="int32" Value="54"/>
 								<Property Name="MidiTrackingRootNote" Type="int32" Value="54"/>
 								<Property Name="OverrideMidiNoteTracking" Type="bool" Value="True"/>
 							</PropertyList>

@@ -10,10 +10,9 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
 
         private void Awake()
         {
-            m_model = new ThemeSongModel();
+            m_model = new ThemeSongModel(gameObject);
             m_view = gameObject.GetComponent<PanelView>();
             
-            m_model.Initialize();
             m_view.InitView(m_model.m_noteValues);
             
             m_view.OnAnyNoteChanged = (index, newValue) =>

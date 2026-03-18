@@ -49,7 +49,7 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
         }
 
 
-        private void CreateNotes(int index, int value,Transform lineRoot)
+        private void CreateNotes(int index, int value, Transform lineRoot)
         {
             GameObject noteGameObject = Instantiate(m_notePrefab, lineRoot);
             noteGameObject.name = $"Note_{index}";

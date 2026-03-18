@@ -13,8 +13,9 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BELL = 1945722105U;
         static const AkUniqueID PLAY_CITY = 3366829419U;
-        static const AkUniqueID PLAY_MIDI = 1916619709U;
+        static const AkUniqueID PLAY_MELODICA = 1929178478U;
         static const AkUniqueID SET_STATE_NONE = 4160240018U;
         static const AkUniqueID SET_STATE_RAINY = 2716087331U;
         static const AkUniqueID SET_STATE_SNOWY = 1986417150U;
