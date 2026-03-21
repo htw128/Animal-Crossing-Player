@@ -13,8 +13,6 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
             m_model = GlobalService.Instance.Music.ThemeSongModel;
             m_view = gameObject.GetComponent<PanelView>();
             
-            m_view.InitView(m_model.m_noteValues);
-            
             m_view.OnAnyNoteChanged = (index, newValue) =>
             {
                 m_model.UpdateNote(index, newValue);
@@ -23,11 +21,14 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
 
         private void OnEnable()
         {
+            m_model.LoadFromCache();
+            m_view.InitView(m_model.m_noteValues);
+            
             m_view.SaveButton.onClick.AddListener(m_model.SaveThemeSong);
             m_view.PreviewButton.onClick.AddListener(PreviewThemeSong);
         }
 
-        private void OnDestroy()
+        private void OnDisable()
         {
             m_view.SaveButton.onClick.RemoveListener(m_model.SaveThemeSong);
             m_view.PreviewButton.onClick.RemoveListener(PreviewThemeSong);

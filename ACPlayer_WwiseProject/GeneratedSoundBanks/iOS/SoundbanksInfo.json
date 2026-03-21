@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{6B77641B-9E16-4DB6-A3D7-6CF3BA6BAC2C}",
     "Language": "SFX",
-    "Hash": "{F0D45C09-28C8-DDB9-F3D0-AB1C560276CA}",
+    "Hash": "{B41E8D57-7BA1-1460-D312-D2D9626B10F6}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Default",
     "ShortName": "Default",
     "Path": "Default.bnk",
@@ -150,14 +150,6 @@
       "Location": "Memory",
       "ShortName": "068 - 2 AM - Snowy.wav",
       "CachePath": "BD/{BDA44623-A2EA-B8B2-239F-121AD602EDC3}.wem"
-     },
-     {
-      "Id": "137385551",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Melodica_A4_strong.wav",
-      "CachePath": "DD/{DD966596-3A15-603B-8B97-48D454043661}.wem"
      },
      {
       "Id": "140516481",
@@ -776,6 +768,14 @@
       "CachePath": "A6/{A6D97F79-FDEC-52E8-D35B-83627813919C}.wem"
      },
      {
+      "Id": "1002682337",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_A4_strong.wav",
+      "CachePath": "0B/{0B547351-AA8A-A1F3-4E64-D5F61C309C96}.wem"
+     },
+     {
       "Id": "1005508453",
       "Language": "SFX",
       "Streaming": "false",
@@ -1331,9 +1331,6 @@
         "Id": "112340253"
        },
        {
-        "Id": "137385551"
-       },
-       {
         "Id": "140516481"
        },
        {
@@ -1371,8 +1368,21 @@
        },
        {
         "Id": "923636082"
+       },
+       {
+        "Id": "1002682337"
        }
       ]
+     },
+     {
+      "Id": "3320589931",
+      "Name": "Release_Melodica",
+      "ObjectPath": "\\Events\\Default Work Unit\\Release_Melodica",
+      "GUID": "{00F8B716-9690-456D-901A-060224C21273}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
      },
      {
       "Id": "4160240018",
@@ -2171,6 +2181,6 @@
     ]
    }
   ],
-  "FileHash": "{AA5D5D60-C7FB-BB71-6EDB-2A0CD8EDC506}"
+  "FileHash": "{99F6CBDE-7A64-0996-5B57-7438B4C8B9E3}"
  }
 }

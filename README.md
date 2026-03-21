@@ -158,8 +158,8 @@ Wwise的安装方法请参考[本文档](https://www.audiokinetic.com/zh/public-
    -  [x] 应用当前时间和天气
    -  [x] 退出手动模式以后，无法回到自动天气状态的bug
    -  [x] 将等待时长恢复到由程序控制，而非在wwise内编辑
--  [x] 移动端适配
--  [ ] 自定义岛屿主题曲
+-  [ ] 移动端适配
+-  [x] 自定义岛屿主题曲
 -  [ ] 昼夜切换
 -  [ ] 信息界面
 -  [ ] 节日播放对应音乐（新年除外）
@@ -175,6 +175,6 @@ Wwise的安装方法请参考[本文档](https://www.audiokinetic.com/zh/public-
 
 和风天气和心知天气的数据都很好。但是和风要JWT，心知也要搭服务器做私钥签名……
 
-### Open Source Disclaimer
+### Open Source Attribution
 
 TimePicker - TTP

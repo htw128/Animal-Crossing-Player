@@ -57,24 +57,6 @@ namespace OliversComputer.ACPlayer
             AkUnitySoundEngine.PostEvent(AK.EVENTS.PLAY_CITY, gameObject);
         }
 
-        private void Update()
-        {
-            if (Keyboard.current.spaceKey.wasPressedThisFrame)
-            {
-                PlayThemeSong();
-            }
-
-            if (Keyboard.current.bKey.wasPressedThisFrame)
-            {
-                ThemeSongModel.SendMidiNote(67+12, true, 1929178478u);
-            }
-
-            if (Keyboard.current.bKey.wasReleasedThisFrame)
-            {
-                ThemeSongModel.SendMidiNote(67+12, false, 1929178478u);
-            }
-        }
-
         private void OnDisable()
         {
             if (GlobalService.HasInstance)

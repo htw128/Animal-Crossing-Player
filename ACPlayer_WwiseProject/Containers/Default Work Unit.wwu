@@ -423,6 +423,11 @@
 				<BlendContainer Name="Melodica" ID="{8E7371DE-783D-4C28-9622-54613CB3E203}" ShortID="301808267">
 					<PropertyList>
 						<Property Name="MidiBreakOnNoteOff" Type="bool" Value="True"/>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-15</Value>
+							</ValueList>
+						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

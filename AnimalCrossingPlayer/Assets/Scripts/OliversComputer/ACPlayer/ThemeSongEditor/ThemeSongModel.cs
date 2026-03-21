@@ -15,10 +15,16 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
         public ThemeSongModel(GameObject gameObject)
         {
             m_musicGameObject = gameObject;
+            LoadFromCache();
+        }
 
+        internal void LoadFromCache()
+        {
+            m_noteValues.Clear();
             if (GlobalService.Instance.CacheReader.Exists("ThemeSong"))
             {
-                m_noteValues = GlobalService.Instance.CacheReader.Read<List<int>>("ThemeSong");
+                var saved = GlobalService.Instance.CacheReader.Read<List<int>>("ThemeSong");
+                m_noteValues.AddRange(saved);
             }
             else
             {
@@ -171,7 +177,7 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
             AkUnitySoundEngine.PostMIDIOnEvent(1929178478, m_musicGameObject, posts, (ushort)posts.Count());
         }
 
-        internal void SendMidiNote(int midiNote, bool mode, uint eventId)
+        private void SendMidiNote(int midiNote, bool mode, uint eventId)
         {
             AkMIDIPostArray posts = new AkMIDIPostArray(1);
             AkMIDIPost onPost = new AkMIDIPost();
@@ -185,7 +191,7 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
             Debug.Log($"Sending Note {midiNote} to {mode}");
         }
 
-        internal void PlayMelodica(byte midiNote, uint eventId, ulong offSet)
+        private void PlayMelodica(byte midiNote, uint eventId, ulong offSet)
         {
             AkMIDIPostArray posts = new AkMIDIPostArray(2);
             

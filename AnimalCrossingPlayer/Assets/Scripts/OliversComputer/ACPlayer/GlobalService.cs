@@ -128,6 +128,8 @@ namespace OliversComputer.ACPlayer
                 {
                     ManualHour = Now.Hour;
                 }
+                
+                Music.PlayThemeSong(false);
             
             }
         }

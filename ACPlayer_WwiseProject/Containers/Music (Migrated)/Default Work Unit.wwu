@@ -51,7 +51,6 @@
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
 												<Property Name="ExitSourceAt" Type="int16" Value="0"/>
 											</PropertyList>
-											<ReferenceList/>
 											<TransitionInfo>
 												<SourceFadeOut>
 													<MusicFade Name="Source Fade-out" ID="{8E6E0BB5-A5AB-4925-A996-C8177B56D98F}">
