@@ -7,7 +7,7 @@ namespace OliversComputer.ACPlayer
 {
     public class MusicController : MonoBehaviour
     {
-        private ThemeSongModel m_themeSongModel;
+        public ThemeSongModel ThemeSongModel { get; private set; }
         private Coroutine m_playCoroutine;
         private const int k_systemSampleRate = 48000;
 
@@ -21,8 +21,8 @@ namespace OliversComputer.ACPlayer
             }
 
             m_playCoroutine = StartCoroutine(
-                    m_themeSongModel.PlayThemeSong(
-                        m_themeSongModel.m_noteValues,
+                    ThemeSongModel.PlayThemeSong(
+                        ThemeSongModel.m_noteValues,
                         () => m_playCoroutine = null,
                         isPreview
                         )
@@ -37,7 +37,7 @@ namespace OliversComputer.ACPlayer
 
         private void Awake()
         {
-            m_themeSongModel = new ThemeSongModel(gameObject);
+            ThemeSongModel = new ThemeSongModel(gameObject);
         }
 
         private void OnEnable()
@@ -66,12 +66,12 @@ namespace OliversComputer.ACPlayer
 
             if (Keyboard.current.bKey.wasPressedThisFrame)
             {
-                m_themeSongModel.SendMidiNote(67+12, true, 1929178478u);
+                ThemeSongModel.SendMidiNote(67+12, true, 1929178478u);
             }
 
             if (Keyboard.current.bKey.wasReleasedThisFrame)
             {
-                m_themeSongModel.SendMidiNote(67+12, false, 1929178478u);
+                ThemeSongModel.SendMidiNote(67+12, false, 1929178478u);
             }
         }
 

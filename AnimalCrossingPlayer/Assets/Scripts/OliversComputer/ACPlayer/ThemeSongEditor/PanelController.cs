@@ -10,7 +10,7 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
 
         private void Awake()
         {
-            m_model = new ThemeSongModel(gameObject);
+            m_model = GlobalService.Instance.Music.ThemeSongModel;
             m_view = gameObject.GetComponent<PanelView>();
             
             m_view.InitView(m_model.m_noteValues);
@@ -33,7 +33,7 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
             m_view.PreviewButton.onClick.RemoveListener(PreviewThemeSong);
         }
 
-        private void PreviewThemeSong()
+        private static void PreviewThemeSong()
         {
             GlobalService.Instance.Music.PlayThemeSong(true);
         }
