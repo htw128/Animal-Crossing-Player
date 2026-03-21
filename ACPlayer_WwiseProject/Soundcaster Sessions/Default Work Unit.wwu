@@ -11,6 +11,18 @@
 						</Module>
 					</ModuleList>
 				</SoundcasterSession>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{03E0A8BC-35C1-4291-8708-1CD0F7540735}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Melodica" ID="{A92C890C-347F-4CE5-B4C2-314ADB30296E}" WorkUnitID="{6D3A078E-0C08-4A5E-A074-3A7AD3BF290A}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Release_Melodica" ID="{00F8B716-9690-456D-901A-060224C21273}" WorkUnitID="{6D3A078E-0C08-4A5E-A074-3A7AD3BF290A}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundcasterSessions>

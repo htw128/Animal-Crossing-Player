@@ -92,6 +92,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Release_Melodica" ID="{00F8B716-9690-456D-901A-060224C21273}">
+					<ChildrenList>
+						<Action Name="" ID="{4BE14B38-E907-4502-A733-6F4CD5B75FB1}" ShortID="1052258382">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="40"/>
+								<Property Name="Scope" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Melodica" ID="{8E7371DE-783D-4C28-9622-54613CB3E203}" WorkUnitID="{117C7821-035C-4AB6-BA06-95177382EF9B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

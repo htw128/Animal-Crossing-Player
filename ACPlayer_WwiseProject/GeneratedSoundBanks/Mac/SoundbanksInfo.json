@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{6B77641B-9E16-4DB6-A3D7-6CF3BA6BAC2C}",
     "Language": "SFX",
-    "Hash": "{834F8120-4CC9-EA52-A275-B452CA069E26}",
+    "Hash": "{35653881-99E4-1B66-C759-59A03194427B}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Default",
     "ShortName": "Default",
     "Path": "Default.bnk",
@@ -1375,6 +1375,16 @@
       ]
      },
      {
+      "Id": "3320589931",
+      "Name": "Release_Melodica",
+      "ObjectPath": "\\Events\\Default Work Unit\\Release_Melodica",
+      "GUID": "{00F8B716-9690-456D-901A-060224C21273}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
       "Id": "4160240018",
       "Name": "Set_State_None",
       "ObjectPath": "\\Events\\Default Work Unit\\Set_State_None",
@@ -2171,6 +2181,6 @@
     ]
    }
   ],
-  "FileHash": "{5BD813DD-3E16-719F-78C6-73544E9F424A}"
+  "FileHash": "{71EB04D2-C935-E4BC-3386-56052CB5A6F5}"
  }
 }

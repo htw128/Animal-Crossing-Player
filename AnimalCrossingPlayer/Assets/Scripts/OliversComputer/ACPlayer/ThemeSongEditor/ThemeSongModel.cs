@@ -9,13 +9,13 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
     public class ThemeSongModel
     {
         private readonly GameObject m_musicGameObject;
-        
+
         internal readonly List<int> m_noteValues = new(16);
 
         public ThemeSongModel(GameObject gameObject)
         {
             m_musicGameObject = gameObject;
-            
+
             if (GlobalService.Instance.CacheReader.Exists("ThemeSong"))
             {
                 m_noteValues = GlobalService.Instance.CacheReader.Read<List<int>>("ThemeSong");
@@ -44,12 +44,29 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
 
         internal IEnumerator PlayThemeSong(List<int> score, Action onFinished, bool isPreview)
         {
-            
-            double interval = isPreview ? 4.0 / 15.0 :10.0 / 11.0;
+            double interval = isPreview ? 4.0 / 15.0 : 10.0 / 11.0;
             uint eventID = isPreview ? 1929178478u : 1945722105u;
+
+            // preview 模式预处理：计算每个非 Sustain 音符后面跟了几个连续 Sustain
+            int[] holdBeats = new int[score.Count];
+            if (isPreview)
+            {
+                for (int i = 0; i < score.Count; i++)
+                {
+                    if (score[i] == (int)NoteNames.Sustain) continue;
+                    int count = 1;
+                    for (int j = i + 1; j < score.Count; j++)
+                    {
+                        if (score[j] == (int)NoteNames.Sustain) count++;
+                        else break;
+                    }
+
+                    holdBeats[i] = count;
+                }
+            }
+
             double startTime = Time.timeAsDouble;
             int noteIndex = 0;
-            int activeMidiNote = -1;
 
             foreach (int note in score)
             {
@@ -60,72 +77,52 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
                     yield return null;
                 }
 
-                switch (note)
+                if (!isPreview)
                 {
-                    case (int)NoteNames.Sustain:
-                        //Do Nothing
-                        break;
-                    
-                    case (int)NoteNames.Rest:
-                        if (activeMidiNote >= 0)
-                        {
-                            SendMidiNote(activeMidiNote, false, eventID);
-                            activeMidiNote = -1;
-                        }
-                        break;
-                    
-                    case (int)NoteNames.Random:
-                        if (activeMidiNote >= 0)
-                        {
-                            SendMidiNote(activeMidiNote, false, eventID);
-                        }
-                        int randomNote = GetMidiNote(Random.Range(2, 14));
-                        SendMidiNote(randomNote, true, eventID);
-                        activeMidiNote = randomNote;
-                        break;
-                    
-                    default:
+                    switch (note)
                     {
-                        int midiNote = GetMidiNote(note);
-                        if (isPreview) midiNote += 12;
-                        if (activeMidiNote >= 0)
-                        {
-                            SendMidiNote(activeMidiNote, false, eventID);
-                        }
-
-                        SendMidiNote(midiNote, true, eventID);
-                        activeMidiNote = midiNote;
-                        break;
+                        case (int)NoteNames.Sustain:
+                        case (int)NoteNames.Rest:
+                            break;
+                        case (int)NoteNames.Random:
+                            SendMidiNote(GetMidiNote(Random.Range(2, 14)), true, eventID);
+                            break;
+                        default:
+                            SendMidiNote(GetMidiNote(note), true, eventID);
+                            break;
                     }
                 }
-                
-                // 口风琴只演奏半拍
-                if (isPreview && activeMidiNote >= 0
-                              && note != (int)NoteNames.Sustain
-                              && note != (int)NoteNames.Rest)
+                else
                 {
-                    double noteOffTime = nextTime + interval * 0.5;
-                    while (Time.timeAsDouble < noteOffTime)
+                    if (note == (int)NoteNames.Sustain || note == (int)NoteNames.Rest)
                     {
-                        yield return null;
+                        // Sustain 和 Rest 拍不触发新音，协程自然推进到下一拍
                     }
-                    SendMidiNote(activeMidiNote, false, eventID);
-                    activeMidiNote = -1;
-                }
+                    else
+                    {
+                        int midiNote = note == (int)NoteNames.Random
+                            ? GetMidiNote(Random.Range(2, 14)) + 12
+                            : GetMidiNote(note) + 12;
+                        
+                        int beats = holdBeats[noteIndex];
+                        uint noteOffSamples = (uint)(beats * interval * 48000);
+                        PlayMelodica((byte)midiNote, eventID, noteOffSamples);
 
+                        // 等到发音结束再继续（后续 Sustain 拍的 nextTime 已经过去，会直接跳过）
+                        double noteEndTime = nextTime + beats * interval;
+                        while (Time.timeAsDouble < noteEndTime)
+                        {
+                            yield return null;
+                        }
+                    }
+                }
                 noteIndex++;
-
-            }
-            
-            if (activeMidiNote >= 0)
-            {
-                SendMidiNote(activeMidiNote, false, eventID);
             }
 
             onFinished?.Invoke();
         }
 
-        private int GetMidiNote(int note)
+    private static int GetMidiNote(int note)
         {
             return note switch
             {
@@ -186,6 +183,29 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
             posts[0] = onPost;
             AkUnitySoundEngine.PostMIDIOnEvent(eventId, m_musicGameObject, posts, (ushort)posts.Count());
             Debug.Log($"Sending Note {midiNote} to {mode}");
+        }
+
+        internal void PlayMelodica(byte midiNote, uint eventId, ulong offSet)
+        {
+            AkMIDIPostArray posts = new AkMIDIPostArray(2);
+            
+            AkMIDIPost onPost = new AkMIDIPost();
+            onPost.midiEvent.byType = AkMIDIEventTypes.NOTE_ON;
+            onPost.midiEvent.byChan = 0;
+            onPost.midiEvent.byOnOffNote = midiNote;
+            onPost.midiEvent.byVelocity = 127;
+            onPost.uOffset = 0;
+            posts[0] = onPost;
+            
+            AkMIDIPost offPost = new AkMIDIPost();
+            offPost.midiEvent.byType = AkMIDIEventTypes.NOTE_OFF;
+            offPost.midiEvent.byChan = 0;
+            offPost.midiEvent.byOnOffNote = midiNote;
+            offPost.midiEvent.byVelocity = 127;
+            offPost.uOffset = offSet;
+            posts[1] = offPost;
+
+            AkUnitySoundEngine.PostMIDIOnEvent(eventId, m_musicGameObject, posts, (ushort)posts.Count());
         }
     }
 }

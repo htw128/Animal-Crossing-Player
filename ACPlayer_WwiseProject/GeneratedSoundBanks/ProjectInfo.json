@@ -3,7 +3,7 @@
   "Project": {
    "Name": "Animal Crossing Player",
    "GUID": "{E1FC8E4F-07A5-4217-A20C-7234E2D6396E}",
-   "Generator": "2025.1.4.9062"
+   "Generator": "2025.1.6.9117"
   },
   "CacheRoot": "../.cache",
   "Platforms": [
@@ -45,6 +45,6 @@
     "UseAsStandIn": "true"
    }
   ],
-  "FileHash": "{BCADCD58-6930-892C-5CE8-6B0D3E8FAA4C}"
+  "FileHash": "{052AB9DA-D74E-2770-B6CF-11B652C30844}"
  }
 }

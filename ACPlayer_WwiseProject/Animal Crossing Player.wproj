@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WwiseDocument Type="Project" SchemaVersion="133" WwiseVersion="v2025.1.4" WwiseBuild="9062">
+<WwiseDocument Type="Project" SchemaVersion="133" WwiseVersion="v2025.1.6" WwiseBuild="9117">
 	<ProjectInfo>
 		<Project Name="Animal Crossing Player" ID="{E1FC8E4F-07A5-4217-A20C-7234E2D6396E}">
 			<Platforms>
@@ -40,7 +40,7 @@
 				<Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True"/>
 				<Property Name="SoundBankGeneratePrintGUID" Type="bool" Value="True"/>
 				<Property Name="SoundBankGeneratePrintPath" Type="bool" Value="True"/>
-				<Property Name="SoundBankHeaderFilePath" Type="string" Value="..\AnimalCrossingPlayer\Assets\Scripts\WwiseIDs"/>
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="Z:\Users\oliver\Documents\Work\UnityProjects\Animal Crossing Player\ACPlayer_WwiseProject\GeneratedSoundBanks"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="iOS">GeneratedSoundBanks\iOS\</Value>
@@ -10573,6 +10573,16 @@
 								<Value>False</Value>
 							</ValueList>
 						</Property>
+						<Property Name="EnableHPF" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableLPF" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="HPF" Type="int16">
 							<ValueList>
 								<Value>0</Value>
@@ -10593,7 +10603,7 @@
 								<Value>False</Value>
 							</ValueList>
 						</Property>
-						<Property Name="SidechainScope" Type="int32">
+						<Property Name="SidechainScope" Type="int16">
 							<ValueList>
 								<Value>0</Value>
 							</ValueList>
@@ -10612,6 +10622,16 @@
 								<Value>0</Value>
 							</ValueList>
 						</Property>
+						<Property Name="EnableHPF" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableLPF" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
 						<Property Name="HPF" Type="int16">
 							<ValueList>
 								<Value>0</Value>
@@ -10632,7 +10652,51 @@
 								<Value>False</Value>
 							</ValueList>
 						</Property>
-						<Property Name="SidechainScope" Type="int32">
+						<Property Name="SidechainScope" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real32">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+				</SharedPropertyList>
+				<SharedPropertyList ClassName="Ak Sidechain Source" PluginType="2" CompanyID="0" PluginID="195">
+					<PropertyList>
+						<Property Name="Color" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableHPF" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="EnableLPF" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="HPF" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="LPF" Type="int16">
+							<ValueList>
+								<Value>0</Value>
+							</ValueList>
+						</Property>
+						<Property Name="OverrideColor" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+						<Property Name="SidechainScope" Type="int16">
 							<ValueList>
 								<Value>0</Value>
 							</ValueList>
