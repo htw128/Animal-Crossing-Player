@@ -44,12 +44,12 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
 
         internal IEnumerator PlayThemeSong(List<int> score, Action onFinished, bool isPreview)
         {
-            const double interval = 10.0 / 11.0;
+            
+            double interval = isPreview ? 4.0 / 15.0 :10.0 / 11.0;
+            uint eventID = isPreview ? 1929178478u : 1945722105u;
             double startTime = Time.timeAsDouble;
             int noteIndex = 0;
             int activeMidiNote = -1;
-            uint eventID = isPreview ? 1929178478u : 1945722105u;
-            eventID = 1945722105u;
 
             foreach (int note in score)
             {
@@ -65,6 +65,7 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
                     case (int)NoteNames.Sustain:
                         //Do Nothing
                         break;
+                    
                     case (int)NoteNames.Rest:
                         if (activeMidiNote >= 0)
                         {
@@ -72,18 +73,21 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
                             activeMidiNote = -1;
                         }
                         break;
+                    
                     case (int)NoteNames.Random:
                         if (activeMidiNote >= 0)
                         {
-                            int midiNote = GetMidiNote(Random.Range(2, 14));
-                            SendMidiNote(midiNote, true, eventID);
-                            activeMidiNote = midiNote;
+                            SendMidiNote(activeMidiNote, false, eventID);
                         }
-                        
+                        int randomNote = GetMidiNote(Random.Range(2, 14));
+                        SendMidiNote(randomNote, true, eventID);
+                        activeMidiNote = randomNote;
                         break;
+                    
                     default:
                     {
                         int midiNote = GetMidiNote(note);
+                        if (isPreview) midiNote += 12;
                         if (activeMidiNote >= 0)
                         {
                             SendMidiNote(activeMidiNote, false, eventID);
@@ -93,6 +97,20 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
                         activeMidiNote = midiNote;
                         break;
                     }
+                }
+                
+                // 口风琴只演奏半拍
+                if (isPreview && activeMidiNote >= 0
+                              && note != (int)NoteNames.Sustain
+                              && note != (int)NoteNames.Rest)
+                {
+                    double noteOffTime = nextTime + interval * 0.5;
+                    while (Time.timeAsDouble < noteOffTime)
+                    {
+                        yield return null;
+                    }
+                    SendMidiNote(activeMidiNote, false, eventID);
+                    activeMidiNote = -1;
                 }
 
                 noteIndex++;
@@ -128,7 +146,7 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
             };
         }
 
-        public void PlaySingleNote(int midiNote)
+        public void PlaySingleNote(byte midiNote, byte velocity = 127)
         {
             // 序列化一个 NOTE_ON + NOTE_OFF 消息数组
             AkMIDIPostArray posts = new AkMIDIPostArray(2);
@@ -137,7 +155,7 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
             AkMIDIPost onPost = new AkMIDIPost();
             onPost.midiEvent.byType = AkMIDIEventTypes.NOTE_ON;
             onPost.midiEvent.byChan = 0;
-            onPost.midiEvent.byOnOffNote = (byte)midiNote;
+            onPost.midiEvent.byOnOffNote = midiNote;
             onPost.midiEvent.byVelocity = 127; // velocity 0–127
             onPost.uOffset = 0; // 立即执行
             posts[0] = onPost;
@@ -146,17 +164,17 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
             AkMIDIPost offPost = new AkMIDIPost();
             offPost.midiEvent.byType = AkMIDIEventTypes.NOTE_OFF;
             offPost.midiEvent.byChan = 0;
-            offPost.midiEvent.byOnOffNote = (byte)midiNote;
+            offPost.midiEvent.byOnOffNote = midiNote;
             offPost.midiEvent.byVelocity = 0;
-            offPost.uOffset = 10000; // 立即紧跟
+            offPost.uOffset = 12800; // 立即紧跟
             posts[1] = offPost;
 
             // 发送到指定 Wwise Event
             // 这会依赖你配置 Event（比如包含一个可响应 MIDI 的 Synth）
-            AkUnitySoundEngine.PostMIDIOnEvent(1945722105, m_musicGameObject, posts, (ushort)posts.Count());
+            AkUnitySoundEngine.PostMIDIOnEvent(1929178478, m_musicGameObject, posts, (ushort)posts.Count());
         }
 
-        private void SendMidiNote(int midiNote, bool mode, uint eventId)
+        internal void SendMidiNote(int midiNote, bool mode, uint eventId)
         {
             AkMIDIPostArray posts = new AkMIDIPostArray(1);
             AkMIDIPost onPost = new AkMIDIPost();
@@ -167,6 +185,7 @@ namespace OliversComputer.ACPlayer.ThemeSongEditor
             onPost.uOffset = 0;
             posts[0] = onPost;
             AkUnitySoundEngine.PostMIDIOnEvent(eventId, m_musicGameObject, posts, (ushort)posts.Count());
+            Debug.Log($"Sending Note {midiNote} to {mode}");
         }
     }
 }

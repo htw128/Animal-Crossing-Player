@@ -18,7 +18,7 @@
     "Type": "User",
     "GUID": "{6B77641B-9E16-4DB6-A3D7-6CF3BA6BAC2C}",
     "Language": "SFX",
-    "Hash": "{28B9D258-58D9-9059-2AAB-802E314F8558}",
+    "Hash": "{834F8120-4CC9-EA52-A275-B452CA069E26}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Default",
     "ShortName": "Default",
     "Path": "Default.bnk",
@@ -150,14 +150,6 @@
       "Location": "Memory",
       "ShortName": "068 - 2 AM - Snowy.wav",
       "CachePath": "35/{35A60F08-964A-C77E-E9E9-C36283BD67EE}.wem"
-     },
-     {
-      "Id": "137385551",
-      "Language": "SFX",
-      "Streaming": "false",
-      "Location": "Memory",
-      "ShortName": "Melodica_A4_strong.wav",
-      "CachePath": "81/{818B4AA5-611D-A3FD-9E18-665962729F18}.wem"
      },
      {
       "Id": "140516481",
@@ -776,6 +768,14 @@
       "CachePath": "91/{9135B3CF-BFD0-A3F6-6FA8-CF81034C8CD0}.wem"
      },
      {
+      "Id": "1002682337",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Melodica_A4_strong.wav",
+      "CachePath": "3B/{3B27D982-928B-0017-D029-7759A5247766}.wem"
+     },
+     {
       "Id": "1005508453",
       "Language": "SFX",
       "Streaming": "false",
@@ -1331,9 +1331,6 @@
         "Id": "112340253"
        },
        {
-        "Id": "137385551"
-       },
-       {
         "Id": "140516481"
        },
        {
@@ -1371,6 +1368,9 @@
        },
        {
         "Id": "923636082"
+       },
+       {
+        "Id": "1002682337"
        }
       ]
      },
@@ -2171,6 +2171,6 @@
     ]
    }
   ],
-  "FileHash": "{4465D7B8-2D80-25C9-E247-78CF1715C2D4}"
+  "FileHash": "{5BD813DD-3E16-719F-78C6-73544E9F424A}"
  }
 }
