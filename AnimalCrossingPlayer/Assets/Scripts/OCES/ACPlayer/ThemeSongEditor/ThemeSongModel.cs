@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace OliversComputer.ACPlayer.ThemeSongEditor
+namespace OCES.ACPlayer.ThemeSongEditor
 {
     public class ThemeSongModel
     {

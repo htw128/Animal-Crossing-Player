@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace OliversComputer.ACPlayer.ThemeSongEditor
+namespace OCES.ACPlayer.ThemeSongEditor
 {
     public class NoteItem : MonoBehaviour
     {

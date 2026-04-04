@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace OliversComputer.ACPlayer
+namespace OCES
 {
     public static class BetterDebug
     {

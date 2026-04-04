@@ -5,7 +5,7 @@ using CI.QuickSave;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace OliversComputer.ACPlayer
+namespace OCES.ACPlayer
 {
     public class GlobalService : MonoBehaviour
     {

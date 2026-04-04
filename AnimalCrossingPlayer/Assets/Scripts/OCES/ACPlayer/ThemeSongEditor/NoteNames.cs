@@ -1,4 +1,4 @@
-namespace OliversComputer.ACPlayer.ThemeSongEditor
+namespace OCES.ACPlayer.ThemeSongEditor
 {
     public enum NoteNames
     {

@@ -1,9 +1,7 @@
-using System;
-using OliversComputer.ACPlayer.ThemeSongEditor;
+using OCES.ACPlayer.ThemeSongEditor;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-namespace OliversComputer.ACPlayer
+namespace OCES.ACPlayer
 {
     public class MusicController : MonoBehaviour
     {

@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 
-namespace OliversComputer.ACPlayer
+namespace OCES.ACPlayer
 {
     public class WeatherUpdater : MonoBehaviour
     {

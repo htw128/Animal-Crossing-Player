@@ -2,7 +2,7 @@ using System.Globalization;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace OliversComputer.ACPlayer
+namespace OCES.ACPlayer
 {
     public class TimeSetter : MonoBehaviour
     {

@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace OliversComputer.ACPlayer.ThemeSongEditor
+namespace OCES.ACPlayer.ThemeSongEditor
 {
     public class PanelController : MonoBehaviour
     {
