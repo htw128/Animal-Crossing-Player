@@ -21,9 +21,9 @@ namespace OCES.ACPlayer.ThemeSongEditor
         internal void LoadFromCache()
         {
             m_noteValues.Clear();
-            if (GlobalService.Instance.CacheReader.Exists("ThemeSong"))
+            if (GlobalService.Instance.CacheReader.Exists(GameConstants.CACHE_KEY_THEME_SONG))
             {
-                var saved = GlobalService.Instance.CacheReader.Read<List<int>>("ThemeSong");
+                var saved = GlobalService.Instance.CacheReader.Read<List<int>>(GameConstants.CACHE_KEY_THEME_SONG);
                 m_noteValues.AddRange(saved);
             }
             else
@@ -45,13 +45,13 @@ namespace OCES.ACPlayer.ThemeSongEditor
 
         public void SaveThemeSong()
         {
-            GlobalService.Instance.CacheWriter.Write("ThemeSong", m_noteValues).Commit();
+            GlobalService.Instance.CacheWriter.Write(GameConstants.CACHE_KEY_THEME_SONG, m_noteValues).Commit();
         }
 
         internal IEnumerator PlayThemeSong(List<int> score, Action onFinished, bool isPreview)
         {
             double interval = isPreview ? 4.0 / 15.0 : 10.0 / 11.0;
-            uint eventID = isPreview ? 1929178478u : 1945722105u;
+            uint eventID = isPreview ? AK.EVENTS.PLAY_MELODICA : AK.EVENTS.PLAY_BELL;
 
             // preview 模式预处理：计算每个非 Sustain 音符后面跟了几个连续 Sustain
             int[] holdBeats = new int[score.Count];
@@ -100,15 +100,15 @@ namespace OCES.ACPlayer.ThemeSongEditor
                 }
                 else
                 {
-                    if (note == (int)NoteNames.Sustain || note == (int)NoteNames.Rest)
+                    if (note is (int)NoteNames.Sustain or (int)NoteNames.Rest)
                     {
                         // Sustain 和 Rest 拍不触发新音，协程自然推进到下一拍
                     }
                     else
                     {
                         int midiNote = note == (int)NoteNames.Random
-                            ? GetMidiNote(Random.Range(2, 14)) + 12
-                            : GetMidiNote(note) + 12;
+                            ? GetMidiNote(Random.Range(2, 14)) + 12 
+                            : GetMidiNote(note) + 12; //Melodica要提升一个八度
                         
                         int beats = holdBeats[noteIndex];
                         uint noteOffSamples = (uint)(beats * interval * 48000);
@@ -159,7 +159,7 @@ namespace OCES.ACPlayer.ThemeSongEditor
             onPost.midiEvent.byType = AkMIDIEventTypes.NOTE_ON;
             onPost.midiEvent.byChan = 0;
             onPost.midiEvent.byOnOffNote = midiNote;
-            onPost.midiEvent.byVelocity = 127; // velocity 0–127
+            onPost.midiEvent.byVelocity = velocity; // velocity 0–127
             onPost.uOffset = 0; // 立即执行
             posts[0] = onPost;
 
@@ -174,7 +174,7 @@ namespace OCES.ACPlayer.ThemeSongEditor
 
             // 发送到指定 Wwise Event
             // 这会依赖你配置 Event（比如包含一个可响应 MIDI 的 Synth）
-            AkUnitySoundEngine.PostMIDIOnEvent(1929178478, m_musicGameObject, posts, (ushort)posts.Count());
+            AkUnitySoundEngine.PostMIDIOnEvent(AK.EVENTS.PLAY_MELODICA, m_musicGameObject, posts, (ushort)posts.Count());
         }
 
         private void SendMidiNote(int midiNote, bool mode, uint eventId)
@@ -188,7 +188,7 @@ namespace OCES.ACPlayer.ThemeSongEditor
             onPost.uOffset = 0;
             posts[0] = onPost;
             AkUnitySoundEngine.PostMIDIOnEvent(eventId, m_musicGameObject, posts, (ushort)posts.Count());
-            Debug.Log($"Sending Note {midiNote} to {mode}");
+            BetterDebug.Log($"Sending Note {midiNote} to {mode}");
         }
 
         private void PlayMelodica(byte midiNote, uint eventId, ulong offSet)
@@ -207,7 +207,7 @@ namespace OCES.ACPlayer.ThemeSongEditor
             offPost.midiEvent.byType = AkMIDIEventTypes.NOTE_OFF;
             offPost.midiEvent.byChan = 0;
             offPost.midiEvent.byOnOffNote = midiNote;
-            offPost.midiEvent.byVelocity = 127;
+            offPost.midiEvent.byVelocity = 0;
             offPost.uOffset = offSet;
             posts[1] = offPost;
 

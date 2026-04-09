@@ -25,8 +25,8 @@ namespace OCES.ACPlayer
             _refreshButtonText.color = new Color(0.6f, 0.6f, 0.6f);
         
             _weatherConditionBox.fontSize = 70;
-            _weatherConditionBox.text = "获取天气中……";
-            _cityNameBox.text = "获取位置中……";
+            _lastWeatherText = _weatherConditionBox.text = "刷新天气中……";
+            _lastCityName = _cityNameBox.text = "刷新位置中……";
         
             _isRefreshing = true;
         }
@@ -45,23 +45,40 @@ namespace OCES.ACPlayer
             GlobalService.Instance.OnGetNewWeather += OnGetNewWeather;
             GlobalService.Instance.OnGetWeatherFailed += OnGetWeatherFailed;
         }
+        
+        private string _lastWeatherText;
+        private string _lastCityName;
 
         // Update is called once per frame
         private void Update()
         {
             //prompt text
-            if (GlobalService.Instance.CurrentWeather == null || _isRefreshing)
+            var weather = GlobalService.Instance.CurrentWeather;
+            if (weather is not null)
             {
-                _weatherConditionBox.fontSize = 70;
-                _weatherConditionBox.text = "获取天气中……";
-                _cityNameBox.text = "获取位置中……";
+                if ((string.IsNullOrEmpty(weather.current.condition.text) || _isRefreshing) && !_isRefreshFailed)
+                {
+                    _weatherConditionBox.fontSize = 70;
+                    _lastWeatherText = _weatherConditionBox.text = "获取天气中……";
+                    _lastCityName = _cityNameBox.text = "获取位置中……";
+                }
+                else if (!_isRefreshFailed)
+                {
+                    string currentWeather = weather.current.condition.text;
+                    string currentCityName = weather.location.name;
+
+                    if (_lastWeatherText != currentWeather)
+                    {
+                        _lastWeatherText = _weatherConditionBox.text = currentWeather;
+                    }
+
+                    if (_lastCityName != currentCityName)
+                    {
+                        _lastCityName = _cityNameBox.text = currentCityName;
+                    }
+                }
             }
-            else if (GlobalService.Instance.CurrentWeather != null && !_isRefreshFailed)
-            {
-                _weatherConditionBox.text = GlobalService.Instance.CurrentWeather.current.condition.text;
-                _cityNameBox.text = GlobalService.Instance.CurrentWeather.location.name;
-            }
-        
+            
             //button
             if (_lastSecond != GlobalService.Instance.Now.Second 
                 && !_refreshButton.enabled 
@@ -91,7 +108,7 @@ namespace OCES.ACPlayer
             GlobalService.Instance.OnGetWeatherFailed -= OnGetWeatherFailed;
         }
 
-        private void OnGetNewWeather(GlobalService.WeatherResponse newResponse)
+        private void OnGetNewWeather(Data.WeatherResponse newResponse)
         {
             _isRefreshing = false;
             _isRefreshFailed = false;
@@ -102,9 +119,9 @@ namespace OCES.ACPlayer
         {
             _isRefreshFailed = true;
             _isRefreshing = false;
-            _cityNameBox.text = "地球";
+            _lastCityName = _cityNameBox.text = "地球";
             _weatherConditionBox.fontSize = 40;
-            _weatherConditionBox.text = "获取天气信息失败，将继续播放当前天气\n请稍后再试 :(";
+            _lastWeatherText = _weatherConditionBox.text = "获取天气信息失败，将继续播放当前天气\n请稍后再试 :(";
         }
 
     }

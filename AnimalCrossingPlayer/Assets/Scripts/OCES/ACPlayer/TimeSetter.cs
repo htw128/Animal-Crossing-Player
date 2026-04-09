@@ -11,17 +11,17 @@ namespace OCES.ACPlayer
 
         private void Start()
         {
-            twelveHourToggle.onValueChanged.AddListener(delegate{OnToggleValueChanged();});
+            twelveHourToggle.onValueChanged.AddListener(OnToggleValueChanged);
         
-            bool isSaved = GlobalService.Instance.CacheReader.Exists("isTwelveHour");
+            bool isSaved = GlobalService.Instance.CacheReader.Exists(GameConstants.CACHE_KEY_TWELVE_HOUR);
 
             if (!isSaved)
             {
-                GlobalService.Instance.CacheWriter.Write("isTwelveHour", twelveHourToggle.isOn).Commit();
+                GlobalService.Instance.CacheWriter.Write(GameConstants.CACHE_KEY_TWELVE_HOUR, twelveHourToggle.isOn).Commit();
             }
             else
             {
-                twelveHourToggle.isOn = GlobalService.Instance.CacheReader.Read<bool>("isTwelveHour");
+                twelveHourToggle.isOn = GlobalService.Instance.CacheReader.Read<bool>(GameConstants.CACHE_KEY_TWELVE_HOUR);
             }
         }
 
@@ -44,12 +44,12 @@ namespace OCES.ACPlayer
 
         private void OnDestroy()
         {
-            twelveHourToggle.onValueChanged.RemoveListener(delegate { OnToggleValueChanged(); });
+            twelveHourToggle.onValueChanged.RemoveListener(OnToggleValueChanged);
         }
 
-        private void OnToggleValueChanged()
+        private void OnToggleValueChanged(bool isOn)
         {
-            GlobalService.Instance.CacheWriter.Write("isTwelveHour", twelveHourToggle.isOn).Commit();
+            GlobalService.Instance.CacheWriter.Write(GameConstants.CACHE_KEY_TWELVE_HOUR, isOn).Commit();
         }
     }
 }

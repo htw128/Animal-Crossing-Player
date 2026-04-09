@@ -11,6 +11,7 @@ namespace OCES.ACPlayer.UI
         
         private float m_leftPadding;
         private LayoutElement m_layoutElement;
+        private float m_currentPadding;
 
         private void Awake()
         {
@@ -24,11 +25,14 @@ namespace OCES.ACPlayer.UI
             m_leftPadding = StandalonePadding;
             
 #endif
+            
+            m_currentPadding = m_layoutElement.preferredWidth = m_leftPadding;
         }
 
         private void Update()
         {
-            m_layoutElement.preferredWidth = m_leftPadding;
+            if(Mathf.Abs(m_currentPadding - m_leftPadding) > 0.01f)
+                m_layoutElement.preferredWidth = m_leftPadding;
         }
     }
 }

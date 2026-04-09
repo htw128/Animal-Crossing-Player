@@ -7,8 +7,6 @@ namespace OCES.ACPlayer
     {
         public ThemeSongModel ThemeSongModel { get; private set; }
         private Coroutine m_playCoroutine;
-        private const int k_systemSampleRate = 48000;
-
 
         public void PlayThemeSong(bool isPreview = false)
         {
@@ -30,7 +28,7 @@ namespace OCES.ACPlayer
         public void UpdateVolume(float volume)
         {
             AkUnitySoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.VOLUME, volume);
-            GlobalService.Instance.CacheWriter.Write("MusicVolume", volume).Commit();
+            GlobalService.Instance.CacheWriter.Write(GameConstants.CACHE_KEY_VOLUME, volume).Commit();
         }
 
         private void Awake()
@@ -41,15 +39,15 @@ namespace OCES.ACPlayer
         private void OnEnable()
         {
             GlobalService.Instance.OnWeatherChanged += SetWwiseWeatherState;
-            BetterDebug.Log($"Current Sample Rate is {k_systemSampleRate}");
+            // BetterDebug.Log($"Current Sample Rate is {k_systemSampleRate}");
         }
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
         
-            float volume = GlobalService.Instance.CacheReader.Exists("MusicVolume") 
-                ? GlobalService.Instance.CacheReader.Read<float>("MusicVolume") : 100f;
+            float volume = GlobalService.Instance.CacheReader.Exists(GameConstants.CACHE_KEY_VOLUME) 
+                ? GlobalService.Instance.CacheReader.Read<float>(GameConstants.CACHE_KEY_VOLUME) : 100f;
             AkUnitySoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.VOLUME, volume);
             AkUnitySoundEngine.PostEvent(AK.EVENTS.SET_STATE_SUNNY, gameObject);
             AkUnitySoundEngine.PostEvent(AK.EVENTS.PLAY_CITY, gameObject);

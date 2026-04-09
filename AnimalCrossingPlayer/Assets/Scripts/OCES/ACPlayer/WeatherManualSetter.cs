@@ -12,7 +12,7 @@ namespace OCES.ACPlayer
         private Picker _picker;
         private GameObject _manualOptions;
 
-        private bool _isPickerInitialized;
+        //private bool _isPickerInitialized; 先留一下，要是两个功能以后还没有用到就删掉
     
         private void Awake()
         {
@@ -30,15 +30,11 @@ namespace OCES.ACPlayer
         }
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
-        void Start()
+        private void Start()
         {
-            _manualToggle.onValueChanged.AddListener(delegate { SetManualState(_manualToggle);}); }
-
-
-        // Update is called once per frame
-        void Update()
-        {
+            _manualToggle.onValueChanged.AddListener(SetManualState); 
         }
+        
 
         private void OnDisable()
         {
@@ -47,16 +43,16 @@ namespace OCES.ACPlayer
 
         private void OnDestroy()
         {
-            _manualToggle.onValueChanged.RemoveListener(delegate { SetManualState(_manualToggle);});
+            _manualToggle.onValueChanged.RemoveListener(SetManualState);
         }
     
-        private void SetManualState(Toggle manualToggle)
+        private void SetManualState(bool value)
         {
-            GlobalService.Instance.IsManual = _manualToggle.isOn;
-            _manualOptions.SetActive(_manualToggle.isOn);
+            GlobalService.Instance.IsManual = value;
+            _manualOptions.SetActive(value);
             _weatherDropDown.value = (int)GlobalService.Instance.WeatherState;
 
-            if (!_manualToggle.isOn)
+            if (!value)
             {
                 GlobalService.Instance.RestoreWeatherFromCache();
             }

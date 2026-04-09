@@ -16,8 +16,8 @@ namespace OCES.ACPlayer
 
         private void Start()
         {
-            float volume = GlobalService.Instance.CacheReader.Exists("MusicVolume") 
-                ? GlobalService.Instance.CacheReader.Read<float>("MusicVolume") : 100f;
+            float volume = GlobalService.Instance.CacheReader.Exists(GameConstants.CACHE_KEY_VOLUME) 
+                ? GlobalService.Instance.CacheReader.Read<float>(GameConstants.CACHE_KEY_VOLUME) : 100f;
             VolumeSlider.value = volume;
             TextBox.text = volume.ToString(CultureInfo.CurrentCulture);
         }

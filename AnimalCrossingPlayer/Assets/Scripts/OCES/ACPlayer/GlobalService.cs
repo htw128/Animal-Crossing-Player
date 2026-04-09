@@ -4,16 +4,17 @@ using System.Globalization;
 using CI.QuickSave;
 using UnityEngine;
 using UnityEngine.Networking;
+using OCES.ACPlayer.Data;
 
 namespace OCES.ACPlayer
 {
     public class GlobalService : MonoBehaviour
     {
-        public static GlobalService Instance { get; private set; }
+        internal static GlobalService Instance { get; private set; }
     
-        public DateTime Now { get; private set; }
-        public MusicController Music { get; private set; }
-        public enum WeatherStates
+        internal DateTime Now { get; private set; }
+        internal MusicController Music { get; private set; }
+        internal enum WeatherStates
         {
             None = -1,
             Sunny = 0,
@@ -21,41 +22,40 @@ namespace OCES.ACPlayer
             Snowy
         }
     
-        public WeatherStates WeatherState { get; private set; }
+        internal WeatherStates WeatherState { get; private set; }
         public WeatherResponse CurrentWeather;
         public QuickSaveWriter CacheWriter;
         public QuickSaveReader CacheReader;
     
-        public event Action<WeatherStates> OnWeatherChanged;
+        internal event Action<WeatherStates> OnWeatherChanged;
         public event Action<WeatherResponse> OnGetNewWeather;
         public event Action<UnityWebRequest> OnGetWeatherFailed;
     
         public static bool HasInstance => Instance != null;
-    
-        [HideInInspector]
-        public bool IsManual;
+        
+        internal bool IsManual;
         public int targetFrameRate = 60; 
         public int ManualHour { get; private set; }
         public string WeatherServiceAPIKey;
 
         private int _lastHour;
-        private const string _cachedRespondKey = "CachedRespond";
-        private const string _cachedUnixTimeKey = "CachedUnixTime";
         private WeatherStates _lastWeatherState = WeatherStates.None;
         [Tooltip("到整点后，几秒后切换回音乐")][SerializeField] private int m_delaySecond;
+        [SerializeField] private int _cacheDurationSecond = 2700;
         private float m_lastTimeToWwise;
+        
     
         public void UpdateWeatherState(bool isForceUpdate = false)
         {
             string url = $"https://api.weatherapi.com/v1/current.json?key={WeatherServiceAPIKey}&q=auto:ip&lang=zh_cmn";
 
-            if (CacheReader.Exists(_cachedRespondKey) && CacheReader.Exists(_cachedUnixTimeKey) && !isForceUpdate)
+            if (CacheReader.Exists(GameConstants.CACHE_KEY_WEATHER) && CacheReader.Exists(GameConstants.CACHE_KEY_UNIX_TIME) && !isForceUpdate)
             {
-                long _timeElapsed = DateTimeOffset.Now.ToUnixTimeSeconds() - CacheReader.Read<long>(_cachedUnixTimeKey);
-                if (_timeElapsed <= 2700)
+                long _timeElapsed = DateTimeOffset.Now.ToUnixTimeSeconds() - CacheReader.Read<long>(GameConstants.CACHE_KEY_UNIX_TIME);
+                if (_timeElapsed <= _cacheDurationSecond)
                 {
                     BetterDebug.Log("命中缓存");
-                    CurrentWeather = CacheReader.Read<WeatherResponse>(_cachedRespondKey);
+                    CurrentWeather = CacheReader.Read<WeatherResponse>(GameConstants.CACHE_KEY_WEATHER);
                     SetWeatherState(ParseWeatherState(CurrentWeather));
                     return;
                 }
@@ -82,7 +82,7 @@ namespace OCES.ACPlayer
         {
             if ((bool)Instance && Instance != this)
             {
-                Destroy(gameObject);
+                Destroy(this);
                 return;
             }
 
@@ -157,8 +157,8 @@ namespace OCES.ACPlayer
             if (request.result == UnityWebRequest.Result.Success)
             {
                 CurrentWeather = JsonUtility.FromJson<WeatherResponse>(request.downloadHandler.text);
-                CacheWriter.Write(_cachedRespondKey, CurrentWeather)
-                    .Write(_cachedUnixTimeKey, DateTimeOffset.Now.ToUnixTimeSeconds())
+                CacheWriter.Write(GameConstants.CACHE_KEY_WEATHER, CurrentWeather)
+                    .Write(GameConstants.CACHE_KEY_UNIX_TIME, DateTimeOffset.Now.ToUnixTimeSeconds())
                     .Commit();
                 SetWeatherState(ParseWeatherState(CurrentWeather));
                 OnGetNewWeather?.Invoke(CurrentWeather);
@@ -174,6 +174,12 @@ namespace OCES.ACPlayer
 
         private WeatherStates ParseWeatherState(WeatherResponse response)
         {
+            if (response?.current?.condition?.text == null)
+            {
+                BetterDebug.LogWarning("天气数据为空，默认使用晴天。");
+                return WeatherStates.Sunny;
+            }
+            
             string text = response.current.condition.text;
 
             if (text.Contains("雨"))
@@ -184,7 +190,7 @@ namespace OCES.ACPlayer
             return text.Contains("雪") ? WeatherStates.Snowy : WeatherStates.Sunny;
         }
     
-        public void SetWeatherState(WeatherStates newState)
+        internal void SetWeatherState(WeatherStates newState)
         {
             if (_lastWeatherState == newState)
                 return;
@@ -196,47 +202,12 @@ namespace OCES.ACPlayer
             OnWeatherChanged?.Invoke(newState);
         }
 
-        public void SetManualTime(int newTime)
+        internal void SetManualTime(int newTime)
         {
             if (ManualHour == newTime) return;
 
             ManualHour = newTime;
             BetterDebug.Log($"已收到手动时间,当前为{ManualHour}");
         }
-
-        #region 天气数据类
-        [Serializable]
-        public class WeatherResponse
-        {
-            public Location location;
-            public Current current;
-        }
-
-        [Serializable]
-        public class Location
-        {
-            public string name;
-            public string region;
-            public string country;
-            public float lat;
-            public float lon;
-            public string tz_id;
-            public long localtime_epoch;
-            public string localtime;
-        }
-
-        [Serializable]
-        public class Current
-        {
-            public Condition condition;
-        }
-
-        [Serializable]
-        public class Condition
-        {
-            public string text;
-            public int code;
-        }
-        #endregion
     }
 }
